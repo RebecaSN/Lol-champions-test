@@ -65,14 +65,6 @@ $matIconColorPrimary: $primaryButtonColor;
     }
   }
 
-  app-proposals-commercial-edit,
-  app-proposal-budget-view,
-  app-edit-proposal,
-  lib-sales-form,
-  lib-edit-sales-form,
-  app-edit-proposal,
-  app-generate-pdf,
-  terms-accepted-dialog,
   app-edit-register {
     .mat-dialog-content
       .topFormField
@@ -88,9 +80,6 @@ $matIconColorPrimary: $primaryButtonColor;
 
   .mat-dialog-container .mat-form-field-type-mat-select.mat-form-field-appearance-outline .mat-form-field-wrapper
 
-
-  app-edit-register,
-  app-generate-pdf,
   terms-accepted-dialog{
     .mat-raised-button {
       font-size: 12px;
@@ -168,7 +157,7 @@ $matIconColorPrimary: $primaryButtonColor;
 
       .mat-icon-button {
         .mat-icon {
-          color: $matIconColorPrimary; //rgb(0, 63, 238);
+          color: $matIconColorPrimary;
           &.fa {
             font-size: 25px;
           }
@@ -183,18 +172,7 @@ $matIconColorPrimary: $primaryButtonColor;
         }
       }
 
-      // .mat-icon {
-      //   display: flex;
-      //   flex-direction: row;
-      //   flex-wrap: nowrap;
-      //   align-content: center;
-      //   justify-content: center;
-      //   align-items: center;
-      // }
-
       /* ------------- Customizing the height of form-field components ------------ */
-
-
 
       .mat-checkbox-indeterminate.mat-primary .mat-checkbox-background,
       .mat-checkbox-checked.mat-primary .mat-checkbox-background {
@@ -286,10 +264,6 @@ $matIconColorPrimary: $primaryButtonColor;
     }
   }
 
-
-  app-edit-register,
-  app-edit-proposal,
-  app-generate-pdf,
   terms-accepted-dialog {
     @media only screen and (min-height: 415px) {
       .mat-dialog-content {
@@ -359,22 +333,8 @@ app-generate-business {
   }
 }
 
-edit-app-tics-commission-form-component {
-  .container {
-    max-height: calc(100vh - 250px) !important;
-  }
-}
-
-app-proposal-commercial-view {
-  .container {
-    min-height: calc(100vh - 150px) !important;
-  }
-}
 
 .mat-dialog-container {
-  app-business-form-sales-ict,
-  app-generate-pdf,
-  app-technical-wo-log-robim,
   terms-accepted-dialog {
     .mat-dialog-content {
       padding: 0 !important;
@@ -438,15 +398,6 @@ app-generate-pdf{
         }
       }
     }
-
-    // .mat-icon {
-    //   display: flex;
-    //   flex-direction: row;
-    //   flex-wrap: nowrap;
-    //   align-content: center;
-    //   justify-content: center;
-    //   align-items: center;
-    // }
 
     /* ------------- Customizing the height of form-field components ------------ */
 
@@ -603,30 +554,3 @@ app-generate-pdf  {
     width: 70vw;
   }
 }
-// /* --------------------- Select component loading style --------------------- */
-// app-add,
-// app-edit,
-// app-probability,
-// app-area,
-// app-involved,
-// app-consult-redundancy,
-// app-business-canceled,
-// app-business-sold-closed {
-//   .mat-option {
-//     /* used for both internal and external spinner versions */
-//     .deferred-select-placeholder-container {
-//       display: flex;
-//       align-items: center;
-//     }
-
-//     /* used for both internal and external spinner versions */
-//     .deferred-select-placeholder-container > span {
-//       flex: 1;
-//     }
-
-//     /* only needed if using internal loading spinner */
-//     ::ng-deep .hide-deferred-select-dummy-option {
-//       display: none !important;
-//     }
-//   }
-// }
