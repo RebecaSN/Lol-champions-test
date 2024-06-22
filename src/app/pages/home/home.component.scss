@@ -1,0 +1,37 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+strong:before {
+  content:"• ";
+}
+
+a{
+  color: black;
+}
+
+p {
+  text-align: justify;
+}
+
+ul li p {
+  margin-left: 20px;
+}

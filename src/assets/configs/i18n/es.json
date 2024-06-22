@@ -1,0 +1,3269 @@
+{
+  "layouts": {
+    "header": {
+      "logout": "Salir",
+      "tooltip": {
+        "userNameActive": "¡Usuario activo!",
+        "userManual": "Manual de usuario"
+      }
+    },
+    "sideNav": {
+      "systemName": "Sistema de gestión empresarial",
+      "menu01": "Pagina principal",
+      "menu02": "Prospección",
+      "menu03": "Negocio",
+      "menu04": "envíos",
+      "menu05": "Proyectos",
+      "menu06": "Propuestas (Comercial)",
+      "menu07": "Propuestas (Presupuesto)",
+      "menu08": "TIC",
+      "menu09": "Informes"
+    }
+  },
+  "pages": {
+    "auth": {
+      "sign-in": {
+        "userName": {
+          "label": "Ingrese el nombre de usuario",
+          "field-validate": "Se requiere nombre de usuario."
+        },
+        "password": {
+          "label": "Introduce la contraseña",
+          "field-validate": "¡Se requiere contraseña!"
+        },
+        "btn-login": "iniciar sesión",
+        "loggingIn": "Entrando...",
+        "createAccount": "Crea una cuenta",
+        "help": "¿Necesita ayuda?",
+        "rememberMe": "Acuérdate de mi",
+        "UnableToEnter": {
+          "title": "no se puede entrar",
+          "detail": "Hubo un error al iniciar sesión, inténtalo de nuevo más tarde.\n "
+        },
+        "login-success": {
+          "title": "Autenticado!",
+          "detail": "Bienvenido"
+        },
+        "section-restore": {
+          "SectionRestoredFor": "Acceso.",
+          "SectionRestored": "Sección restaurada."
+        }
+      }
+    },
+    "prospecting": {
+      "title": "Gestión de Prospección",
+      "sub-title": "",
+      "toolbar": {
+        "title": "Lista de prospección",
+        "advanced-filter": {
+          "prospecting-status": "Estado...",
+          "prospecting-owner": "Responsable..."
+        },
+        "actions": {
+          "buttons": {
+            "search_network": "Red de búsqueda de obras"
+          }
+        }
+      },
+      "table": {
+        "header": {
+          "id": "identificación",
+          "status": "Estado",
+          "identificationName": "Identificación",
+          "businessPurposeName": "Meta",
+          "state": "Expresar",
+          "clientCompany": "Cliente",
+          "businessInternalManagerContact": "Responsable",
+          "businessProbabilityName": "Temperatura",
+          "filter": "Búsqueda..."
+        },
+        "menu": {
+          "edit": "Editar prospección",
+          "generate-business": "Generar Negocio"
+        },
+        "detail": {
+          "status": "Estado:",
+          "identificationComplement": "Complementar:",
+          "businessPurpose": "Meta:",
+          "businessDate": "Fecha:",
+          "clientCompany": "Cliente:",
+          "state": "Expresar:",
+          "identificationName": "Identificador:",
+          "clientDecisionContact": "Contacto:",
+          "businessSource": "Fuente:",
+          "businessInternalManagerContact": "Responsable:",
+          "businessSourceComplement": "Descripción:",
+          "observation": "Observación:",
+          "lastBusinessProbability": "Relevancia:"
+        }
+      },
+      "maintenance": {
+        "title": {
+          "add": "Registro de Prospección",
+          "edit": "Edición de prospección"
+        },
+        "tab": {
+          "prospecting": {
+            "tab-label": "prospección",
+            "fields": {
+              "labels": {
+                "status": "Estado...",
+                "prospectingDate": "Fecha...",
+                "identification": "Identificación...",
+                "identificationComplement": "Complementar...",
+                "clientCompany": "Cliente...",
+                "clientDecisionContact": "Contacto...",
+                "businessInternalManagerContact": "Responsable...",
+                "prospectingResponsible": "Responsable...",
+                "lastBusinessProbability": "Temperatura...",
+                "businessPurpose": "Meta...",
+                "businessPurposeComplement": "Descripción...",
+                "country": "País...",
+                "state": "Expresar...",
+                "city": "Ciudad...",
+                "businessSource": "Fuente...",
+                "businessSourceComplement": "Descripción...",
+                "observation": "Observación..."
+              },
+              "placeholders": {
+                "status": "Estado...",
+                "prospectingDate": "Fecha...",
+                "identification": "Identificación...",
+                "identificationComplement": "Complementar...",
+                "clientCompany": "Cliente...",
+                "clientDecisionContact": "Contacto...",
+                "businessInternalManagerContact": "Responsable...",
+                "prospectingResponsible": "Responsable...",
+                "lastBusinessProbability": "Temperatura...",
+                "businessPurpose": "Meta...",
+                "businessPurposeComplement": "Descripción...",
+                "country": "País...",
+                "state": "Expresar...",
+                "city": "Ciudad...",
+                "businessSource": "Fuente...",
+                "businessSourceComplement": "Descripción...",
+                "observation": "Observación..."
+              },
+              "validators": {
+                "clientCompany": "Nombre de cliente ingresado no reconocido.",
+                "clientDecisionContact": "Nombre de contacto ingresado no reconocido.",
+                "businessInternalManagerContact": "Nombre del responsable mecanografiado no reconocido."
+              }
+            }
+          },
+          "activity": {
+            "tab-label": "Actividades",
+            "fields": {
+              "labels": {
+                "activityType": "Tipo de actividad...",
+                "objective": "Objetivo...",
+                "actionType": "Tipo de acción...",
+                "requestedToDate": "Solicitado a...",
+                "forecast": "Predicción...",
+                "activityStatus": "Estado...",
+                "conclusion": "Conclusión...",
+                "requestorContact": "Solicitante...",
+                "responsibleContact": "Responsable...",
+                "observation": "Observación..."
+              },
+              "placeholders": {
+                "requestedToDate": "Solicitado a...",
+                "forecast": "Predicción...",
+                "conclusion": "Conclusión...",
+                "requestorContact": "Solicitante...",
+                "responsibleContact": "Responsable...",
+                "observation": "Observación..."
+              }
+            },
+            "actions": {
+              "buttons": {
+                "cancel": "Cancelar",
+                "confirm": "Confirmar",
+                "include": "Incluir",
+                "search_network": "Red de búsqueda de obras"
+              }
+            },
+            "table": {
+              "header": {
+                "id": "identificación",
+                "activityType": "Tipo de actividad",
+                "objective": "objetivo",
+                "actionType": "tipo de acción",
+                "responsible": "Responsable",
+                "forecast": "Predicción",
+                "conclusion": "Conclusión",
+                "status": "Estado"
+              }
+            }
+          }
+        },
+        "actions": {
+          "buttons": {
+            "confirm": "Confirmar",
+            "cancel": "Cancelar",
+            "generate-business": "Generar Negocio"
+          }
+        }
+      },
+      "generate-new-business": {
+        "title": "Generación de nuevos negocios",
+        "informative": "<p>Está a punto de transponer esta perspectiva <b>🇧🇷{{identificationName}}🇧🇷</b> en un negocio</p><p>Seleccione el estado deseado.</p>",
+        "fields": {
+          "labels": {
+            "status": "Estado..."
+          }
+        },
+        "actions": {
+          "buttons": {
+            "confirm": "Confirmar",
+            "cancel": "Cancelar",
+            "generate-business": "Generar Negocio"
+          }
+        }
+      },
+      "activity-view": {
+        "title": "Vista de actividad",
+        "lines": {
+          "activityType": "Tipo de actividad:",
+          "objective": "Objetivo:",
+          "actionType": "Tipo de acción:",
+          "forecast": "Predicción:",
+          "requestedToDate": "Requerido para:",
+          "status": "Estado:",
+          "conclusion": "Conclusión:",
+          "responsibleForActivity": "Responsable:",
+          "requestorContact": "Solicitante:",
+          "observation": "Observación",
+          "actions": {
+            "buttons": {
+              "close": "Cerrar"
+            }
+          }
+        }
+      },
+      "construction-network": {
+        "title": "visualización",
+        "accordion": {
+          "company": {
+            "title": "Datos de la empresa",
+            "lines": {
+              "companyName": "Empresa:",
+              "companyType": "Escribe:",
+              "companyState": "Expresar:",
+              "companyCity": "Ciudad:",
+              "companyCep": "CÓDIGO POSTAL:",
+              "companyAddress": "Lugar público:",
+              "companyNeighborhood": "Vecindario:",
+              "companyPhoneOne": "1er Teléfono:",
+              "companyPhoneTwo": "2do teléfono:",
+              "companySite": "Sitio:"
+            }
+          },
+          "contacts": {
+            "title": "contactos",
+            "lines": {
+              "contactOneName": "1er contacto:",
+              "contactOnePosition": "Posición:",
+              "contactOneEmail": "Correo electrónico:",
+              "contactOnePhoneOne": "1er Teléfono:",
+              "contactOnePhoneTwo": "segundo teléfono",
+              "contactTwoName": "2do contacto:",
+              "contactTwoPosition": "Posición:",
+              "contactTwoEmail": "Correo electrónico:",
+              "contactTwoPhoneOne": "1er Teléfono:",
+              "contactTwoPhoneTwo": "2do teléfono:",
+              "contactThreeName": "3er contacto:",
+              "contactThreePosition": "Posición:",
+              "contactThreeEmail": "Correo electrónico:",
+              "contactThreePhoneOne": "1er Teléfono:",
+              "contactThreePhoneTwo": "2do teléfono:"
+            }
+          },
+          "miscellaneous": {
+            "title": "Otras informaciones",
+            "lines": {
+              "name": "Nombre:",
+              "sector": "Sector:",
+              "area": "Zona:",
+              "tradingName": "Nombre comercial:",
+              "description": "Descripción",
+              "note": "Nota:",
+              "phase": "Fase:",
+              "address": "Lugar público:",
+              "state": "Expresar:",
+              "city": "Ciudad:",
+              "neighborhood": "Vecindario:",
+              "bathrooms": "Baños:",
+              "blocks": "Bloques:",
+              "conclusion": "Conclusión:",
+              "constructionId": "Identificación:",
+              "constructionType": "Tipo de construcción:",
+              "deadline": "Fecha limite:",
+              "pattern": "Patrón:",
+              "paving": "Pavimentación:",
+              "regionCode": "Código regional:",
+              "responsible": "Responsable:",
+              "totalArea": "Área total:",
+              "units": "Unidades:",
+              "usefulArea": "Área total utilizada:",
+              "vacancies": "vacantes:",
+              "valueBr": "Valor BR:",
+              "valueUsMillion": "Valor de EE. UU. M:"
+            }
+          }
+        },
+        "actions": {
+          "buttons": {
+            "close": "Cerrar",
+            "import": "importar"
+          }
+        }
+      },
+      "search-network": {
+        "title": {
+          "add": "Lista de obras"
+        },
+        "table": {
+          "header": {
+            "id": "identificación",
+            "name": "Nombre",
+            "companyName": "Empresa",
+            "companyState": "Expresar",
+            "companyCity": "Ciudad",
+            "contactOneName": "Contacto",
+            "area": "Zona",
+            "totalArea": "Área total",
+            "filter": "Búsqueda..."
+          }
+        },
+        "actions": {
+          "buttons": {
+            "import": "importar",
+            "cancel": "Cancelar",
+            "disregard": "Ignorar registro"
+          }
+        }
+      }
+    },
+    "business": {
+      "title": "Administración de Empresas",
+      "table": {
+        "header": {
+          "id": "identificación",
+          "status": "Estado",
+          "code": "Código",
+          "identificationName": "Identificación",
+          "businessPurposeName": "Meta",
+          "state": "Expresar",
+          "totalAreaNumberM2": "Área total",
+          "contractTypeName": "tipo de contrato",
+          "businessInternalManagerContactName": "Gerente Interno",
+          "filter": "Búsqueda..."
+        },
+        "menu": {
+          "edit": "Editar oferta",
+          "shipping": "Envío",
+          "sold_closed": "Vendido / Cerrado",
+          "canceled": "cancelado",
+          "lost": "Perdido",
+          "declined": "rechazado",
+          "standby": "Apoyar",
+          "fomSalesICT": "Formulario Venta TIC",
+          "reactivation": "Reactivación de Empresas"
+        }
+      },
+      "add": {
+        "dialogTitle": "Registración de negocio",
+        "fields": {
+          "label": {
+            "contractType": "Tipo de contrato...",
+            "status": "Estado Inicio...",
+            "businessCode": "código ",
+            "identification": "Identificación...",
+            "proposalCode": "Propuesta No....",
+            "clientCompany": "Propietario...",
+            "clientDecisionContact": "Decisión de contacto...",
+            "identificationComplement": "Suplemento de identificación...",
+            "businessInternalManagerContact": "Gerente Interno...",
+            "construction": "Construcciones..."
+          },
+          "placeholder": {
+            "contractType": "Tipo de contrato...",
+            "status": "Estado Inicio...",
+            "businessCode": "código ",
+            "identification": "Identificación...",
+            "proposalCode": "Propuesta No....",
+            "clientCompany": "Propietario...",
+            "clientDecisionContact": "Decisión de contacto...",
+            "identificationComplement": "Suplemento de identificación...",
+            "businessInternalManagerContact": "Gerente Interno...",
+            "construction": "Construcciones..."
+          },
+          "validators": {
+            "contractType": {
+              "info": "",
+              "error": "",
+              "warning": ""
+            },
+            "status": {
+              "info": "",
+              "error": "",
+              "warning": ""
+            },
+            "businessCode": {
+              "info": "",
+              "error": "",
+              "warning": ""
+            },
+            "identification": {
+              "info": "",
+              "error": "",
+              "warning": ""
+            },
+            "proposalCode": {
+              "info": "",
+              "error": "",
+              "warning": ""
+            },
+            "clientCompany": {
+              "info": "",
+              "error": "El nombre del propietario ingresado no se reconoce.",
+              "warning": ""
+            },
+            "clientDecisionContact": {
+              "info": "",
+              "error": "Decisión Nombre de contacto ingresado no reconocido.",
+              "warning": ""
+            },
+            "identificationComplemnt": {
+              "info": "",
+              "error": "",
+              "warning": ""
+            },
+            "businessInternalManagerContact": {
+              "info": "",
+              "error": "Decisión Nombre de contacto ingresado no reconocido.",
+              "warning": ""
+            }
+          }
+        },
+        "tab": {
+          "tab_01": {
+            "title": {
+              "identification": "Identificación"
+            },
+            "subTitle": {
+              "state": "estado, estado"
+            },
+            "fields": {
+              "label": {
+                "businessPurpose": "Meta...",
+                "businessPurposeComplement": "Complemento de Propósito...",
+                "lastBusinessProbability": "Probabilidad...",
+                "estimatedTime": "Plazo (estimado):",
+                "month": "Mes...",
+                "year": "Año...",
+                "country": "País...",
+                "state": "Expresar...",
+                "city": "Ciudad...",
+                "description": "Descripción del negocio...",
+                "totalAreaNumberM2": "Zona...",
+                "source": "Fuente...",
+                "detail": "Detalle...",
+                "date": "Fecha..."
+              },
+              "placeholder": {
+                "businessPurpose": "Meta...",
+                "businessPurposeComplement": "Complemento de Propósito...",
+                "lastBusinessProbability": "Probabilidad...",
+                "estimatedTime": "Plazo (estimado):",
+                "month": "Mes...",
+                "year": "Año...",
+                "country": "País...",
+                "state": "Expresar...",
+                "city": "Ciudad...",
+                "description": "Descripción del negocio...",
+                "totalAreaNumberM2": "Zona...",
+                "source": "Fuente...",
+                "detail": "Detalle...",
+                "date": "Fecha..."
+              },
+              "validators": {
+                "businessPurpose": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "lastBusinessProbability": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "estimatedTime": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "month": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "year": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "country": {
+                  "info": "",
+                  "error": "Nombre del país no reconocido.",
+                  "warning": ""
+                },
+                "state": {
+                  "info": "",
+                  "error": "Nombre de estado no reconocido.",
+                  "warning": ""
+                },
+                "city": {
+                  "info": "",
+                  "error": "Nombre de la ciudad no reconocido.",
+                  "warning": ""
+                },
+                "description": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "area": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "source": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "detail": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "date": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                }
+              }
+            }
+          },
+          "tab_02": {
+            "title": {
+              "involved": "Involucrado",
+              "company": "Empresa",
+              "contactDecision": "Decisión de contacto"
+            },
+            "fields": {
+              "label": {
+                "project": "Proyecto...",
+                "manager": "Gerente...",
+                "prospector": "Prospector...",
+                "contractor": "Contratista...",
+                "executor": "Verdugo..."
+              },
+              "placeholder": {
+                "project": "Proyecto...",
+                "manager": "Gerente...",
+                "prospector": "Prospector...",
+                "contractor": "Contratista...",
+                "executor": "Verdugo..."
+              },
+              "validators": {
+                "project": {
+                  "info": "",
+                  "error": "Nombre de contacto no reconocido.",
+                  "warning": ""
+                },
+                "manager": {
+                  "info": "",
+                  "error": "Nombre de contacto no reconocido.",
+                  "warning": ""
+                },
+                "prospector": {
+                  "info": "",
+                  "error": "Nombre de contacto no reconocido.",
+                  "warning": ""
+                },
+                "contractor": {
+                  "info": "",
+                  "error": "Nombre de contacto no reconocido.",
+                  "warning": ""
+                },
+                "executor": {
+                  "info": "",
+                  "error": "Nombre de contacto no reconocido.",
+                  "warning": ""
+                }
+              }
+            },
+            "buttom": {
+              "hint": {
+                "removeInvolved": "Quitar Involucrado."
+              }
+            }
+          }
+        },
+        "modal": {
+          "probability": {
+            "title": "Probabilidad",
+            "fields": {
+              "label": {
+                "probability": "Escribe...",
+                "probabilityDate": "Fecha...",
+                "reason": "Descripción..."
+              },
+              "placeholder": {
+                "probability": "Escribe...",
+                "probabilityDate": "Fecha...",
+                "reason": "Descripción..."
+              }
+            },
+            "table": {
+              "header": {
+                "id": "identificación",
+                "probability": "Escribe",
+                "probabilityDate": "Fecha",
+                "reason": "Descripción"
+              }
+            },
+            "actions": {
+              "buttons": {
+                "label": {
+                  "add": "Agregar",
+                  "cancel": "Cancelar",
+                  "confirm": "Confirmar"
+                }
+              }
+            },
+            "messages": {
+              "warn": {
+                "add-probability": "Los datos introducidos ya han sido incluidos."
+              }
+            }
+          },
+          "area": {
+            "title": "Área por Producto",
+            "fields": {
+              "label": {
+                "product": "Producto...",
+                "structure": "Estructura...",
+                "coverage": "Techo...",
+                "area": "Zona...",
+                "vu": "vu..."
+              },
+              "placeholder": {
+                "product": "Producto...",
+                "structure": "Estructura...",
+                "coverage": "Techo...",
+                "area": "Zona...",
+                "vu": "vu..."
+              }
+            },
+            "table": {
+              "header": {
+                "product": "Producto",
+                "structure": "Estructura",
+                "coverage": "Techo",
+                "area": "Zona"
+              },
+              "footer": {
+                "areaTotal": "Área total:"
+              }
+            },
+            "actions": {
+              "buttons": {
+                "label": {
+                  "add": "Agregar",
+                  "cancel": "Cancelar",
+                  "confirm": "Confirmar"
+                }
+              }
+            }
+          },
+          "involved": {
+            "title": "Involucrado",
+            "fields": {
+              "label": {
+                "prospectingCompany": "prospectos...",
+                "prospectingContact": "Prospector...",
+                "contractingCompany": "Contratista...",
+                "contractingDecisionContact": "Contratista...",
+                "executingCompany": "Verdugo...",
+                "executingContact": "Verdugo..."
+              },
+              "placeholder": {
+                "prospectingCompany": "prospectos...",
+                "prospectingContact": "Prospector...",
+                "contractingCompany": "Contratista...",
+                "contractingDecisionContact": "Contratista...",
+                "executingCompany": "Verdugo...",
+                "executingContact": "Verdugo..."
+              },
+              "validators": {
+                "contractingCompany": {
+                  "info": "",
+                  "error": "Nombre de contacto ingresado no reconocido.",
+                  "warning": ""
+                },
+                "contractingDecisionContact": {
+                  "info": "",
+                  "error": "Nombre de contacto ingresado no reconocido.",
+                  "warning": ""
+                },
+                "prospectingCompany": {
+                  "info": "",
+                  "error": "Nombre de contacto ingresado no reconocido.",
+                  "warning": ""
+                },
+                "prospectingContact": {
+                  "info": "",
+                  "error": "Nombre de contacto ingresado no reconocido.",
+                  "warning": ""
+                },
+                "executingCompany": {
+                  "info": "",
+                  "error": "Nombre de contacto ingresado no reconocido.",
+                  "warning": ""
+                },
+                "executingContact": {
+                  "info": "",
+                  "error": "Nombre de contacto ingresado no reconocido.",
+                  "warning": ""
+                }
+              }
+            },
+            "actions": {
+              "buttons": {
+                "label": {
+                  "cancel": "Cancelar",
+                  "confirm": "Confirmar"
+                }
+              }
+            }
+          },
+          "consult-redundancy": {
+            "title": "negocios similares",
+            "message": "Existen empresas registradas en el sistema con las mismas características.",
+            "table": {
+              "header": {
+                "contractType": "tipo de contrato",
+                "identification": "Identificación",
+                "businessCode": "Código comercial",
+                "area": "Zona",
+                "city": "Ciudad"
+              },
+              "button-hint": "comparar datos"
+            },
+            "actions": {
+              "buttons": {
+                "label": {
+                  "close": "Cerrar"
+                }
+              }
+            }
+          }
+        },
+        "actions": {
+          "buttons": {
+            "label": {
+              "add": "Agregar",
+              "consultRedundancy": "Consulta Redundancia",
+              "cancel": "Cancelar",
+              "confirm": "Confirmar"
+            }
+          }
+        }
+      },
+      "edit": {
+        "dialogTitle": "Registración de negocio",
+        "fields": {
+          "label": {
+            "contractType": "Tipo de contrato...",
+            "status": "Estado Inicio...",
+            "businessCode": "código ",
+            "identification": "Identificación...",
+            "proposalCode": "Propuesta No....",
+            "clientCompany": "Propietario...",
+            "clientDecisionContact": "Decisión de contacto...",
+            "identificationComplement": "Suplemento de identificación...",
+            "businessInternalManagerContact": "Gerente Interno...",
+            "construction": "Construcciones..."
+          },
+          "placeholder": {
+            "contractType": "Tipo de contrato...",
+            "status": "Estado Inicio...",
+            "businessCode": "código ",
+            "identification": "Identificación...",
+            "proposalCode": "Propuesta No....",
+            "clientCompany": "Propietario...",
+            "clientDecisionContact": "Decisión de contacto...",
+            "identificationComplement": "Suplemento de identificación...",
+            "businessInternalManagerContact": "Gerente Interno...",
+            "construction": "Construcciones..."
+          },
+          "validators": {
+            "contractType": {
+              "info": "",
+              "error": "",
+              "warning": ""
+            },
+            "status": {
+              "info": "",
+              "error": "",
+              "warning": ""
+            },
+            "businessCode": {
+              "info": "",
+              "error": "",
+              "warning": ""
+            },
+            "identification": {
+              "info": "",
+              "error": "",
+              "warning": ""
+            },
+            "proposalCode": {
+              "info": "",
+              "error": "",
+              "warning": ""
+            },
+            "clientCompany": {
+              "info": "",
+              "error": "El nombre del propietario ingresado no se reconoce.",
+              "warning": ""
+            },
+            "clientDecisionContact": {
+              "info": "",
+              "error": "Decisión Nombre de contacto ingresado no reconocido.",
+              "warning": ""
+            },
+            "identificationComplemnt": {
+              "info": "",
+              "error": "",
+              "warning": ""
+            },
+            "businessInternalManagerContact": {
+              "info": "",
+              "error": "Decisión Nombre de contacto ingresado no reconocido.",
+              "warning": ""
+            }
+          }
+        },
+        "tab": {
+          "tab_01": {
+            "title": {
+              "identification": "Identificación"
+            },
+            "subTitle": {
+              "state": "estado, estado"
+            },
+            "fields": {
+              "label": {
+                "businessPurpose": "Meta...",
+                "businessPurposeComplement": "Complemento de Propósito...",
+                "lastBusinessProbability": "Probabilidad...",
+                "estimatedTime": "Plazo (estimado):",
+                "month": "Mes...",
+                "year": "Año...",
+                "country": "País...",
+                "state": "Expresar...",
+                "city": "Ciudad...",
+                "description": "Descripción del negocio...",
+                "totalAreaNumberM2": "Zona...",
+                "source": "Fuente...",
+                "detail": "Detalle...",
+                "date": "Fecha..."
+              },
+              "placeholder": {
+                "businessPurpose": "Meta...",
+                "businessPurposeComplement": "Complemento de Propósito...",
+                "lastBusinessProbability": "Probabilidad...",
+                "estimatedTime": "Plazo (estimado):",
+                "month": "Mes...",
+                "year": "Año...",
+                "country": "País...",
+                "state": "Expresar...",
+                "city": "Ciudad...",
+                "description": "Descripción del negocio...",
+                "totalAreaNumberM2": "Zona...",
+                "source": "Fuente...",
+                "detail": "Detalle...",
+                "date": "Fecha..."
+              },
+              "validators": {
+                "businessPurpose": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "lastBusinessProbability": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "estimatedTime": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "month": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "year": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "country": {
+                  "info": "",
+                  "error": "Nombre del país no reconocido.",
+                  "warning": ""
+                },
+                "state": {
+                  "info": "",
+                  "error": "Nombre de estado no reconocido.",
+                  "warning": ""
+                },
+                "city": {
+                  "info": "",
+                  "error": "Nombre de la ciudad no reconocido.",
+                  "warning": ""
+                },
+                "description": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "area": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "source": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "detail": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                },
+                "date": {
+                  "info": "",
+                  "error": "",
+                  "warning": ""
+                }
+              }
+            }
+          },
+          "tab_02": {
+            "title": {
+              "involved": "Involucrado",
+              "company": "Empresa",
+              "contactDecision": "Decisión de contacto"
+            },
+            "fields": {
+              "label": {
+                "project": "Proyecto...",
+                "manager": "Gerente...",
+                "prospector": "Prospector...",
+                "contractor": "Contratista...",
+                "executor": "Verdugo..."
+              },
+              "placeholder": {
+                "project": "Proyecto...",
+                "manager": "Gerente...",
+                "prospector": "Prospector...",
+                "contractor": "Contratista...",
+                "executor": "Verdugo..."
+              },
+              "validators": {
+                "project": {
+                  "info": "",
+                  "error": "Nombre de contacto no reconocido.",
+                  "warning": ""
+                },
+                "manager": {
+                  "info": "",
+                  "error": "Nombre de contacto no reconocido.",
+                  "warning": ""
+                },
+                "prospector": {
+                  "info": "",
+                  "error": "Nombre de contacto no reconocido.",
+                  "warning": ""
+                },
+                "contractor": {
+                  "info": "",
+                  "error": "Nombre de contacto no reconocido.",
+                  "warning": ""
+                },
+                "executor": {
+                  "info": "",
+                  "error": "Nombre de contacto no reconocido.",
+                  "warning": ""
+                }
+              }
+            },
+            "buttom": {
+              "hint": {
+                "removeInvolved": "Quitar Involucrado."
+              }
+            }
+          }
+        },
+        "modal": {
+          "probability": {
+            "title": "Probabilidad",
+            "fields": {
+              "label": {
+                "probability": "Escribe...",
+                "probabilityDate": "Fecha...",
+                "reason": "Descripción..."
+              },
+              "placeholder": {
+                "probability": "Escribe...",
+                "probabilityDate": "Fecha...",
+                "reason": "Descripción..."
+              }
+            },
+            "table": {
+              "header": {
+                "id": "identificación",
+                "probability": "Escribe",
+                "probabilityDate": "Fecha",
+                "reason": "Descripción"
+              }
+            },
+            "actions": {
+              "buttons": {
+                "label": {
+                  "add": "Agregar",
+                  "cancel": "Cancelar",
+                  "confirm": "Confirmar"
+                }
+              }
+            },
+            "messages": {
+              "warn": {
+                "add-probabilit": "Los datos introducidos ya han sido incluidos."
+              }
+            }
+          },
+          "area": {
+            "title": "Área por Producto",
+            "fields": {
+              "label": {
+                "product": "Producto...",
+                "structure": "Estructura...",
+                "coverage": "Techo...",
+                "area": "Zona...",
+                "vu": "vu..."
+              },
+              "placeholder": {
+                "product": "Producto...",
+                "structure": "Estructura...",
+                "coverage": "Techo...",
+                "area": "Zona...",
+                "vu": "vu..."
+              }
+            },
+            "table": {
+              "header": {
+                "product": "Producto",
+                "structure": "Estructura",
+                "coverage": "Techo",
+                "area": "Zona"
+              },
+              "footer": {
+                "areaTotal": "Área total:"
+              }
+            },
+            "actions": {
+              "buttons": {
+                "label": {
+                  "add": "Agregar",
+                  "cancel": "Cancelar",
+                  "confirm": "Confirmar"
+                }
+              }
+            }
+          },
+          "involved": {
+            "title": "Involucrado",
+            "fields": {
+              "label": {
+                "prospectingCompany": "prospectos...",
+                "prospectingContact": "Prospector...",
+                "contractingCompany": "Contratista...",
+                "contractingDecisionContact": "Contratista...",
+                "executingCompany": "Verdugo...",
+                "executingContact": "Verdugo..."
+              },
+              "placeholder": {
+                "prospectingCompany": "prospectos...",
+                "prospectingContact": "Prospector...",
+                "contractingCompany": "Contratista...",
+                "contractingDecisionContact": "Contratista...",
+                "executingCompany": "Verdugo...",
+                "executingContact": "Verdugo..."
+              },
+              "validators": {
+                "contractingCompany": {
+                  "info": "",
+                  "error": "Nombre de contacto ingresado no reconocido.",
+                  "warning": ""
+                },
+                "contractingDecisionContact": {
+                  "info": "",
+                  "error": "Nombre de contacto ingresado no reconocido.",
+                  "warning": ""
+                },
+                "prospectingCompany": {
+                  "info": "",
+                  "error": "Nombre de contacto ingresado no reconocido.",
+                  "warning": ""
+                },
+                "prospectingContact": {
+                  "info": "",
+                  "error": "Nombre de contacto ingresado no reconocido.",
+                  "warning": ""
+                },
+                "executingCompany": {
+                  "info": "",
+                  "error": "Nombre de contacto ingresado no reconocido.",
+                  "warning": ""
+                },
+                "executingContact": {
+                  "info": "",
+                  "error": "Nombre de contacto ingresado no reconocido.",
+                  "warning": ""
+                }
+              }
+            },
+            "actions": {
+              "buttons": {
+                "label": {
+                  "cancel": "Cancelar",
+                  "confirm": "Confirmar"
+                }
+              }
+            }
+          },
+          "consult-redundancy": {
+            "title": "negocios similares",
+            "message": "Existen empresas registradas en el sistema con las mismas características.",
+            "table": {
+              "header": {
+                "contractType": "tipo de contrato",
+                "identification": "Identificación",
+                "businessCode": "Código comercial",
+                "area": "Zona",
+                "city": "Ciudad"
+              },
+              "button-hint": "comparar datos"
+            },
+            "actions": {
+              "buttons": {
+                "label": {
+                  "close": "Cerrar"
+                }
+              }
+            }
+          }
+        },
+        "actions": {
+          "buttons": {
+            "label": {
+              "add": "Agregar",
+              "consultRedundancy": "Consulta Redundancia",
+              "cancel": "Cancelar",
+              "confirm": "Confirmar",
+              "view-activities": "Mantenimiento de Actividades"
+            }
+          }
+        }
+      },
+      "view": {
+        "dialogTitle": "Vista de registro:",
+        "title": {
+          "code": "Código:"
+        },
+        "accordion": {
+          "identification": {
+            "header": "Identificación comercial",
+            "labels": {
+              "proposalCode": "Nro. de propuesta",
+              "contractType": "tipo de contrato",
+              "status": "Estado",
+              "firstAttendanceContactInfo": "Información de contacto de primeros auxilios",
+              "identificationNameComplement": "Suplemento de identificación",
+              "description": "Descripción",
+              "businessSource": "Fuente",
+              "businessSourceComplement": "Descripción",
+              "businessPurpose": "Meta",
+              "businessPurposeComplementranslate": "Complemento de Propósito",
+              "city-state-country": "Ciudad estado Pais",
+              "estimatedTermDeal": "Plazo estimado",
+              "totalAreaNumberM2": "Área total",
+              "construction": "Construcciones",
+              "businessInternalManagerContact": "Gerente Interno",
+              "clientCompany": "Propietario",
+              "clientDecisionContact": "Decisión de contacto",
+              "businessCreatorContact": "Usuario creador"
+            }
+          },
+          "participants": {
+            "header": "Contactos involucrados",
+            "table": {
+              "header": {
+                "company": "Empresa",
+                "contact-decision": "Contacto de decisión"
+              },
+              "column": {
+                "prospector": "Prospector",
+                "contractor": "Contratista",
+                "executor": "ejecutor"
+              }
+            }
+          }
+        },
+        "actions": {
+          "buttons": {
+            "label": {
+              "close": "Cerrar"
+            }
+          }
+        }
+      },
+      "modal": {
+        "sold-closed": {
+          "title": "Trato vendido/cerrado",
+          "area-by-product": {
+            "title": "Área por Producto",
+            "subTitle": "Por favor, consulte la lista de productos / acabados / áreas...",
+            "toolbarTitle": "Techo:"
+          },
+          "fields": {
+            "label": {
+              "product": "Producto...",
+              "structure": "Estructura...",
+              "coverage": "Techo...",
+              "area": "Zona...",
+              "vu": "vu..."
+            },
+            "placeholder": {
+              "product": "Producto...",
+              "structure": "Estructura...",
+              "coverage": "Techo...",
+              "area": "Zona...",
+              "vu": "vu..."
+            }
+          },
+          "actions": {
+            "buttons": {
+              "label": {
+                "add": "Agregar",
+                "cancel": "Cancelar",
+                "confirm": "Confirmar"
+              }
+            }
+          }
+        },
+        "business-canceled": {
+          "title": "Oferta cancelada",
+          "fields": {
+            "label": {
+              "reason": "Razón...",
+              "reasonComplement": "Otro motivo...",
+              "justification": "Justificación (cómo influyó la razón en el resultado)..."
+            },
+            "placeholder": {
+              "reason": "Razón...",
+              "reasonComplement": "Otro motivo...",
+              "justification": "Justificación (cómo influyó la razón en el resultado)..."
+            }
+          },
+          "actions": {
+            "buttons": {
+              "label": {
+                "finish": "finalizar",
+                "cancel": "Cancelar",
+                "continue-later": "Continuar luego"
+              }
+            }
+          }
+        },
+        "business-stand-by": {
+          "title": "negocio en espera",
+          "fields": {
+            "label": {
+              "modiveDescription": "Justificación (cómo influyó la razón en el resultado)..."
+            },
+            "placeholder": {
+              "modiveDescription": "Justificación (cómo influyó la razón en el resultado)..."
+            }
+          },
+          "actions": {
+            "buttons": {
+              "label": {
+                "finish": "finalizar",
+                "cancel": "Cancelar",
+                "continue-later": "Continuar luego"
+              }
+            }
+          }
+        },
+        "business-declined": {
+          "title": "negocio rechazado",
+          "fields": {
+            "label": {
+              "reason": "Razón...",
+              "reasonComplement": "Otro motivo...",
+              "justification": "Justificación (cómo influyó la razón en el resultado)..."
+            },
+            "placeholder": {
+              "reason": "Razón...",
+              "reasonComplement": "Otro motivo...",
+              "justification": "Justificación (cómo influyó la razón en el resultado)..."
+            }
+          },
+          "actions": {
+            "buttons": {
+              "label": {
+                "finish": "finalizar",
+                "cancel": "Cancelar",
+                "continue-later": "Continuar luego"
+              }
+            }
+          }
+        },
+        "lost": {
+          "title": "trato perdido",
+          "card": {
+            "one": "1. ¿Para qué solución?",
+            "two": "2. ¿Para qué empresa?",
+            "three": "3. ¿Qué otras soluciones competían y qué empresas se presentaron?",
+            "four": "4. ¿Cómo influyó el precio?",
+            "five": "5. Motivo",
+            "six": "6. Justificación (cómo influyó la razón en el resultado)"
+          },
+          "fields": {
+            "label": {
+              "structure": "Estructura...",
+              "roof": "Techo...",
+              "company": "Empresa...",
+              "justification": "Justificación...",
+              "solution": "Solución..."
+            },
+            "placeholder": {
+              "structure": "Estructura...",
+              "roof": "Techo...",
+              "company": "Empresa...",
+              "justification": "Describa la razón...",
+              "solution": "Solución..."
+            }
+          },
+          "table": {
+            "header": {
+              "company": "Empresa",
+              "structure": "Estructura",
+              "roof": "Techo"
+            }
+          },
+          "actions": {
+            "buttons": {
+              "label": {
+                "add": "Agregar",
+                "finish": "finalizar",
+                "cancel": "Cancelar",
+                "continue-later": "Continuar luego"
+              }
+            }
+          }
+        },
+        "form-sales-ict": {
+          "title": "Formulario Venta TIC",
+          "fields": {
+            "labels": {
+              "work": "Construcciones...",
+              "sequence": "Secuencia...",
+              "identification": "Identificación..."
+            }
+          },
+          "tabs": {
+            "sales-report": {
+              "tab-label": "Informe y Venta",
+              "tab-content": {
+                "title": "informe comercial vendido",
+                "card": {
+                  "one": "1. ¿Qué otras soluciones competían y qué empresas se presentaron?",
+                  "two": "2. ¿Cómo influyó el precio?",
+                  "three": "3. ¿Cuál fue nuestro diferencial?",
+                  "four": "4. Justificación (cómo influyó el diferencial en el resultado):",
+                  "five": "5. Gabinete de Prensa (Información relevante para divulgación en los medios):"
+                },
+                "fields": {
+                  "label": {
+                    "company": "Empresa...",
+                    "structure-solution": "Solución Estructural...",
+                    "roof-solution": "Solución de cobertura...",
+                    "justification": "justificación...",
+                    "differential": "Diferencial..."
+                  },
+                  "placeholder": {
+                    "structure": "Estructura...",
+                    "roof": "Techo...",
+                    "company": "Empresa...",
+                    "justification": "Describa la razón...",
+                    "differential": "Introduzca el diferencial..."
+                  }
+                },
+                "table": {
+                  "header": {
+                    "company": "Empresa",
+                    "structure-solution": "Estructura de la solución",
+                    "roof-solution": "Solución de cobertura"
+                  }
+                },
+                "buttons": {
+                  "add": "Agregar"
+                }
+              }
+            },
+            "values-payment": {
+              "tab-label": "TIC.1 - Montos y Pago",
+              "tab-content": {}
+            },
+            "conditions-address": {
+              "tab-label": "TIC.2 - Condiciones y Direcciones",
+              "tab-content": {}
+            }
+          },
+          "actions": {
+            "buttons": {
+              "label": {
+                "confirm": "Confirmar",
+                "cancel": "Cancelar",
+                "ict": "TIC",
+                "sales-report": "Reporte de ventas",
+                "reopen-for-changes": "Reabrir para cambios",
+                "continue-later": "Continuar luego"
+              }
+            }
+          }
+        },
+        "shippings": {
+          "title": "Registro de envío",
+          "fields": {
+            "label": {
+              "business-code": "Código comercial...",
+              "shipping-type": "Tipo de envío...",
+              "business-identification": "Negocio...",
+              "shipping-date": "Fecha...",
+              "shipping-version": "Versión...",
+              "internal-manager": "Gerente Interno..."
+            },
+            "placeholder": {
+              "business-code": "Código comercial...",
+              "shipping-type": "Tipo de envío...",
+              "business-identification": "Negocio...",
+              "shipping-date": "Fecha...",
+              "shipping-version": "Versión...",
+              "internal-manager": "Gerente Interno..."
+            }
+          },
+          "tabs": {
+            "executor": {
+              "tab-label": "albaceas",
+              "list-title": "Lista de personas involucradas en el envío."
+            },
+            "building-geometrys": {
+              "tab-label": "Geometría de construcción",
+              "tabs": {
+                "default-tab-label": "Edificio",
+                "add-tab-label": "añadir nuevo edificio",
+                "fields": {
+                  "label": {
+                    "buildingName": "Nombre del edificio..."
+                  },
+                  "placeholder": {
+                    "buildingName": "Nombre del edificio..."
+                  }
+                },
+                "tabs": {
+                  "geometry": {
+                    "tab-label": "Geometría"
+                  },
+                  "support-system": {
+                    "tab-label": "Sistema de apoyo"
+                  },
+                  "complementary": {
+                    "tab-label": "Complementario"
+                  },
+                  "closures": {
+                    "tab-label": "cierres"
+                  },
+                  "marquee": {
+                    "tab-label": "marquesina"
+                  }
+                }
+              }
+            },
+            "conventional-attachments": {
+              "tab-label": "Convencional / Adjuntos"
+            },
+            "bim-uses": {
+              "tab-label": "Uso de BIM"
+            },
+            "commercial": {
+              "tab-label": "Comercial"
+            }
+          },
+          "actions": {
+            "buttons": {
+              "label": {
+                "confirm": "Confirmar",
+                "cancel": "Cancelar",
+                "print-shipment": "Imprimir envío",
+                "send-shipment": "Enviar envío"
+              }
+            }
+          }
+        },
+        "reactivate-business": {
+          "title": "Reactivación de Empresas",
+          "fields": {
+            "label": {
+              "status": "Estado...",
+              "justification": "Justificación..."
+            },
+            "placeholder": {
+              "status": "Estado...",
+              "justification": "Justificación..."
+            }
+          },
+          "actions": {
+            "buttons": {
+              "label": {
+                "confirm": "Confirmar",
+                "cancel": "Cancelar"
+              }
+            }
+          }
+        }
+      }
+    },
+    "dashboard": {
+      "title": "Pagina principal"
+    },
+    "proposals-commercial": {
+      "title": "Gestión de propuestas (comercial)",
+      "sub-title": "",
+      "toolbar": {
+        "title": "Lista de propuestas"
+      },
+      "table": {
+        "header": {
+          "id": "identificación",
+          "proposalCode": "Nro. de propuesta",
+          "identificationName": "Identificación",
+          "businessPurposeName": "Meta",
+          "state": "Expresar",
+          "clientCompany": "Cliente",
+          "businessInternalManagerContact": "Responsable",
+          "status": "Estado",
+          "filter": "Búsqueda..."
+        },
+        "menu": {
+          "edit": "Editar propuesta",
+          "editModal": {
+            "managementSummary": {},
+            "valuesAndPayments": {
+              "title": "TIC - Tabla de información de registro",
+              "materialsTab": "Materiales",
+              "servicesTab": "servicios",
+              "observation": "Observación",
+              "buttoms": {
+                "include": "Incluir",
+                "edit": "Para editar"
+              },
+              "materials": {
+                "value": {
+                  "title": "Valores",
+                  "fields": {
+                    "type": "Escribe",
+                    "billing": "A facturar (BRL)",
+                    "cost": "Costo (BRL)",
+                    "product": "Producto",
+                    "discount": "Descuento",
+                    "icms": "ICMS",
+                    "placeholder": {
+                      "type": "Escribe",
+                      "billing": "A facturar (BRL)",
+                      "cost": "Costo (BRL)",
+                      "product": "Producto",
+                      "discount": "Descuento",
+                      "icms": "ICMS"
+                    }
+                  },
+                  "productModal": {
+                    "title": "productos Marko",
+                    "fields": {
+                      "category": "Categoría",
+                      "description": "Descripción",
+                      "value": "Precio R$)",
+                      "placeholder": {
+                        "category": "Categoría",
+                        "description": "Descripción",
+                        "value": "Precio R$)"
+                      },
+                      "footer": {
+                        "totalValue": "Valor total"
+                      }
+                    }
+                  }
+                },
+                "payment": {
+                  "title": "Pago",
+                  "fields": {
+                    "typePayment": "Escribe",
+                    "tax": "Velocidad (%)",
+                    "value": "Precio R$)",
+                    "numberOfDays": "número de días",
+                    "date": "Fecha",
+                    "placeholder": {
+                      "typePayment": "Escribe",
+                      "tax": "Velocidad (%)",
+                      "value": "Precio R$)",
+                      "numberOfDays": "número de días",
+                      "date": "Fecha"
+                    }
+                  }
+                }
+              },
+              "services": {
+                "paymentService": {
+                  "fields": {
+                    "periodicity": "Frecuencia",
+                    "deadline": "Plazo",
+                    "placeholder": {
+                      "periodicity": "Frecuencia",
+                      "deadline": "Plazo"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "modal": {
+          "edit": {
+            "title": "Edición de propuestas",
+            "fields": {
+              "labels": {
+                "id": "Identificador:",
+                "proposalCode": "Nº de propuesta:",
+                "identificationName": "Identificación:",
+                "phase": "Fase:",
+                "score": "Puntuación:",
+                "revision": "Revisión:",
+                "work-area": "Área de trabajo:",
+                "roll-on-area": "Zona de rodadura:",
+                "closing-area": "Área de cierre:",
+                "work-value": "Valor del trabajo:",
+                "contributor-work": "Colaborador (Obra):",
+                "customer-taxpayer": "Colaborador (Cliente):",
+                "taxes": "Impuestos:",
+                "localization": "Localización",
+                "proposal-template": "Plantilla de propuesta..."
+              }
+            },
+            "tab-group": {
+              "direction-summary": {
+                "tab-label": "Resumen de gestión",
+                "accordion": {
+                  "expansion-panel": {
+                    "steel-cost": {
+                      "title": "Sección: Costo del Acero",
+                      "tables": {
+                        "01": {
+                          "header": {
+                            "description": "Descripción",
+                            "marko": "Marca (BRL)",
+                            "stahldach": "Stahldach (BRL)",
+                            "totalMC": "MC Total Esperado (BRL)"
+                          },
+                          "fields": {
+                            "marko": "Marca..."
+                          }
+                        },
+                        "02": {
+                          "header": {
+                            "description": "Descripción",
+                            "steelCost": "Costo del acero (BRL)",
+                            "averageCost": "Costo Promedio (BRL)",
+                            "lastBuy": "Última compra (BRL)"
+                          },
+                          "fields": {
+                            "marko": "Marca..."
+                          }
+                        },
+                        "03": {
+                          "header": {
+                            "description": "Descripción",
+                            "weightKg": "Peso Kg (BRL)",
+                            "value": "Precio R$)",
+                            "currency": "R$/Kg",
+                            "steelCost": "Costo del acero (BRL)"
+                          },
+                          "fields": {
+                            "marko": "Marca..."
+                          }
+                        },
+                        "04": {
+                          "header": {
+                            "description": "Descripción",
+                            "weightKg": "Peso Kg (BRL)",
+                            "value": "Precio R$)",
+                            "currency": "R$/Kg",
+                            "averageCost": "Costo Promedio (BRL)"
+                          },
+                          "fields": {
+                            "marko": "Marca..."
+                          }
+                        },
+                        "05": {
+                          "header": {
+                            "description": "Descripción",
+                            "weightKg": "Peso Kg (BRL)",
+                            "value": "Precio R$)",
+                            "currency": "R$/Kg",
+                            "lastBuy": "Última compra (BRL)"
+                          },
+                          "fields": {
+                            "marko": "Marca..."
+                          }
+                        }
+                      }
+                    },
+                    "direction-summary": {
+                      "title": "Sección: Resumen de Gestión",
+                      "tables": {
+                        "01": {
+                          "header": {
+                            "description": "Descripción",
+                            "weightKg": "Peso/Kg (BRL)",
+                            "percentage": "🇧🇷",
+                            "value": "Precio R$)",
+                            "percentageValue": "🇧🇷",
+                            "weightM2": "Peso/m² (BRL)",
+                            "priceM2": "Precio/m² (BRL)",
+                            "priceKg": "Precio/Kg (BRL)",
+                            "costKg": "Costo/Kg (BRL)",
+                            "cmKg": "MC/Kg (BRL)",
+                            "cmM2": "MC/m² (BRL)"
+                          },
+                          "fields": {
+                            "marko": "Marca..."
+                          },
+                          "modal-move-confirm": {
+                            "title": "Mover elemento de sección",
+                            "text": "¿Realmente desea mover el elemento a la sección {{session}}🇧🇷",
+                            "actions": {
+                              "buttons": {
+                                "cancel": "Cancelar",
+                                "confirm": "Confirmar"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "actions": {
+                  "buttons": {
+                    "labels": {
+                      "recalculate": "Recalcular",
+                      "reimport": "Reimportar datos desde TOP"
+                    }
+                  }
+                }
+              },
+              "amounts-payment": {
+                "tab-label": "Montos y Pago",
+                "title": "TIC - Tabla de información de registro",
+                "observation": "Observación",
+                "buttoms": {
+                  "include": "Incluir",
+                  "edit": "Para editar"
+                },
+                "materialsTab": {
+                  "title": "Materiales",
+                  "value": {
+                    "title": "Valores",
+                    "fields": {
+                      "labels": {
+                        "type": "Escribe",
+                        "billing": "A facturar (BRL)",
+                        "cost": "Costo (BRL)",
+                        "product": "Producto",
+                        "discount": "Descuento",
+                        "icms": "ICMS"
+                      },
+                      "placeholder": {
+                        "type": "Escribe",
+                        "billing": "A facturar (BRL)",
+                        "cost": "Costo (BRL)",
+                        "product": "Producto",
+                        "discount": "Descuento",
+                        "icms": "ICMS"
+                      }
+                    },
+                    "productModal": {
+                      "title": "productos Marko",
+                      "fields": {
+                        "labels": {
+                          "category": "Categoría",
+                          "description": "Descripción",
+                          "value": "Precio R$)"
+                        },
+                        "placeholder": {
+                          "category": "Categoría",
+                          "description": "Descripción",
+                          "value": "Precio R$)"
+                        },
+                        "footer": {
+                          "totalValue": "Valor total"
+                        }
+                      }
+                    }
+                  },
+                  "payment": {
+                    "title": "Pago",
+                    "fields": {
+                      "labels": {
+                        "typePayment": "Escribe",
+                        "tax": "Velocidad (%)",
+                        "value": "Precio R$)",
+                        "numberOfDays": "número de días",
+                        "date": "Fecha"
+                      },
+                      "placeholder": {
+                        "typePayment": "Escribe",
+                        "tax": "Velocidad (%)",
+                        "value": "Precio R$)",
+                        "numberOfDays": "número de días",
+                        "date": "Fecha"
+                      }
+                    }
+                  }
+                },
+                "servicesTab": {
+                  "title": "servicios",
+                  "paymentService": {
+                    "fields": {
+                      "labels": {
+                        "periodicity": "Frecuencia",
+                        "deadline": "Plazo"
+                      },
+                      "placeholder": {
+                        "periodicity": "Frecuencia",
+                        "deadline": "Plazo"
+                      }
+                    }
+                  }
+                }
+              },
+              "commercial-remarks": {
+                "tab-label": "Comentarios (Comercial)",
+                "fields": {
+                  "labels": {
+                    "internalObservation": "Observación Interna (Comercial)",
+                    "observationForCustomer": "Nota para mostrar en la propuesta del cliente",
+                    "firstFreeField": "campo libre 01",
+                    "secondFreeField": "campo libre 02"
+                  },
+                  "placeholders": {
+                    "internalObservation": "Observación Interna (Comercial)",
+                    "noteForCustomer": "Nota para mostrar en la propuesta del cliente",
+                    "firstFreeField": "Introduzca su texto aquí..."
+                  }
+                }
+              },
+              "remarks-budget": {
+                "tab-label": "Historial de presupuesto",
+                "fields": {
+                  "labels": {
+                    "observationBudget": "Nota (presupuesto)"
+                  }
+                }
+              }
+            },
+            "actions": {
+              "buttons": {
+                "labels": {
+                  "view-proposal": "Ver propuesta",
+                  "": "",
+                  "confirm": "Confirmar",
+                  "cancel": "Cancelar",
+                  "return": "Volver a Comercial"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "reports": {
+      "title": "Informes"
+    },
+    "shippings": {
+      "title": "Gestión de envíos",
+      "table": {
+        "header": {
+          "id": "identificación",
+          "status": "Estado",
+          "code": "Código",
+          "identification": "Identificación",
+          "businessPurposeName": "Meta",
+          "state": "Expresar",
+          "area": "Zona",
+          "type": "Escribe",
+          "filter": "Búsqueda..."
+        },
+        "table-detail": {
+          "modal": {
+            "copy": {
+              "title": "Copia de Envío",
+              "text": "¿Realmente quieres hacer una copia del registro?",
+              "actions": {
+                "buttons": {
+                  "confirm": "Confirmar",
+                  "cancel": "Cancelar"
+                },
+                "message": {
+                  "success": {
+                    "title": "¡Éxito!",
+                    "description": "¡Registro copiado con éxito!"
+                  }
+                }
+              }
+            },
+            "participants": {
+              "title": "Lista de Involucrados en el Embarque",
+              "table": {
+                "header": {
+                  "name": "",
+                  "email": "",
+                  "phone": ""
+                }
+              },
+              "actions": {
+                "buttons": {
+                  "label": {
+                    "close": "Cerrar"
+                  }
+                }
+              }
+            }
+          },
+          "no-detail": {
+            "title": "¡Datos no encontrados!",
+            "subTitle": "El registro comercial seleccionado no tiene un envío registrado. <br> Para agregar un envío, haga clic en el botón Agregar en la barra arriba de la tabla."
+          }
+        }
+      },
+      "fields": {
+        "labels": {
+          "business-code": "Código comercial...",
+          "shipping-type": "Tipo de envío...",
+          "business-identification": "Identificación comercial...",
+          "shipping-date": "Fecha...",
+          "shipping-version": "Versión...",
+          "businessInternalManagerContact": "Gerente Interno..."
+        },
+        "placeholders": {
+          "businessInternalManagerContact": "Gerente Interno...",
+          "business-identification": "Identificación comercial..."
+        },
+        "validators": {
+          "businessInternalManagerContact": {
+            "error": "El nombre del gerente ingresado no se reconoce."
+          },
+          "business-identification": {
+            "error": "Identificación comercial no reconocida."
+          }
+        }
+      },
+      "tab": {
+        "executor": {
+          "tab-label": "ejecutor",
+          "table": {
+            "header": {
+              "participantsName": "Nombre de los participantes"
+            },
+            "column": {
+              "participants": {
+                "noContractingCompany": "Decisión de no contacto",
+                "noProspectingCompany": "Sin contacto de prospector",
+                "noExecutingCompany": "Ejecutor de decisiones de contacto"
+              }
+            }
+          }
+        },
+        "building-geometry": {
+          "tab-label": "Geometría de construcción",
+          "fields": {
+            "label": {
+              "buildingName": "Nombre del edificio..."
+            },
+            "placeholder": {
+              "buildingName": "Nombre del edificio..."
+            }
+          },
+          "tabs": {
+            "geometry": {
+              "fields": {
+                "label": {
+                  "buildingName": "Nombre del edificio...",
+                  "geoRoofRidge": "Cresta...",
+                  "geoFreeHeight": "Autorización...",
+                  "geoHeadBoardLimit": "Límite de cabeza...",
+                  "geoPaintingType": "Pintura...",
+                  "geoIsolationType": "Aislamiento",
+                  "geoObservation": "Comentarios...",
+                  "geoUtilitiesLoad": "Cargando Utilidades...",
+                  "geoAccidentalLoad": "Carga Accidental...",
+                  "geoObservationLoad": "Comentarios",
+                  "geoRollonType": "Rodar sobre...",
+                  "geoGutterType": "Canal...",
+                  "geoSupportType": "Soporte...",
+                  "geoObservationProduct": "Comentarios..."
+                },
+                "placeholder": {
+                  "buildingName": "Nombre del edificio...",
+                  "geoRoofRidge": "Cresta...",
+                  "geoFreeHeight": "Autorización...",
+                  "geoHeadBoardLimit": "Límite de cabeza...",
+                  "geoPaintingType": "Pintura...",
+                  "geoIsolationType": "Aislamiento",
+                  "geoObservation": "Comentarios...",
+                  "geoUtilitiesLoad": "Cargando Utilidades...",
+                  "geoAccidentalLoad": "Carga Accidental...",
+                  "geoObservationLoad": "Comentarios",
+                  "geoRollonType": "Rodar sobre...",
+                  "geoGutterType": "Canal...",
+                  "geoSupportType": "Soporte...",
+                  "geoObservationProduct": "Comentarios..."
+                }
+              },
+              "table": {
+                "toolbarTitle": "Lista de geometrías",
+                "header": {
+                  "sequenceNumber": "Secuencia",
+                  "width": "Ancho (m)",
+                  "length": "Longitud (m)",
+                  "rollonSpan": "Luces rodantes (m)",
+                  "displacement": "Desplazamiento (m)",
+                  "order": "Secuencia"
+                },
+                "modal": {
+                  "title": "Registro de Geometría",
+                  "fields": {
+                    "label": {
+                      "sequenceNumber": "Secuencia",
+                      "width": "Ancho...",
+                      "length": "longitud...",
+                      "rollonSpan": "Tramos rodantes...",
+                      "displacement": "Desplazamiento..."
+                    },
+                    "placeholder": {
+                      "sequenceNumber": "Secuencia",
+                      "width": "Ancho...",
+                      "length": "longitud...",
+                      "rollonSpan": "Tramos rodantes...",
+                      "displacement": "Desplazamiento..."
+                    }
+                  },
+                  "del": {
+                    "title": "borrado de registros",
+                    "text": "¿Realmente desea eliminar el registro?",
+                    "actions": {
+                      "buttons": {
+                        "cancel": "Cancelar",
+                        "confirm": "Confirmar"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "support-system": {
+              "fields": {
+                "label": {
+                  "supSupportSystemType": "Escribe...",
+                  "supPillarType": "pilares...",
+                  "supPillarEndDistance": "Modulación Pilares Fin...",
+                  "supPillarInternDistance": "Modulación Pilares Internos...",
+                  "supObservation": "Comentarios..."
+                },
+                "placeholder": {
+                  "supPillarEndDistance": "Modulación Pilares Fin...",
+                  "supPillarInternDistance": "Modulación Pilares Internos...",
+                  "supObservation": "Comentarios..."
+                }
+              }
+            },
+            "complementary": {
+              "fields": {
+                "label": {
+                  "isLighting": "Encendiendo",
+                  "compIlluminationLuxRequested": "Lux solicitó...",
+                  "compIlluminationAreaPercentage": "Zona Iluminada...",
+                  "compIlluminationType": "Tipo de iluminación...",
+                  "compIlluminationObservation": "Comentarios...",
+                  "isCatwalk": "pasarelas",
+                  "compFootBridgeLocationType": "Sitio...",
+                  "compFootBridgeLocationObservation": "Comentarios...",
+                  "isLifeline": "linea de vida",
+                  "compSecurityLifeLineType": "Sitio...",
+                  "compSecurityLifeLineObservation": "Comentarios...",
+                  "isSailorLadder": "escalera de marinero",
+                  "compSailorLadderQuantity": "La cantidad...",
+                  "compSailorLadderObservation": "Comentarios...",
+                  "isFlightOfStairs": "Escalera de lanza",
+                  "compLadderHeight": "Altura...",
+                  "compLadderQuantity": "La cantidad...",
+                  "compLadderObservation": "Comentarios...",
+                  "isPhotovoltaicPanel": "Est. ",
+                  "compPhotovoltaicLoad": "Cargar...",
+                  "compPhotovoltaicObservation": "Comentarios...",
+                  "isPipeRack": "estante de tubería",
+                  "compPipeRackLoad": "Cargar...",
+                  "compPipeRackPurpose": "Meta...",
+                  "compPipeRackLocation": "Sitio...",
+                  "compPipeRackObservation": "Comentarios...",
+                  "isVentilation": "Ventilación",
+                  "compVentilationAirChange": "Turnos/Tiempo...",
+                  "compVentilationOccupationRate": "Tasa de ocupación...",
+                  "compVentilationDirection": "Sentido...",
+                  "hasCompVentilationWithIlumination": "con iluminación",
+                  "compVentilationObservation": "Comentarios...",
+                  "isMezzanine": "Entresuelo",
+                  "compMezzaninePillarType": "Tipo de pilar...",
+                  "compMezzanineType": "tipo entrepiso...",
+                  "compMezzanineOverload": "Sobrecarga...",
+                  "compMezzanineWidth": "Ancho...",
+                  "compMezzanineLength": "Longitud...",
+                  "compMezzanineLocation": "Ubicación (Ubicación en proyecto entrepiso)...",
+                  "compMezzanineObservation": "Comentarios...",
+                  "isEquipmentBased": "Equipo básico"
+                },
+                "placeholder": {
+                  "isLighting": "Encendiendo",
+                  "compIlluminationLuxRequested": "Lux solicitó...",
+                  "compIlluminationAreaPercentage": "Zona Iluminada...",
+                  "compIlluminationType": "Tipo de iluminación...",
+                  "compIlluminationObservation": "Comentarios...",
+                  "isCatwalk": "pasarelas",
+                  "compFootBridgeLocationType": "Sitio...",
+                  "compFootBridgeLocationObservation": "Comentarios...",
+                  "isLifeline": "linea de vida",
+                  "compSecurityLifeLineType": "Sitio...",
+                  "compSecurityLifeLineObservation": "Comentarios...",
+                  "isSailorLadder": "escalera de marinero",
+                  "compSailorLadderQuantity": "La cantidad...",
+                  "compSailorLadderObservation": "Comentarios...",
+                  "isFlightOfStairs": "Escalera de lanza",
+                  "compLadderHeight": "Altura...",
+                  "compLadderQuantity": "La cantidad...",
+                  "compLadderObservation": "Comentarios...",
+                  "isPhotovoltaicPanel": "Est. ",
+                  "compPhotovoltaicLoad": "Cargar...",
+                  "compPhotovoltaicObservation": "Comentarios...",
+                  "isPipeRack": "estante de tubería",
+                  "compPipeRackLoad": "Cargar...",
+                  "compPipeRackPurpose": "Meta...",
+                  "compPipeRackLocation": "Sitio...",
+                  "compPipeRackObservation": "Comentarios...",
+                  "isVentilation": "Ventilación",
+                  "compVentilationAirChange": "Turnos/Tiempo...",
+                  "compVentilationOccupationRate": "Tasa de ocupación...",
+                  "compVentilationDirection": "Sentido...",
+                  "hasCompVentilationWithIlumination": "con iluminación",
+                  "compVentilationObservation": "Comentarios...",
+                  "isMezzanine": "Entresuelo",
+                  "compMezzaninePillarType": "Tipo de pilar...",
+                  "compMezzanineType": "tipo entrepiso...",
+                  "compMezzanineOverload": "Sobrecarga...",
+                  "compMezzanineWidth": "Ancho...",
+                  "compMezzanineLength": "Longitud...",
+                  "compMezzanineLocation": "Ubicación (Ubicación en proyecto entrepiso)...",
+                  "compMezzanineObservation": "Comentarios...",
+                  "isEquipmentBased": "Equipo básico"
+                }
+              },
+              "table": {
+                "toolbarTitle": "Lista de equipos básicos",
+                "header": {
+                  "quantity": "La cantidad",
+                  "load": "Carga (kgf/unidad)",
+                  "observation": "Observación"
+                },
+                "modal": {
+                  "title": "Registro de Geometría",
+                  "fields": {
+                    "label": {
+                      "quantity": "La cantidad...",
+                      "load": "Cargar...",
+                      "observation": "Observación..."
+                    },
+                    "placeholder": {
+                      "quantity": "La cantidad...",
+                      "load": "Cargar...",
+                      "observation": "Observación..."
+                    }
+                  },
+                  "del": {
+                    "title": "borrado de registros",
+                    "text": "¿Realmente desea eliminar el registro?",
+                    "actions": {
+                      "buttons": {
+                        "cancel": "Cancelar",
+                        "confirm": "Confirmar"
+                      }
+                    }
+                  },
+                  "actions": {
+                    "buttons": {
+                      "cancel": "Cancelar",
+                      "confirm": "Confirmar"
+                    }
+                  }
+                }
+              }
+            },
+            "closure": {
+              "fields": {
+                "label": {
+                  "closureType": "Tipo de cierre...",
+                  "closureTypeObservation": "Comentarios...",
+                  "isMisalignedForeheadWithClosure": "Diadema desalineada con cierre",
+                  "closureHeadBlockMasonryHeight": "Altura del encabezado...",
+                  "closureHeadBlockRoofArrangement": "Disposición de mosaico...",
+                  "closureHeadBlockObservation": "Comentarios...",
+                  "closureRoofType": "Tipo de Azulejos...",
+                  "closureRoofArrangement": "Disposición de mosaico...",
+                  "closureStructureType": "Estructura...",
+                  "closureTopAlignment": "Alineación superior...",
+                  "closureMasonryHeight": "Altura de mampostería...",
+                  "closureLocation": "Sitio...",
+                  "closureAxisObservation": "Ejes con Cierre...",
+                  "closureObservation": "Comentarios...",
+                  "isShutters": "¿Persianas?",
+                  "closureShutterHeight": "Altura veneciana...",
+                  "closureShutterObservation": "Comentarios...",
+                  "isTrackClosing": "¿Cierre de carril?",
+                  "closureBandType": "tipo de banda...",
+                  "closureBandHeight": "Altura de la banda...",
+                  "closureBandQuota": "Cuota de rango...",
+                  "closureBandObservation": "Comentarios..."
+                },
+                "placeholder": {
+                  "closureType": "Tipo de cierre...",
+                  "closureTypeObservation": "Comentarios...",
+                  "isMisalignedForeheadWithClosure": "Diadema desalineada con cierre",
+                  "closureHeadBlockMasonryHeight": "Altura del encabezado...",
+                  "closureHeadBlockRoofArrangement": "Disposición de mosaico...",
+                  "closureHeadBlockObservation": "Comentarios...",
+                  "closureRoofType": "Tipo de Azulejos...",
+                  "closureRoofArrangement": "Disposición de mosaico...",
+                  "closureStructureType": "Estructura...",
+                  "closureTopAlignment": "Alineación superior...",
+                  "closureMasonryHeight": "Altura de mampostería...",
+                  "closureLocation": "Sitio...",
+                  "closureAxisObservation": "Ejes con Cierre...",
+                  "closureObservation": "Comentarios...",
+                  "isShutters": "¿Persianas?",
+                  "closureShutterHeight": "Altura veneciana...",
+                  "closureShutterObservation": "Comentarios...",
+                  "isTrackClosing": "¿Cierre de carril?",
+                  "closureBandType": "tipo de banda...",
+                  "closureBandHeight": "Altura de la banda...",
+                  "closureBandQuota": "Cuota de rango...",
+                  "closureBandObservation": "Comentarios..."
+                }
+              }
+            },
+            "sunroom": {
+              "fields": {
+                "label": {
+                  "closureSunroomUtilitiesLoad": "Cargando Utilidades...",
+                  "closureSunroomObservation": "Comentarios..."
+                },
+                "placeholder": {
+                  "closureSunroomUtilitiesLoad": "Cargando Utilidades...",
+                  "closureSunroomObservation": "Comentarios..."
+                }
+              },
+              "table": {
+                "toolbarTitle": "lista de marquesinas",
+                "header": {
+                  "place": "Sitio",
+                  "width": "Ancho",
+                  "length": "Longitud",
+                  "freeHeight": "espacio libre",
+                  "roofType": "Tipo de Azulejos",
+                  "order": "Secuencia"
+                },
+                "modal": {
+                  "title": "registro de marquesina",
+                  "fields": {
+                    "label": {
+                      "place": "Sitio...",
+                      "width": "Ancho...",
+                      "length": "Longitud...",
+                      "freeHeight": "Autorización...",
+                      "roofType": "Tipo de Azulejos...",
+                      "secundaryType": "Secundaria de la Marquesa...",
+                      "isForehead": "encabezamiento",
+                      "headBlockType": "tipo de prueba...",
+                      "headBlockRoofType": "Tipo de Azulejos...",
+                      "headBlockHeight": "Altura...",
+                      "arrangementType": "Tipo de diseño...",
+                      "observation": "Comentarios..."
+                    },
+                    "placeholder": {
+                      "place": "Sitio...",
+                      "width": "Ancho...",
+                      "length": "Longitud...",
+                      "freeHeight": "Autorización...",
+                      "roofType": "Tipo de Azulejos...",
+                      "secundaryType": "Secundaria de la Marquesa...",
+                      "isForehead": "encabezamiento",
+                      "headBlockType": "tipo de prueba...",
+                      "headBlockRoofType": "Tipo de Azulejos...",
+                      "headBlockHeight": "Altura...",
+                      "arrangementType": "Tipo de diseño...",
+                      "observation": "Comentarios..."
+                    }
+                  },
+                  "actions": {
+                    "buttons": {
+                      "labels": {
+                        "cancel": "Cancelar",
+                        "confirm": "Confirmar"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "conventional-attachments": {
+          "tab-label": "Convencional / Adjuntos",
+          "fields": {
+            "labels": {
+              "load-utilities": "Cargando Utilidades...",
+              "load-utilities-obs": "Observación..."
+            },
+            "placeholders": {
+              "load-utilities": "Cargando Utilidades...",
+              "load-utilities-obs": "Observación..."
+            }
+          },
+          "table": {
+            "toolbarTitle": "Lista de miembros convencionales / archivos adjuntos",
+            "headers": {
+              "id": "identificación",
+              "place": "Sitio",
+              "breadth": "Ancho (m)",
+              "lenght": "Longitud (m)",
+              "freeHeight": "Altura libre (m)",
+              "typeOfTiles": "Tipo de Azulejos",
+              "order": "Secuencia"
+            },
+            "modal": {
+              "add": {
+                "title": "Inclusión",
+                "fields": {
+                  "labels": {
+                    "place": "Sitio...",
+                    "width": "Ancho...",
+                    "length": "Longitud...",
+                    "freeHeight": "Autorización...",
+                    "closureType": "Tipo de Azulejos...",
+                    "isIsolation": "Aislamiento",
+                    "isolationType": "Tipo de aislamiento...",
+                    "isolationStructureType": "Estructura...",
+                    "isHeadBlock": "encabezamiento",
+                    "headBlockType": "tipo de prueba...",
+                    "headBlockHeight": "Altura...",
+                    "arrangementType": "Disposición...",
+                    "observation": "Observación..."
+                  },
+                  "placeholder": {
+                    "place": "Sitio...",
+                    "width": "Ancho...",
+                    "length": "Longitud...",
+                    "freeHeight": "Autorización...",
+                    "closureType": "Tipo de Azulejos...",
+                    "isIsolation": "Aislamiento",
+                    "isolationType": "Tipo de aislamiento...",
+                    "isolationStructureType": "Estructura...",
+                    "isHeadBlock": "encabezamiento",
+                    "headBlockType": "tipo de prueba...",
+                    "headBlockHeight": "Altura...",
+                    "arrangementType": "Disposición...",
+                    "observation": "Observación..."
+                  }
+                },
+                "actions": {
+                  "buttons": {
+                    "cancel": "Cancelar",
+                    "confirm": "Confirmar"
+                  }
+                }
+              }
+            },
+            "actions": {
+              "icons-buttons": {
+                "hint": {
+                  "edit": "Para editar",
+                  "remove": "Borrar"
+                }
+              }
+            }
+          }
+        },
+        "uses-of-bim": {
+          "tab-label": "Usos de BIM",
+          "fields": {
+            "labels": {
+              "bimObservation": "Observación..."
+            },
+            "placeholders": {
+              "bimObservation": "Observación..."
+            }
+          },
+          "checkbox": {
+            "labels": {
+              "hasBIMCoordination3D": "coordinación 3D",
+              "hasBIMExtracDocumentation": "Extracción de documentación",
+              "hasBIMExtracQuantitative": "Extracción Cuantitativa",
+              "hasBIMExtracVirtualMockup": "Extracción de maquetas virtuales"
+            },
+            "text": {
+              "hasBIMCoordination3D": "El proceso de Coordinación 3D consiste en utilizar el Modelo para: Revisar, analizar el Alcance y Hacer compatible el Modelo con otros modelos proporcionados por el cliente u otros Stakeholders. ",
+              "hasBIMExtracDocumentation": "El proceso de Extracción de Documentación consiste en generar Proyectos DWG o PDF a partir de los Modelos. ",
+              "hasBIMExtracQuantitative": "El proceso de Extracción Cuantitativa consiste en extraer, del modelo, las cantidades relacionadas con los elementos modelados (o no). ",
+              "hasBIMExtracVirtualMockup": "El proceso de Creación del Modelo Virtual consiste en utilizar un software o aplicación capaz de generar: Imágenes Fotorrealistas, Videos Fotorrealistas, Ejecutables Caminables y Vistas Panorámicas del Modelo."
+            }
+          }
+        },
+        "commercial": {
+          "tab-label": "Comercial",
+          "fields": {
+            "labels": {
+              "comICMSTaxpayerState": "Eventos de pago...",
+              "comICMSTaxpayerStateValue": "Valor...",
+              "comNonStandardPaymentTermsObs": "Observación...",
+              "comRetentionPercentageValue": "Porcentaje de retención..."
+            },
+            "placeholders": {
+              "comICMSTaxpayerStateValue": "Valor...",
+              "comNonStandardPaymentTermsObs": "Observación...",
+              "comRetentionPercentageValue": "Porcentaje de retención..."
+            },
+            "validators": {
+              "company": {
+                "error": "Nombre de contacto ingresado no reconocido."
+              },
+              "contact": {
+                "error": "Nombre de contacto ingresado no reconocido."
+              }
+            }
+          },
+          "checkbox": {
+            "labels": {
+              "hasComICMSTaxpayer": "contribuyente del ICMS?",
+              "hasComNonStandardPaymentTerms": "Condiciones de pago no estándar",
+              "hasComThirdPartyMaterialDirectBilling": "Material de facturación directa de terceros",
+              "hasComSuretyLetter": "Seguro / Carta de garantía",
+              "hasComConstructionInsurance": "seguro de construcción",
+              "hasComConstructionCondominium": "Condominio de Construcción",
+              "hasComSafetyTechnician": "Técnico de seguridad",
+              "hasComRetentionPercentage": "% Retencion",
+              "hasComIssueART": "Emitir ART",
+              "hasComShippingValueIncluded": "Envío incluido"
+            }
+          },
+          "table": {
+            "toolbarTitle": "Lista de Comisiones",
+            "headers": {
+              "id": "identificación",
+              "typeCommission": "Escribe",
+              "company": "Empresa",
+              "contact": "Contacto",
+              "percentage": "🇧🇷",
+              "observation": "Observación",
+              "order": "Secuencia"
+            },
+            "modal": {
+              "add": {
+                "title": "Registro de comisiones",
+                "fields": {
+                  "labels": {
+                    "typeCommission": "Escribe",
+                    "company": "Empresa",
+                    "contact": "Contacto",
+                    "percentage": "🇧🇷",
+                    "observation": "Observación"
+                  },
+                  "placeholder": {
+                    "typeCommission": "Escribe",
+                    "company": "Empresa",
+                    "contact": "Contacto",
+                    "percentage": "🇧🇷",
+                    "observation": "Observación"
+                  }
+                },
+                "validators": {
+                  "error": {
+                    "companyName": "El nombre ingresado no fue identificado.",
+                    "contactName": "El nombre ingresado no fue identificado."
+                  }
+                },
+                "actions": {
+                  "buttons": {
+                    "cancel": "Cancelar",
+                    "confirm": "Confirmar"
+                  }
+                }
+              }
+            },
+            "actions": {
+              "icons-buttons": {
+                "hint": {
+                  "edit": "Para editar",
+                  "remove": "Borrar"
+                }
+              }
+            }
+          }
+        }
+      },
+      "technicalWOVersion": {
+        "title": "Lista de versiones de envío",
+        "subTitle": "Seleccione el envío deseado para la copia.",
+        "table": {
+          "header": {
+            "id": "identificación",
+            "technicalWOType": "Tipo de envío",
+            "technicalWODate": "La fecha de inicio",
+            "technicalWOStatus": "Estado",
+            "versionNumber": "Versión"
+          }
+        },
+        "actions": {
+          "buttons": {
+            "labels": {
+              "cancel": "Cancelar"
+            }
+          }
+        }
+      },
+      "technicalWOSend": {
+        "title": "Enviar envío",
+        "text": "¿Realmente desea enviar el Envío?",
+        "actions": {
+          "buttons": {
+            "cancel": "Cancelar",
+            "confirm": "Confirmar"
+          }
+        }
+      },
+      "technicalWOClose": {
+        "title": "Cerrar envío",
+        "text": "¿Realmente desea cerrar el Envío?",
+        "actions": {
+          "buttons": {
+            "cancel": "Cancelar",
+            "confirm": "Confirmar"
+          }
+        }
+      },
+      "technicalWOLogChangeRobimVsMercury": {
+        "title": "Registro de cambios de envío en Robim",
+        "table": {
+          "header": {
+            "id": "identificación",
+            "dateTime": "Fecha",
+            "tableName": "Referencia",
+            "type": "Escribe",
+            "header-row-first-group": "Valor antiguo",
+            "oldColumnName": "Columna",
+            "oldValueName": "Valor",
+            "header-row-second-group": "Nuevo valor",
+            "newColumnName": "Columna",
+            "newValueName": "Valor"
+          }
+        },
+        "actions": {
+          "buttons": {
+            "labels": {
+              "cancel": "Cancelar"
+            }
+          }
+        }
+      },
+      "technicalWOMigrated": {
+        "title": "Vista previa de los datos de envío migrados",
+        "header": {
+          "technicalWOType-th": "Tipo de envío"
+        },
+        "accordion-panel": {
+          "geometry": {
+            "header": "Geometría",
+            "labels": {
+              "roof": "Techo:",
+              "quantity": "Cant.:",
+              "support": "Soporte:",
+              "structure-rafters-pillars": "Estructura (Vigas/Pilares):",
+              "structure-rafters-pillars-observatio": "Nota:",
+              "intercolumn-of-support-rafter": "Intercolumnion de la Viga de Soporte:",
+              "project-analysis": "Análisis del proyecto:",
+              "internal": "Interno:",
+              "extremity": "Extremo lejano:",
+              "gutter": "Canal:",
+              "material": "Material:",
+              "disposition": "Disposición:",
+              "dimensions": "Dimensiones:",
+              "dimensions-project-analysis": "Análisis del proyecto:",
+              "right-foot": "Pie derecho min libre (bajo el acorde inf):",
+              "right-foot-project-analysis": "Análisis del proyecto:",
+              "roll-on-spans": "Ir roll-on:",
+              "roll-on-spans-project-analysis": "Análisis del proyecto:",
+              "height-limit": "Límite de altura:",
+              "localization": "Localización:",
+              "overload": "Sobrecarga:",
+              "predominant": "Predominante:",
+              "predominant-kgf": "kgf/m² {{client}} Cliente {{accidental}} Accidental  ",
+              "located": "localizado:",
+              "located-value": "",
+              "project-load-table": "Tabla de carga del proyecto:",
+              "swing": "Balancear:",
+              "swing-project-analysis": "Análisis del proyecto:",
+              "longitudinal-swing": "Equilibrio longitudinal:",
+              "transverse-swing": "Equilibrio cruzado:",
+              "observation-swing": "Nota:"
+            }
+          },
+          "accessories": {
+            "header": "Accesorios",
+            "labels": {
+              "illumination": "Encendiendo:",
+              "illumination-type": "Escribe:",
+              "illumination-area": "Zona:",
+              "illumination-lines": "Línea:",
+              "illumination-length": "Longitud:",
+              "thermal-insulation": "Aislamiento térmico",
+              "thermal-insulation-type": "Escribe:",
+              "thermal-insulation-area": "Zona:",
+              "ventilation": "Ventilación:",
+              "ventilation-project-analysis": "Análisis del proyecto:",
+              "changes-time": "Cambios/Tiempo:",
+              "volume-reduction": "Volumen rojo.:",
+              "Sense": "Sentido:",
+              "ventilation-lines": "Líneas:",
+              "ventilation-length": "Longitud:",
+              "fan-illumination": "Iluminación del ventilador:"
+            }
+          },
+          "closure": {
+            "header": "Cierre",
+            "labels": {
+              "closing": "Cierre:",
+              "closing-type": "Escribe:",
+              "closing-location": "Localización:",
+              "brickwork-height": "Altura de mampostería:",
+              "closing-tile": "Teja:",
+              "closing-arrangement": "Disposición:",
+              "closing-others": "Otros:",
+              "closing-shutter": "obturador:",
+              "closing-headband": "encabezamiento:",
+              "closing-layout": "Disposición:",
+              "closing-alignment": "Alineación:",
+              "closing-top": "Más alto:",
+              "closing-Bottom": "Abajo:"
+            }
+          },
+          "miscellaneous": {
+            "header": "Varios",
+            "labels": {
+              "payment-terms": "Condiciones de pago:",
+              "third-party-direct-billing-material": "Material de facturación directa de terceros:",
+              "insurance-letter-of-guarantee": "Seguro / Fianza:",
+              "construction-insurance": "Seguro de Construcción:",
+              "construction-condominium": "Condominio de la Obra:",
+              "percent-retention": "% Retención Sí Campo:",
+              "issue-art": "Emitir ART:",
+              "included-shipping": "Envío incluido:",
+              "ctc-commission": "Comisión CTC (sobre el producto Marko):",
+              "other-commissions": "Otras Comisiones (sobre importe total):"
+            }
+          },
+          "observations": {
+            "header": "Comentarios",
+            "labels": {}
+          }
+        }
+      },
+      "actions": {
+        "buttons": {
+          "labels": {
+            "technicalWOMigrated": "Ver envío migrado",
+            "print-shipment": "Imprimir envío",
+            "close-shipment": "Cerrar envío",
+            "send-shipment": "Enviar envío",
+            "technicalWOLogChangeRobimVsMercury": "Cambiar iniciar sesión en Robim",
+            "cancel": "Cancelar",
+            "confirm": "Confirmar"
+          }
+        }
+      }
+    },
+    "project": {
+      "title": "Gerencia de Proyectos",
+      "toolbarTitle": "Lista de proyectos",
+      "toolbarCheckboxFilter": {
+        "pending": "Pendiente",
+        "sinalized": "Finalizado"
+      },
+      "toolbar-button-add": {
+        "modal": {
+          "title": "Añadir solicitud",
+          "fields": {
+            "labels": {
+              "identificationName": "Identificación...",
+              "totalAreaNumberM2": "Zona...",
+              "place": "Sitio...",
+              "scheduledTo": "Previsto para...",
+              "requestedFor": "Solicitado a...",
+              "spreadsheetModelForecast": "Pronóstico de hoja de cálculo...",
+              "requester": "Solicitante...",
+              "observation": "Observación..."
+            },
+            "placeholders": {
+              "identificationName": "Identificación...",
+              "totalAreaNumberM2": "Zona...",
+              "place": "Sitio...",
+              "scheduledTo": "Previsto para...",
+              "requestedFor": "Solicitado a...",
+              "spreadsheetModelForecast": "Pronóstico de hoja de cálculo...",
+              "requester": "Solicitante...",
+              "observation": "Observación..."
+            },
+            "validators": {
+              "request": {
+                "error": "Nombre del solicitante escrito no reconocido."
+              }
+            }
+          },
+          "actions": {
+            "buttons": {
+              "confirm": "Confirmar",
+              "cancel": "Cancelar"
+            },
+            "toast": {
+              "success": {
+                "title": "'¡Inclusión exitosa!'",
+                "message": "Registro de números: {{id}} incluido con éxito!"
+              }
+            }
+          }
+        }
+      },
+      "toolbar-button-delete": {
+        "modal": {
+          "actions": {
+            "buttons": {
+              "confirm": "Confirmar",
+              "cancel": "Cancelar"
+            },
+            "toast": {
+              "success": {
+                "title": "'¡Desactivación exitosa!'",
+                "message": "¡El(los) registro(s) fue(n) deshabilitado(s) con éxito!"
+              }
+            }
+          }
+        }
+      },
+      "toolbar-button-import": {
+        "modal": {
+          "actions": {
+            "buttons": {
+              "confirm": "Confirmar",
+              "cancel": "Cancelar"
+            },
+            "toast": {
+              "success": {
+                "title": "'¡Importación exitosa!'",
+                "message": "¡Los registros fueron importados con éxito!"
+              }
+            }
+          }
+        }
+      },
+      "table": {
+        "header": {
+          "id": "identificación",
+          "versionNumber": "Versión",
+          "executingCompanyName": "distribuidor",
+          "businessInternalManagerContactName": "Solicitante",
+          "requestTypeName": "Tipo de solicitud",
+          "projectCode": "código ",
+          "identificationName": "Nombre del Trabajo (Negocio)",
+          "area": "Zona",
+          "stateName": "Expresar",
+          "creationDate": "Fecha de creación",
+          "requestedFor": "Requerido para",
+          "generalStatus": "Estado",
+          "filter": "Búsqueda..."
+        },
+        "table-detail": {
+          "fields": {
+            "label": {
+              "budgetStage": "Fase de presupuesto:",
+              "place": "Sitio:",
+              "scheduledTo": "Previsto para:",
+              "requester": "Solicitante:",
+              "bimModelForecast": "Pronóstico del modelo BIM:",
+              "bimModelResponsible": "Responder ",
+              "bimModelStatus": "Estado del modelo BIM:",
+              "drawingModelForecast": "Pronóstico de dibujo:",
+              "responsibleForTheDrawingModel": "Responder ",
+              "drawingModelStatus": "Estado del dibujo:",
+              "spreadsheetModelForecast": "Pronóstico de hoja de cálculo:",
+              "responsibleForTheSpreadsheetModel": "Responder ",
+              "spreadsheetTemplateStatus": "Estado de la hoja de trabajo:",
+              "observation": "Observación"
+            }
+          }
+        },
+        "modal": {
+          "edit": {
+            "title": "Actualización del proyecto",
+            "fields": {
+              "labels": {
+                "projectCode": "Código de proyecto...",
+                "budgetStage": "Fase de presupuesto...",
+                "projectStatus": "Estatus general...",
+                "bimModelForecast": "Pronóstico del modelo BIM...",
+                "bimModelResponsible": "Responder ",
+                "bimModelStatus": "Estado Modelo BIM...",
+                "drawingModelForecast": "Pronóstico de dibujo...",
+                "responsibleForTheDrawingModel": "Responder ",
+                "drawingModelStatus": "Estado del dibujo...",
+                "spreadsheetModelForecast": "Pronóstico de hoja de cálculo...",
+                "responsibleForTheSpreadsheetModel": "Responder ",
+                "spreadsheetTemplateStatus": "Estado de la hoja de cálculo...",
+                "observation": "Observación..."
+              },
+              "placeholders": {
+                "projectCode": "Código de proyecto...",
+                "bimModelForecast": "Pronóstico del modelo BIM...",
+                "drawingModelForecast": "Pronóstico de dibujo...",
+                "spreadsheetModelForecast": "Pronóstico de hoja de cálculo...",
+                "observation": "Observación..."
+              }
+            },
+            "actions": {
+              "buttons": {
+                "confirm": "Confirmar",
+                "cancel": "Cancelar"
+              },
+              "toast": {
+                "success": {
+                  "title": "¡Edición exitosa!",
+                  "message": "Registro de números: {{id}} editado con exito!"
+                }
+              }
+            }
+          },
+          "detail": {
+            "title": "detalles del proyecto",
+            "project-review": {
+              "title": "Revision del proyecto",
+              "fields": {
+                "labels": {
+                  "identification": "Identificación:",
+                  "internal-manager": "Gerente Interno:",
+                  "client": "Cliente:",
+                  "requester": "Solicitante:",
+                  "owner": "Propietario:",
+                  "creation-date": "Fecha de creación:",
+                  "purpose": "Meta:",
+                  "requested-for": "Requerido para:",
+                  "place": "Sitio:",
+                  "drawing-number": "Número de dibujo:",
+                  "observation": "Observación:"
+                }
+              }
+            },
+            "project-technical-wo": {
+              "title": "Envío del proyecto",
+              "fields": {
+                "labels": {
+                  "identification": "Identificación:",
+                  "internal-manager": "Gerente Interno:",
+                  "client": "Cliente:",
+                  "executor": "Ejecutor:",
+                  "owner": "Propietario:",
+                  "requester": "Solicitante:",
+                  "technical-wo-type": "Tipo de envío:",
+                  "creation-date": "Fecha de creación:",
+                  "purpose": "Meta:",
+                  "requested-for": "Requerido para:",
+                  "place": "Sitio:",
+                  "drawing-number": "Número de dibujo:",
+                  "redundant-business": "negativo ",
+                  "location": "Localización:",
+                  "dimensions-title": "-- Dimensiones --",
+                  "dimensions": "Dimensiones:",
+                  "right-foot-free-min": "Pie derecho min libre (bajo el acorde inf):",
+                  "rollon-span": "Lapso de rodadura:",
+                  "height-limit": "Límite de altura:",
+                  "structure-title": "-- Estructura --",
+                  "structure-type": "Escribe:",
+                  "observation-structure": "Observación:",
+                  "roof-title": "-- Techo --",
+                  "roof-type": "Escribe:",
+                  "support": "Soporte:",
+                  "swing-title": "-- Balancear --",
+                  "longitudinal": "Longitudinal:",
+                  "transversal": "Transversal:",
+                  "swing-observation": "Observación:",
+                  "overload-title": "-- Sobrecarga --",
+                  "predominant": "Predominante:",
+                  "located": "localizado:",
+                  "overload-location": "Sitio:",
+                  "support-beam-intercolumn-title": "-- Soporte viga intercolumna --",
+                  "internal": "Interno:",
+                  "extremity": "Extremo lejano:",
+                  "gutters-title": "-- Canalones --",
+                  "disposition": "Disposición:",
+                  "material": "Material:",
+                  "natural-lighting-title": "-- Iluminación natural --",
+                  "lighting-Type": "Escribe:",
+                  "lighting-area": "Zona:",
+                  "thermal-insulation-title": "-- Aislamiento térmico --",
+                  "thermal-insulation-type": "Escribe:",
+                  "thermal-insulation-area": "Zona:",
+                  "ventilation-title": "-- Ventilación --",
+                  "ventilation-Type": "Escribe:",
+                  "sense": "Sentido:",
+                  "lighting": "Encendiendo:",
+                  "closure-title": "-- Cierre --",
+                  "closing-Type": "Escribe:",
+                  "location-of-closure": "Localización:",
+                  "top-alignment": "Alineación superior:",
+                  "bottom-alignment": "Alineación inferior:",
+                  "venetian": "obturador:",
+                  "forehead": "Frente:",
+                  "miscellaneous-title": "-- Varios --",
+                  "technical-reserve": "Reserva técnica:",
+                  "third-party-material-direct-billing": "Material de facturación directa de terceros:",
+                  "insurance-Letter-of-guarantee": "Seguro / Fianza:",
+                  "construction-insurance": "Seguro de Construcción:",
+                  "construction-condominium": "Condominio de Construcción:",
+                  "non-standard-payment-terms": "Condiciones de pago no estándar:",
+                  "documents-title": "-- Documentos --",
+                  "observation": "Observación:"
+                }
+              }
+            },
+            "actions": {
+              "buttons": {
+                "print": "Imprimir",
+                "export-to-pdf": "Exportar",
+                "cancel": "Cancelar"
+              }
+            }
+          }
+        },
+        "menu": {
+          "edit": "Para editar",
+          "detail": "Detalle",
+          "export-pdf": "Detalles heredados",
+          "view": "Ver envío"
+        },
+        "export-to-exel": {
+          "header": {
+            "id": "identificación",
+            "Bim_Responsible": "Bim Responsable",
+            "Scheduled_Date": "cita agendada",
+            "Status_of_the_bim": "estado bim",
+            "Budget_responsible": "responsable del presupuesto",
+            "Budget_Scheduled_Date": "Fecha de presupuesto programada",
+            "Budget_phase": "etapa de presupuesto",
+            "Budget_status": "estado del presupuesto",
+            "Budget_code": "código de presupuesto",
+            "Creation_Date": "Fecha de creación",
+            "Design_Responsible": "Responsable de Diseño",
+            "Design_Scheduled_Date": " Fecha de diseño programada",
+            "Design_Status": "Estado del diseño",
+            "General_status": "Estatus general",
+            "Identification_Name": " nombre de identificación",
+            "Observation": "Observación",
+            "Requestor_email": "Correo electrónico del solicitante",
+            "Requestor_name": " El nombre del solicitante",
+            "Requestor_phone": "Teléfono del Solicitante",
+            "State_code": "Acrónimo del estado",
+            "State_Name": "nombre del Estado",
+            "Observation_bim": "bim de observación",
+            "Building_observation": "Observación del edificio"
+          }
+        }
+      }
+    },
+    "tics": {
+      "title": "Gestión TIC",
+      "toolbarTitle": "Lista de propuestas",
+      "toolbar-button-add": {
+        "modal": {
+          "title": "Añadir solicitud",
+          "fields": {
+            "labels": {},
+            "placeholders": {},
+            "validators": {
+              "request": {}
+            }
+          },
+          "actions": {
+            "buttons": {
+              "confirm": "Confirmar",
+              "cancel": "Cancelar"
+            },
+            "toast": {
+              "success": {
+                "title": "'¡Inclusión exitosa!'",
+                "message": "Registro de números: {{id}} incluido con éxito!"
+              }
+            }
+          }
+        }
+      },
+      "table": {
+        "header": {
+          "id": "identificación",
+          "proposalCode": "Nro. de propuesta",
+          "identificationName": "Identificación",
+          "businessPurposeName": "Meta",
+          "state": "Expresar",
+          "clientCompany": "Cliente",
+          "businessInternalManagerContact": "Responsable",
+          "status": "Estado",
+          "filter": "Búsqueda..."
+        },
+        "menu": {
+          "salesForm": "formulario de venta"
+        }
+      }
+    }
+  },
+  "network-messages": {
+    "title": {
+      "no-network": "¡Sin red!",
+      "access-denied": "¡Acceso denegado!",
+      "not-found": "¡No encontrado!",
+      "internal-server-error": "¡Error Interno del Servidor!"
+    },
+    "detail": {
+      "no-network": "No se puede acceder al servidor.",
+      "access-denied": "Su acceso no tiene permiso para esta acción.",
+      "not-found": "No se puede encontrar el recurso de destino."
+    },
+    "section": {
+      "expired": {
+        "title": "Sección Caducada.",
+        "detail": "La sección actual ha expirado."
+      }
+    },
+    "HttpErrorResponse": {
+      "title": "Falla inesperada",
+      "message": "Ocurrió una falla de comunicación con el servidor."
+    }
+  },
+  "components": {
+    "dynamic-data-table": {
+      "toolbarTitle": "Lista de empresas registradas",
+      "filter": {
+        "global": {
+          "label": "Búsqueda",
+          "placeholder": "Utilice el filtro global para buscar todos los campos..."
+        },
+        "columns": {
+          "label": "Búsqueda...",
+          "placeholder": "Escribe para buscar..."
+        },
+        "tooltip": {
+          "iconSearchFilter": "Expandir/Contraer filtros",
+          "iconClearFilter": "borrar campos de filtro"
+        }
+      },
+      "rowTooltip": "Haga doble clic en la línea para ver.",
+      "filter-no-record": "No hay registros devueltos por la consulta.",
+      "no-record": "No se encontraron registros...",
+      "paginator": {
+        "items_per_page_label": "Artículos por página:",
+        "next_page_label": "Siguiente página",
+        "previous_page_label": "Pagina anterior",
+        "first_page_label": "Primera pagina",
+        "last_page_label": "Última página",
+        "range_page_label_1": "0 de {{length}}",
+        "range_page_label_2": "{{startIndex}} 🇧🇷 {{endIndex}} en {{length}}"
+      }
+    },
+    "dynamic-panel-body": {
+      "pages": {
+        "oportunity-crm": {
+          "list": {
+            "title": "",
+            "subTitle": ""
+          },
+          "add": {
+            "title": "",
+            "subTitle": ""
+          },
+          "edit": {
+            "title": "",
+            "subTitle": ""
+          }
+        },
+        "business": {
+          "list": {
+            "title": "",
+            "subTitle": ""
+          },
+          "add": {
+            "title": "",
+            "subTitle": ""
+          },
+          "edit": {
+            "title": "",
+            "subTitle": ""
+          }
+        },
+        "shipping": {
+          "list": {
+            "title": "",
+            "subTitle": ""
+          },
+          "add": {
+            "title": "",
+            "subTitle": ""
+          },
+          "edit": {
+            "title": "",
+            "subTitle": ""
+          }
+        },
+        "proposal": {
+          "list": {
+            "title": "",
+            "subTitle": ""
+          },
+          "add": {
+            "title": "",
+            "subTitle": ""
+          },
+          "edit": {
+            "title": "",
+            "subTitle": ""
+          }
+        },
+        "tic": {
+          "list": {
+            "title": "",
+            "subTitle": ""
+          },
+          "add": {
+            "title": "",
+            "subTitle": ""
+          },
+          "edit": {
+            "title": "",
+            "subTitle": ""
+          }
+        }
+      }
+    },
+    "mat-select": {
+      "select": "Seleccione...",
+      "search": {
+        "label": "Búsqueda...",
+        "placeholder": "Escribe para encontrar...",
+        "item-not-found": "Objeto no encontrado."
+      },
+      "no-item": "Ninguno",
+      "loading": "Cargando..."
+    }
+  },
+  "auxiliaryDataTables": {
+    "probability": {
+      "high": "Elevado",
+      "average": "Promedio",
+      "low": "Bajo",
+      "null": "nulo"
+    }
+  },
+  "configurations": {
+    "enums": {
+      "month": {
+        "january": "enero",
+        "february": "Febrero",
+        "march": "Marzo",
+        "april": "Abril",
+        "may": "Puede",
+        "june": "Junio",
+        "july": "Julio",
+        "august": "Agosto",
+        "september": "Septiembre",
+        "october": "Octubre",
+        "november": "Noviembre",
+        "december": "Diciembre"
+      },
+      "buildingsComplementaryVentilationSense": {
+        "ridge": "Cresta",
+        "bobbinSense": "dirección de la bobina"
+      }
+    }
+  },
+  "default_validators": {
+    "field_required": "Campo obligatorio."
+  },
+  "common": {
+    "buttons": {
+      "export-to-excel": "Exportar a Excel",
+      "export-to-pdf": "Exportar a PDF"
+    }
+  }
+}

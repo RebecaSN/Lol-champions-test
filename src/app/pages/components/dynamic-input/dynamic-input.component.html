@@ -1,0 +1,49 @@
+
+<mat-form-field class="full-width" appearance="{{inputAppearance}}" fxFlex>
+  <mat-label>{{ label}}</mat-label>
+
+  <div *ngIf="!isCurrencyMask">
+    <input
+      matInput
+      [type]="inputType"
+      [placeholder]="inputPlaceholder"
+      [formControl]="inputFormControl"
+      [attr.disabled]="isDisabled"
+      [required]="isRequired"
+      [readonly]="isReadonly"
+      spellcheck="false"
+      autocomplete="off"
+      [mask]="maskInput"
+      [patterns]="customPatterns"
+      [maxlength]="maxlengthValue"
+      [minlength]="minlengthValue">
+  </div>
+  <div *ngIf="isCurrencyMask">
+    <input
+      matInput
+      [type]="inputType"
+      [placeholder]="inputPlaceholder"
+      [formControl]="inputFormControl"
+      [attr.disabled]="isDisabled"
+      [required]="isRequired"
+      [readonly]="isReadonly"
+      spellcheck="false"
+      autocomplete="off"
+      currencyMask
+      [options]="currencyMaskOptions">
+  </div>
+
+  <span *ngIf="isSuffix" matSuffix>{{suffixValue}}</span>
+
+  <mat-hint *ngIf="isHint" align="end">{{inputFormControl?.value?.length || 0}}/{{hintValue}}</mat-hint>
+
+  <button mat-button *ngIf="inputFormControl?.value && !isDisabled && !isReadonly" matSuffix mat-icon-button aria-label="Clear"
+    (click)="clearFieldControl(inputFormControl)">
+    <mat-icon>close</mat-icon>
+  </button>
+
+  <mat-error *ngIf="isRequired && isErrorShow">
+    <ng-content select="[matErrors]"></ng-content>
+  </mat-error>
+
+</mat-form-field>

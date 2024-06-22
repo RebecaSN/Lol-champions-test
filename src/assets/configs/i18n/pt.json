@@ -1,0 +1,579 @@
+{
+  "layouts": {
+    "allRightsReserved": "Marko. Todos os direitos reservados.",
+    "header": {
+      "logout": "Sair",
+      "tooltip": {
+        "userNameActive": "Usuário Ativo!",
+        "userManual": "Manual do Usuário"
+      }
+    },
+    "sideNav": {
+      "systemName": "Sistemas Integrados Marko",
+      "menu": {
+        "home": "Página Principal",
+        "register": "Cadastro",
+        "proposal": "Proposta"
+      }
+    }
+  },
+  "pages": {
+    "auth": {
+      "sign-in": {
+        "userName": {
+          "label": "Informe o nome do usuário",
+          "field-validate": "Nome de usuário é obrigatório."
+        },
+        "password": {
+          "label": "Informe a senha",
+          "field-validate": "Senha é obrigatória!"
+        },
+        "btn-login": "Conecte-se",
+        "loggingIn": "Entrando...",
+        "createAccount": "Criar Conta",
+        "help": "Esqueceu a senha?",
+        "rememberMe": "Lembre-se de mim",
+        "UnableToEnter": {
+          "title": "Incapaz de entrar",
+          "detail": "Ocorreu um erro ao fazer login, tente mais tarde. \nErro: "
+        },
+        "login-success": {
+          "title": "Autenticado!",
+          "detail": "Bem vindo"
+        },
+        "section-restore": {
+          "SectionRestoredFor": "Login.",
+          "SectionRestored": "Seção restaurada."
+        }
+      },
+      "forgot-password": {
+        "old-password": {
+          "label": "Senha atual...",
+          "field-validate": "Senha incorreta"
+        },
+        "new-password": {
+          "label": "Nova senha...",
+          "field-validate": "A senha não atende as normas"
+        },
+        "confirm-new-password": {
+          "label": "Confirme nova senha...",
+          "field-validate": "Senha não atende as normas"
+        },
+        "username": {
+          "label": "Nome do usuário...",
+          "field-validate": "Nome do usuário não identificado"
+        },
+        "email": {
+          "label": "E-Mail...",
+          "field-validate": "E-Mail do usuário não identificado"
+        },
+        "btn-confirm": "Confirmar",
+        "btn-send": "Enviar",
+        "minCharValValidator": "Deve ter pelo menos {{ minChar }} caracteres!",
+        "minNumberValueValidator": "Deve conter pelo menos {{ numbers }} números!",
+        "validatorMinValUpCharacter": "Deve conter pelo menos {{ upperCase }} em Maiúsculas!",
+        "lowercaseCharacterMinimumValValidator": "Deve conter pelo menos {{ lowerCase }} letra em caixa pequena!",
+        "specialCharMinValValidator": "Deve conter pelo menos {{ specialChar }} Personagem Especial!"
+      }
+    },
+    "home": {
+      "title": "Portal do Cliente",
+      "subTitle": "Sistemas Integrados Marko",
+      "welcome-message": {
+        "welcome-to-portal": "Bem-vindo ao portal do cliente Marko!",
+        "content": "Com o objetivo de melhorar controle de processos da Marko e permitir sempre transparência aos envolvidos, disponibilizamos mais esta ferramenta, no qual gradativamente adicionaremos mais funcionalidades!",
+        "function": "Atualmente, temos disponível as funcionalidades abaixo:",
+        "registration-title": "Cadastro:",
+        "registration-message": "Nesta funcionalidade você poderá alterar os dados cadastrais de sua empresa na Marko, estes dados são utilizados para emissão de NFs, tratamento de pagamentos e comunicação com o Cliente.",
+        "proposal-title": "Proposta:",
+        "proposal-message": "Aqui será possível você acompanhar Propostas Comerciais pendentes, ver seus detalhes, aprová-las ou rejeitá-las, bem como visualizar detalhes de propostas comerciais anteriores entre a Marko/Stahldach e sua empresa."
+      }
+    },
+    "proposal": {
+      "title": "Portal do Cliente",
+      "subTitle": "Sistemas Integrados Marko",
+      "table": {
+        "header": {
+          "proposalCode": "Cód. Proposta",
+          "revision": "Revisão",
+          "proposalDateTime": "Data Proposta",
+          "proposalStatus": "Status",
+          "proposalCreatorContactId": "Responsável Marko",
+          "customerProposalContactName": "Contato Cliente",
+          "identificationName": "Identificação do Negócio",
+          "businessLocalization": "Local",
+          "filter": "Buscar..."
+        }
+      },
+      "tooBar": {
+        "title": "Lista de propostas"
+      },
+      "edit-modal": {
+        "title": "Aprovação da Proposta",
+        "secOneProposalId": "Nº Proposta:",
+        "secOneProposalCode": "Cód. Proposta:",
+        "secOneBusinessIdentificationName": "Identificador:",
+        "secOneProposalDate": "Data da Proposta:",
+        "secOneProposalRevision": "Revisão:",
+        "secOneProposalCreatorContact": "Responsável Marko:",
+        "secTwoTabPaymentsTitle": "Valores e Pagamentos",
+        "freeOfDebtPayments": "As opções de pagamento estão desativadas devido o tipo de contrato desta proposta ser <b>Livre de Débito</b>!",
+        "totalValues": "Valores Totais",
+        "billingMarko": "Valor Material:",
+        "billingStahldach": "Valor Serviço:",
+        "billingDirect": "Valor Terceiro:",
+        "contractValue": "Valor Contratual:",
+        "materialPaymentsTitle": "Material",
+        "materialPaymentsSubTitle": "Valores",
+        "materialSignalTitle": "Sinal ( R$ {{materialSignalBalance}} )",
+        "materialBalance": "Saldo Material ( R$ {{materialBalance}} )",
+        "servicePaymentsTitle": "Serviços",
+        "serviceSignalTitle": "Sinal ( R$ {{serviceSignalBalance}} )",
+        "serviceBalance": "Saldo Serviços ( R$ {{serviceBalance}} )",
+        "thirdPaymentsTitle": "Terceiros",
+        "thirdSignalTitle": "Sinal ( R$ {{thirdSignalBalance}} )",
+        "thirdBalance": "Saldo Terceiros ( R$ {{thirdBalance}} )",
+        "secTwoTabObservationTitle": "Observações",
+        "observation": {
+          "fields": {
+            "labels": {
+              "comercial-observation": "Observação do Comercial Marko",
+              "client-observation": "Observação do Cliente"
+            },
+            "placeholder": {
+              "comercial-observation": "Observação do Comercial Marko",
+              "client-observation": "Observação do Cliente"
+            }
+          }
+        },
+        "modalDescApproveTitle": "Aprovação da Proposta",
+        "modalDescRepproveTitle": "Reprovação da Proposta",
+        "modalDescApproveText": "Tem certeza que deseja aprovar a proposta abaixo?",
+        "modalDescRepproveText": "Tem certeza que deseja reprovar a proposta abaixo?",
+        "modalDescListId": "Nº Proposta:",
+        "modalDescListProposalCode": "Cód. Proposta:",
+        "modalDescListBusinessIdentificationName": "Identificador:",
+        "modalDescListProposalDate": "Data da Proposta:",
+        "modalDescListProposalRevision": "Revisão:",
+        "modalDescListProposalCreatorContact": "Responsável Marko:",
+        "customerProposalContactName": "Contato Cliente:",
+        "approval-modal": {
+          "header": "Aprovação",
+          "message": "Tem certeza que deseja aprovar a proposta abaixo?",
+          "alertSucessTitle": "Sucesso",
+          "alertSucessDesc": "Proposta aprovada com sucesso"
+        },
+        "disapproval-modal": {
+          "header": "Reprovação",
+          "message": "Tem certeza que deseja reprovar a proposta abaixo?",
+          "alertSucessTitle": "Sucesso",
+          "alertSucessDesc": "Proposta reprovada com sucesso"
+        },
+        "actions": {
+          "buttons": {
+            "approved": "Aprovar",
+            "disapproved": "Reprovar",
+            "cancel": "Cancelar",
+            "confirm": "Confirmar"
+          }
+        }
+      }
+    },
+    "register": {
+      "main-page": {
+        "company-data": {
+          "title": "Dados da empresa",
+          "fields": {
+            "name": "Nome:",
+            "fantasy-name": "Nome fantasia:",
+            "cnpj": "CNPJ:",
+            "ie": "Inscrição estadual:",
+            "im": "Inscrição Municipal:",
+            "icmsTaxpayer": "Contribuinte ICMS:",
+            "mainOccupation": "Ocupação Principal:",
+            "cnaeActivity": "Atividade CNAF:"
+          },
+          "placeholder": {
+            "name": "Nome:",
+            "fantasy-name": "Nome fantasia:",
+            "cnpj": "CNPJ:",
+            "ie": "Inscrição estadual:",
+            "im": "Inscrição Municipal:",
+            "icmsTaxpayer": "Contribuinte ICMS:",
+            "mainOccupation": "Ocupação Principal:",
+            "cnaeActivity": "Atividade CNAF:"
+          }
+        },
+        "adresses-data": {
+          "title": "Endereços",
+          "type-billing": "Cobrança",
+          "type-invoice": "Faturamento",
+          "type-delivery": "Entrega",
+          "fields": {
+            "address": "Rua",
+            "neighborhood": "Bairro",
+            "zipCode": "CEP",
+            "city": "Cidade",
+            "state": "Estado",
+            "country": "Pais",
+            "number": "Numero",
+            "complement": "Complemento"
+          },
+          "placeholder": {
+            "address": "Rua",
+            "neighborhood": "Bairro",
+            "zipCode": "CEP",
+            "city": "Cidade",
+            "state": "Estado",
+            "country": "Pais",
+            "number": "Numero",
+            "complement": "Complemento"
+          }
+        },
+        "contact-data": {
+          "title": "Dados do Contato",
+          "fields": {
+            "contactName": "Nome",
+            "contactEmail": "E-mail",
+            "contactPhone": "Telefone",
+            "observation": "Observação"
+          },
+          "placeholder": {
+            "contactName": "Nome",
+            "contactEmail": "E-mail",
+            "contactPhone": "Telefone",
+            "observation": "Observação"
+          }
+        },
+        "bank-data": {
+          "title": "Dados Bancários",
+          "fields": {
+            "description": "Descrição:",
+            "bankNumber": "Banco:",
+            "bankAgencyName": "Nome Agência:",
+            "bankAgencyCode": "Nº Agência:",
+            "bankAgencyDigit": "Digito",
+            "accountType": "Tipo de conta:",
+            "bankAccountNumber": "Nº Conta",
+            "bankAccountDigit": "Digito",
+            "favored": "Favorecido:",
+            "cnpJ_CPF_Favored": "CNPJ/CPF favorecido:",
+            "pixKeyType": "Tipo de chave pix:",
+            "pixKey": "Chave pix:"
+          },
+          "placeholder": {
+            "description": "Descrição",
+            "banks": "Banco",
+            "agencyCode": "Código da agência",
+            "agencyDigit": "Digito",
+            "agencyName": "Nome da agência",
+            "accountType": "Tipo de conta",
+            "favored": "Favorecido",
+            "cnpJ_CPF_Favored": "CNPJ/CPF do favorecido",
+            "pixKeyType": "Tipo de chave pix",
+            "pixKey": "Chave pix",
+            "bankAccount": "Conta corrente"
+          }
+        }
+      },
+      "edit-page": {
+        "actions": {
+          "switch-button-text": "Considerar os mesmos dados de endereço de faturamento?",
+          "check-box-text": "Indicar dado Bancário como padrão",
+          "buttons": {
+            "new-banck-data": "+ Novos dados bancários",
+            "confirm": "Confirmar"
+          }
+        }
+      },
+      "generate-pdf-page": {
+        "title": "Vizualização da proposta",
+        "actions": {
+          "buttons": {
+            "cancel": "Cancelar",
+            "print": "Imprimir"
+          }
+        }
+      }
+    }
+  },
+  "network-messages": {
+    "title": {
+      "no-network": "Sem Rede!",
+      "access-denied": "Acesso Negado!",
+      "not-found": "Não encontrado!",
+      "internal-server-error": "Erro interno do servidor!"
+    },
+    "detail": {
+      "no-network": "Não é possível acessar o servidor.",
+      "access-denied": "Seu acesso não tem permissão para esta ação.",
+      "not-found": "O recurso de destino não pode ser encontrado."
+    },
+    "section": {
+      "expired": {
+        "title": "Seção Expirada.",
+        "detail": "A seção atual expirou o tempo de utilização."
+      }
+    },
+    "HttpErrorResponse": {
+      "title": "Falha Inesperada",
+      "message": "Ocorreu uma falha de comunição com o servidor."
+    }
+  },
+  "components": {
+    "dynamic-data-table": {
+      "toolbarTitle": "Lista de Negócios cadastrados",
+      "filter": {
+        "global": {
+          "label": "Buscar",
+          "placeholder": "Utilize o filtro global para buscar pelos campos: {{fields}}"
+        },
+        "columns": {
+          "label": "Buscar...",
+          "placeholder": "Digite para buscar..."
+        },
+        "tooltip": {
+          "iconSearchFilter": "Expandir/Retrair filtros",
+          "iconClearFilter": "Limpara campos de filtros"
+        }
+      },
+      "rowTooltip": "Clique duas vezes na linha para visualizar.",
+      "filter-no-record": "Nenhum registro retornado pela consulta.",
+      "no-record": "Nenhum registro encontrado...",
+      "paginator": {
+        "items_per_page_label": "Itens por página:",
+        "next_page_label": "Próxima página",
+        "previous_page_label": "Página anterior",
+        "first_page_label": "Primeira página",
+        "last_page_label": "Última página",
+        "range_page_label_1": "0 de {{length}}",
+        "range_page_label_2": "{{startIndex}} - {{endIndex}} de {{length}}"
+      }
+    },
+    "dynamic-panel-body": {
+      "pages": {
+        "oportunity-crm": {
+          "list": {
+            "title": "",
+            "subTitle": ""
+          },
+          "add": {
+            "title": "",
+            "subTitle": ""
+          },
+          "edit": {
+            "title": "",
+            "subTitle": ""
+          }
+        },
+        "business": {
+          "list": {
+            "title": "",
+            "subTitle": ""
+          },
+          "add": {
+            "title": "",
+            "subTitle": ""
+          },
+          "edit": {
+            "title": "",
+            "subTitle": ""
+          }
+        },
+        "shipping": {
+          "list": {
+            "title": "",
+            "subTitle": ""
+          },
+          "add": {
+            "title": "",
+            "subTitle": ""
+          },
+          "edit": {
+            "title": "",
+            "subTitle": ""
+          }
+        },
+        "proposal": {
+          "list": {
+            "title": "",
+            "subTitle": ""
+          },
+          "add": {
+            "title": "",
+            "subTitle": ""
+          },
+          "edit": {
+            "title": "",
+            "subTitle": ""
+          }
+        },
+        "tic": {
+          "list": {
+            "title": "",
+            "subTitle": ""
+          },
+          "add": {
+            "title": "",
+            "subTitle": ""
+          },
+          "edit": {
+            "title": "",
+            "subTitle": ""
+          }
+        }
+      }
+    },
+    "mat-select": {
+      "select": "Selecione...",
+      "search": {
+        "label": "Buscar...",
+        "placeholder": "Digite para localizar...",
+        "item-not-found": "Item não encontrado."
+      },
+      "no-item": "Nenhum",
+      "loading": "Carregando..."
+    }
+  },
+  "auxiliaryDataTables": {
+    "probability": {
+      "high": "Alta",
+      "average": "Média",
+      "low": "Baixa",
+      "null": "Nula"
+    }
+  },
+  "configurations": {
+    "enums": {
+      "month": {
+        "january": "Janeiro",
+        "february": "Fevereiro",
+        "march": "Março",
+        "april": "Abril",
+        "may": "Maio",
+        "june": "Junho",
+        "july": "Julho",
+        "august": "Agosto",
+        "september": "Setembro",
+        "october": "Outubro",
+        "november": "Novembro",
+        "december": "Dezembro"
+      },
+      "buildingsComplementaryVentilationSense": {
+        "ridge": "Cumeeira",
+        "bobbinSense": "Sentido da bobina"
+      },
+      "businessSoldTypeValueCodeEnum": {
+        "matProductsMarko": "Produtos Marko",
+        "matThirdsResale": "Terceiros Reserva",
+        "matThirdsDirectInvoice": "Terceiros Faturamento Direto",
+        "servProjects": "Projetos",
+        "servManagement": "Gerenciamento",
+        "servServicesAssembly": "Serviços Montagem",
+        "servFundsInGeneral": "Verbas em Geral",
+        "servContributionMargin": "Margem Contribuição",
+        "servCommission": "Comissão",
+        "servTaxes": "Impostos"
+      },
+      "businessSoldStatusEnum": {
+        "completed": "Concluindo",
+        "pendingDirectorApproval1": "Pendente 1° Aprovação do Diretor",
+        "pendingDirectorApproval2": "Pendente 2° Aprovação do Diretor",
+        "notApprovedByDirector1": "Reprovação 1° Diretor",
+        "notApprovedByDirector2": "Reprovação 2° Diretor",
+        "generalCommunicationDispatched": "Envio de Comunicação"
+      },
+      "executiveSummaryPhaseCodeEnum": {
+        "empty": "Vazio",
+        "budget": "Orçamento",
+        "sale": "Venda",
+        "planning": "Plnejamento",
+        "execution": "Execução"
+      },
+      "proposal": {
+        "proposal-pay-periodicity": {
+          "monthly": "Mensal",
+          "biweekly": "Quinzenal",
+          "weekly": "Semanal"
+        },
+        "businessSoldStatusTypeCodeEnum": {
+          "completed": "Concluído",
+          "pendingDirectorApproval1": "Pendente aprovação do diretor 1",
+          "pendingDirectorApproval2": "Pendente aprovação do diretor 2",
+          "notApprovedByDirector1": " Não Aprovado pelo Diretor 1",
+          "notApprovedByDirector2": "Não Aprovado pelo Diretor 2",
+          "generalCommunicationDispatched": "Despachada pela comunicação geral"
+        },
+        "proposalSourceCode": {
+          "material": "Material",
+          "service": "Serviço"
+        }
+      }
+    },
+    "currencySymbol": "R$",
+    "valueNotFound": "Nenhum valor informado."
+  },
+  "default_validators": {
+    "field_required": "Campo obrigatório."
+  },
+  "common": {
+    "buttons": {
+      "export-to-excel": "Exportar para Excel",
+      "export-to-pdf": "Exportar para PDF",
+      "default_cancel": "Cancelar",
+      "default_save": "Salvar",
+      "default_edit": "Editar",
+      "default_confirm": "Confirmar",
+      "default_include": "Incluir",
+      "default_approve": "Aprovar",
+      "default_repprove": "Reprovar"
+    }
+  },
+  "alertsMessages": {
+    "appRelease": {
+      "title": "Nova versão",
+      "message": "Foi disponibilizada uma nova versão do sistema. <br>Clique em \"Atualizar Página\" para recarregar a página e atualizar o sistema.",
+      "actionButton": "Atualizar Página"
+    },
+    "accessDenied": {
+      "title": "ATENÇÃO!!!",
+      "message": "Você não tem permissão de acesso a esta funcionalidade do sistema!"
+    },
+    "userOverride": {
+      "title": "Alerta"
+    },
+    "default_success_title": "Sucesso",
+    "default_registration_successfully_added": "Registro incluido com sucesso",
+    "default_registration_successfully_edited": "Registro alterado com sucesso",
+    "default_success_desc": "Operação realizada com sucesso",
+    "default_error_title": "Error",
+    "default_info_title": "Informação",
+    "default_warning_title": "Atenção",
+    "default_erro_0_title": "Erro - Sem Acesso",
+    "default_error_0_msg": "Não é possível acessar o servidor. <br>Por favor, verifique sua conexão.",
+    "default_erro_400_title": "Erro 400",
+    "default_error_400_msg": "Ocorreu um erro de processamento no servidor. <br>Por favor, contate o suport e informe o código.",
+    "default_erro_401_title": "Erro 401",
+    "default_error_401_msg": "Você não esta autorizado. <br>Por favor, contate o suport e informe o código.",
+    "default_erro_403_title": "Erro 403",
+    "default_error_403_msg": "Ocorreu um erro de processamento no servidor. <br>Por favor, contate o suport e informe o código.",
+    "default_erro_404_title": "Erro 404",
+    "default_error_404_msg": "O recurso solicitado não pôde ser encontrado. <br>Por favor, contate o suport e informe o código.",
+    "default_erro_407_title": "Erro 407",
+    "default_error_407_msg": "Ocorreu um erro de processamento no servidor. <br>Por favor, contate o suport e informe o código.",
+    "default_erro_408_title": "Erro 408",
+    "default_error_408_msg": "O servidor expirou aguardando o pedido. <br>Por favor, contate o suport e informe o código.",
+    "default_erro_500_title": "Erro Code: 500",
+    "default_error_500_msg": "Ocorreu um erro de processamento no servidor. Por favor, contate o suport e informe o código.",
+    "default_erro_502_title": "Erro 502",
+    "default_error_502_msg": "Ocorreu um erro de processamento no servidor. <br>Por favor, contate o suport e informe o código.",
+    "default_erro_503_title": "Erro 503",
+    "default_error_503_msg": "Ocorreu um erro de processamento no servidor. <br>Por favor, contate o suport e informe o código.",
+    "default_erro_504_title": "Erro 504",
+    "default_error_504_msg": "Ocorreu um erro de processamento no servidor. <br>Por favor, contate o suport e informe o código.",
+    "default_erro_511_title": "Erro 511",
+    "default_error_511_msg": "Ocorreu um erro de processamento no servidor. <br>Por favor, contate o suport e informe o código.",
+    "default_erro_599_title": "Erro 599",
+    "default_error_599_msg": "O cliente precisa autenticar para obter acesso à rede. <br>Por favor, contate o suport e informe o código."
+  }
+}

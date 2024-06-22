@@ -1,0 +1,57 @@
+.app-overlay-container:empty {
+  display: none !important;
+}
+
+.cdk-overlay-container {
+  z-index: 1040 !important;
+  .cdk-global-overlay-wrapper .cdk-overlay-pane {
+    position: relative !important;
+    // max-height: 60vw!important;
+  }
+}
+
+// .mat-dialog-container {
+//   padding: 24px 5px 5px !important;
+//   max-height: 40vw!important;
+//   min-width: 40vw;
+//   max-width: 65vw;
+// }
+
+// // .mat-dialog-container {
+// //   width: 65vw !important;
+// //   padding: 24px 0 0!important;
+// //   max-width: 65vw !important;
+// //   // max-height: 90vh !important;
+// //   overflow: hidden !important;
+// //   .container {
+// //     min-height: 50vw !important;
+// //     // max-height: 75vh !important;
+// //     overflow-y: auto !important;
+// //     overflow-x: hidden !important;
+// //     padding: 20px 0 0 0 !important;
+// //     .mat-dialog-container {
+// //       padding: 0 !important;
+// //     }
+// //     .mat-dialog-content {
+// //       margin: 0 !important;
+// //       padding: 0 !important;
+// //       .mat-horizontal-content-container {
+// //         overflow: hidden!important;
+// //         padding: 0 24px 0 24px;
+// //         .card-body {
+// //           padding-bottom: 20px;
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+// // .mat-dialog-actions {
+// //   padding: 8px 0;
+// //   display: flex;
+// //   flex-wrap: wrap;
+// //   min-height: 52px;
+// //   align-items: center;
+// //   box-sizing: content-box;
+// //   margin-bottom: 0;
+// // }

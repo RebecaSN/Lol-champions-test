@@ -1,0 +1,23 @@
+app-dynamic-panel-body {
+  margin-top: 0!important;
+}
+
+.mat-card {
+  height: calc(100vh - 135px)!important;
+  overflow: auto;
+}
+
+.footer{
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  margin-left: -31px !important;
+  padding: 0 !important;
+
+  .site{
+    margin-left: 50px;
+  }
+  a{
+    color: black;
+  }
+}

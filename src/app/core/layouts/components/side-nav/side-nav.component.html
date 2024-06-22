@@ -1,0 +1,68 @@
+<div class="logo">
+  <a href="#" class="simple-text logo-normal">
+    <img src="assets/images/logo-small.png" alt="" />
+  </a>
+
+</div>
+<div class="sidebar-wrapper">
+  <ul class="nav">
+    <li routerLinkActive="active">
+      <a class="link" [routerLink]="['/home']">
+        <mat-icon fontSet="fa" fontIcon="fa-home" fxLayoutAlign="start center"></mat-icon>
+        <p>Home</p>
+      </a>
+    </li>
+
+    <li routerLinkActive="active">
+      <a class="link" [routerLink]="['/champions-list']">
+        <mat-icon fontSet="fa" fontIcon="fa-id-card-o" fxLayoutAlign="start center"></mat-icon>
+        <p>Champions - List</p>
+      </a>
+    </li>
+
+  </ul>
+</div>
+
+
+<!-- <mat-sidenav-container class="my-sidebar" [ngClass]="{'collapsed': !isExpanded}">
+  <mat-sidenav #sidenav mode="side" opened="isExpanded" class="my-sidebar" [@expandCollapse]="isExpanded ? 'expanded' : 'collapsed'">
+    <div class="logo">
+      <a href="#" class="simple-text logo-normal">
+        <img *ngIf="isExpanded" class="logo-complete" src="/src/assets/images/logo.png" alt="" />
+        <p *ngIf="isExpanded" [@fadeInOut]="isExpanded ? 'in' : 'out'">{{ 'layouts.sideNav.systemName' | translate }}</p>
+        <img *ngIf="!isExpanded" class="logo-small" src="/src/assets/images/logo-small.png" alt="" />
+      </a>
+    </div>
+
+    <mat-nav-list class="my-sidebar sidebar-wrapper">
+      <mat-list-item class="meu-link" (click)="isExpanded = !isExpanded">
+        <mat-icon *ngIf="!isExpanded" class="chevron-button red">chevron_right</mat-icon>
+        <mat-icon *ngIf="isExpanded" class="chevron-button red">chevron_left</mat-icon>
+      </mat-list-item>
+
+      <div class="sidebar-wrapper">
+        <div class="nav">
+          <mat-list-item class="meu-link" routerLinkActive="active" [routerLink]="['/home']" [ngClass]="{ 'collapse-icons': !isExpanded }">
+            <a class="link">
+              <mat-icon fontSet="fa" class="menu-icon">home</mat-icon>
+              <span *ngIf="isExpanded" class="menu-item">Página Inicial</span>
+            </a>
+          </mat-list-item>
+
+          <mat-list-item class="meu-link" routerLinkActive="active" [routerLink]="['/champions-list']" [ngClass]="{ 'collapse-icons': !isExpanded }">
+            <a class="link">
+              <mat-icon fontSet="fa" class="menu-icon">list</mat-icon>
+              <span *ngIf="isExpanded" class="menu-item">Lista de Campeões</span>
+            </a>
+          </mat-list-item>
+        </div>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container> -->

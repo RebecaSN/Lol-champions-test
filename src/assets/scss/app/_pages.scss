@@ -1,0 +1,632 @@
+$background-layout: #a80404;
+$mat-ripple: #a804046b;
+$primaryButtonColor: #18746e;
+$matDialogTitle: #7c5656; //#543232;
+$matIconColorTrash: $background-layout;
+$matIconColorPrimary: $primaryButtonColor;
+// .mat-dialog-container {
+//   // min-width: 30vw;
+//   font-size: 12px !important;
+
+  .mat-form-field-appearance-outline {
+    .mat-form-field-prefix,
+    .mat-form-field-suffix {
+      top: 0em !important;
+    }
+  }
+  .mat-form-field-appearance-outline.mat-form-field-disabled {
+    .mat-form-field-wrapper {
+      .mat-form-field-flex {
+        .mat-form-field-outline {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+  // }
+
+  .mat-form-field-appearance-outline .mat-select-arrow-wrapper {
+    transform: translateY(-5%) !important;
+  }
+
+  .mat-form-field-type-mat-select,
+  .mat-form-field-type-mat-input {
+    &.mat-form-field-appearance-outline {
+      .mat-form-field-outline {
+        color: rgb(107, 155, 218) !important;
+        height: 35px;
+      }
+      &.mat-form-field-invalid {
+        &.mat-form-field-invalid {
+          .mat-form-field-outline-thick {
+            color: #f44336 !important;
+          }
+        }
+      }
+      .mat-form-field-infix {
+        padding: 0.4em 0 0.6em 0;
+
+        .mat-form-field-label-wrapper {
+          top: -1.2em;
+          padding-top: 1.1em;
+        }
+      }
+      .mat-form-field-wrapper {
+        margin: 0.25em 0 0.35em;
+        .mat-form-field-subscript-wrapper {
+          font-size: 75%;
+          margin-top: 0.5em;
+          top: calc(100% - 1.7916666667em);
+        }
+      }
+      .mat-form-field-suffix {
+        // top: -0.05em;
+        font-size: 10px;
+      }
+    }
+  }
+
+  app-proposals-commercial-edit,
+  app-proposal-budget-view,
+  app-edit-proposal,
+  lib-sales-form,
+  lib-edit-sales-form,
+  app-edit-proposal,
+  app-generate-pdf,
+  terms-accepted-dialog,
+  app-edit-register {
+    .mat-dialog-content
+      .topFormField
+      .mat-form-field-type-mat-input.mat-form-field-appearance-outline
+      .mat-form-field-wrapper,
+    .mat-dialog-content
+      mat-dialog-actions
+      .mat-form-field-type-mat-select.mat-form-field-appearance-outline
+      .mat-form-field-wrapper {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  .mat-dialog-container .mat-form-field-type-mat-select.mat-form-field-appearance-outline .mat-form-field-wrapper
+
+
+  app-edit-register,
+  app-generate-pdf,
+  terms-accepted-dialog{
+    .mat-raised-button {
+      font-size: 12px;
+    }
+    .mat-form-field-appearance-outline {
+      .mat-form-field-prefix,
+      .mat-form-field-suffix {
+        top: 0em !important;
+      }
+    }
+    .mat-form-field-appearance-outline.mat-form-field-disabled {
+      .mat-form-field-wrapper {
+        .mat-form-field-flex {
+          .mat-form-field-outline {
+            background-color: #f1f1f1;
+          }
+        }
+      }
+    }
+
+    .mat-form-field-appearance-outline .mat-select-arrow-wrapper {
+      transform: translateY(-5%) !important;
+    }
+
+    .mat-form-field-type-mat-select,
+    .mat-form-field-type-mat-input {
+      &.mat-form-field-appearance-outline {
+        .mat-form-field-outline {
+          color: rgb(107, 155, 218) !important;
+          height: 35px;
+        }
+        &.mat-form-field-invalid {
+          &.mat-form-field-invalid {
+            .mat-form-field-outline-thick {
+              color: #f44336 !important;
+            }
+          }
+        }
+        .mat-form-field-infix {
+          padding: 0.4em 0 0.6em 0;
+
+          .mat-form-field-label-wrapper {
+            top: -1.2em;
+            padding-top: 1.1em;
+          }
+        }
+        .mat-form-field-wrapper {
+          margin: 0.25em 0 0.35em;
+          .mat-form-field-subscript-wrapper {
+            font-size: 75%;
+            margin-top: 0.5em;
+            // top: 100% // calc(100% - 1.7916666667em);
+          }
+        }
+        .mat-form-field-suffix {
+          // top: -0.05em;
+          font-size: 10px;
+        }
+      }
+    }
+    /* ------------- CSS do titulo do modal caso queira colocar cor ------------- */
+    [mat-dialog-title] {
+      margin: -24px -24px 0px -24px !important;
+      padding: 15px 20px;
+      background: $matDialogTitle;
+      color: #fff;
+      // cursor: move;
+    }
+
+    .mat-dialog-content {
+      border-bottom: 1px #ddd solid;
+      border-top: 1px #ddd solid;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      .mat-icon-button {
+        .mat-icon {
+          color: $matIconColorPrimary; //rgb(0, 63, 238);
+          &.fa {
+            font-size: 25px;
+          }
+
+          &.trash {
+            color: $matIconColorTrash !important;
+          }
+
+          &.buttonPrimary {
+            color: $matIconColorPrimary !important;
+          }
+        }
+      }
+
+      // .mat-icon {
+      //   display: flex;
+      //   flex-direction: row;
+      //   flex-wrap: nowrap;
+      //   align-content: center;
+      //   justify-content: center;
+      //   align-items: center;
+      // }
+
+      /* ------------- Customizing the height of form-field components ------------ */
+
+
+
+      .mat-checkbox-indeterminate.mat-primary .mat-checkbox-background,
+      .mat-checkbox-checked.mat-primary .mat-checkbox-background {
+        background-color: $primaryButtonColor !important;
+      }
+      .mat-card {
+        padding: 0 !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .mat-tab-group {
+          .mat-tab-list {
+            .mat-tab-labels {
+              .mat-tab-label {
+                color: #b1b1b1;
+                height: 40px !important;
+                .mat-tab-label-content {
+                  flex-wrap: wrap !important;
+                  span {
+                    font-size: 12px;
+                    display: flex !important;
+                    flex: 1 0 100% !important;
+                    justify-content: center !important;
+                    &.tab-label-subTitle {
+                      font-size: 10px;
+                    }
+                  }
+                }
+              }
+              .mat-tab-label-active {
+                color: #7e1818;
+                background-color: #f3b2b28c;
+                font-size: 12px;
+                font-weight: 600;
+              }
+            }
+
+            .mat-ink-bar {
+              background-color: #b34040 !important;
+            }
+          }
+          .mat-tab-body {
+            padding: 0px !important;
+            .title {
+              color: #003fee;
+              text-align: center;
+              margin-bottom: 15px;
+            }
+            .tab-body {
+              padding-top: 5px;
+            }
+            .mat-tab-body-content {
+              padding: 10px 10px 5px !important;
+              .mat-card {
+                .mat-card-content {
+                  padding: 15px 10px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .mat-tab-label,
+      .mat-tab-link,
+      .mat-card-subtitle,
+      .mat-card-content {
+        font-size: 12px;
+      }
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-primary
+      .mat-ripple-element,
+    .mat-checkbox:active:not(.mat-checkbox-disabled).mat-primary
+      .mat-ripple-element {
+      background: $primaryButtonColor !important;
+    }
+
+    .mat-ripple-element {
+      background-color: $mat-ripple !important;
+    }
+
+    .mat-checkbox-indeterminate.mat-primary .mat-checkbox-background,
+    .mat-checkbox-checked.mat-primary .mat-checkbox-background {
+      background-color: $primaryButtonColor !important;
+    }
+  }
+
+
+  app-edit-register,
+  app-edit-proposal,
+  app-generate-pdf,
+  terms-accepted-dialog {
+    @media only screen and (min-height: 415px) {
+      .mat-dialog-content {
+        min-height: 75vh !important;
+      }
+
+      .mat-tab-body {
+        min-height: 40vh !important;
+      }
+    }
+
+    @media only screen and (min-height: 769px) {
+      .mat-dialog-content {
+        min-height: 80vh !important;
+      }
+
+      .mat-tab-body {
+        min-height: 58vh !important;
+      }
+    }
+
+    @media only screen and (min-height: 992px) {
+      .mat-dialog-content {
+        min-height: 80vh !important;
+      }
+
+      .mat-tab-body {
+        min-height: 58vh !important;
+      }
+    }
+  }
+
+  app-disapproved-modal {
+    [mat-dialog-title] {
+      background: #d60 !important;
+    }
+  }
+
+  app-approve-modal {
+    [mat-dialog-title] {
+      background: rgb(30, 122, 118) !important;
+    }
+  }
+
+  app-edit-proposal{
+    form {
+      width: 70vw;
+    }
+  }
+
+  app-search-network-view {
+    form {
+      width: 60vw;
+    }
+  }
+
+  edit-app-tics-commission-form-component {
+    form {
+      width: 40vw;
+    }
+  }
+}
+
+app-generate-business {
+  form {
+    width: 25vw;
+  }
+}
+
+edit-app-tics-commission-form-component {
+  .container {
+    max-height: calc(100vh - 250px) !important;
+  }
+}
+
+app-proposal-commercial-view {
+  .container {
+    min-height: calc(100vh - 150px) !important;
+  }
+}
+
+.mat-dialog-container {
+  app-business-form-sales-ict,
+  app-generate-pdf,
+  app-technical-wo-log-robim,
+  terms-accepted-dialog {
+    .mat-dialog-content {
+      padding: 0 !important;
+      .container {
+        margin-top: 15px !important;
+      }
+      .mat-card {
+        margin: 0 !important;
+        .mat-tab-group {
+          .mat-tab-body {
+            padding: 0 !important;
+            .mat-tab-body-content {
+              padding: 10px;
+              .mat-card {
+                margin-top: 10px !important;
+                // margin-bottom: 10px!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+app-edit-proposal,
+app-disapproved-modal,
+app-approve-modal,
+app-generate-pdf{
+  .mat-raised-button {
+    font-size: 12px;
+  }
+  /* ------------- CSS do titulo do modal caso queira colocar cor ------------- */
+  [mat-dialog-title] {
+    margin: -24px -24px 0px -24px !important;
+    padding: 15px 20px;
+    background: $matDialogTitle;
+    color: #fff;
+    // cursor: move;
+  }
+
+  .mat-dialog-content {
+    border-bottom: 1px #ddd solid;
+    border-top: 1px #ddd solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .mat-icon-button {
+      .mat-icon {
+        color: $matIconColorPrimary; //rgb(0, 63, 238);
+        &.fa {
+          font-size: 25px;
+        }
+
+        &.trash {
+          color: $matIconColorTrash !important;
+        }
+
+        &.buttonPrimary {
+          color: $matIconColorPrimary !important;
+        }
+      }
+    }
+
+    // .mat-icon {
+    //   display: flex;
+    //   flex-direction: row;
+    //   flex-wrap: nowrap;
+    //   align-content: center;
+    //   justify-content: center;
+    //   align-items: center;
+    // }
+
+    /* ------------- Customizing the height of form-field components ------------ */
+
+    .mat-form-field-appearance-outline {
+      .mat-form-field-prefix,
+      .mat-form-field-suffix {
+        top: 0em !important;
+      }
+    }
+    .mat-form-field-appearance-outline.mat-form-field-disabled {
+      .mat-form-field-wrapper {
+        .mat-form-field-flex {
+          .mat-form-field-outline {
+            background-color: #f1f1f1;
+          }
+        }
+      }
+    }
+
+    .mat-form-field-appearance-outline .mat-select-arrow-wrapper {
+      transform: translateY(-5%) !important;
+    }
+
+    .mat-form-field-type-mat-select,
+    .mat-form-field-type-mat-input {
+      &.mat-form-field-appearance-outline {
+        .mat-form-field-outline {
+          color: rgb(107, 155, 218) !important;
+          height: 35px;
+        }
+        &.mat-form-field-invalid {
+          &.mat-form-field-invalid {
+            .mat-form-field-outline-thick {
+              color: #f44336 !important;
+            }
+          }
+        }
+        .mat-form-field-infix {
+          padding: 0.4em 0 0.6em 0;
+
+          .mat-form-field-label-wrapper {
+            top: -1.2em;
+            padding-top: 1.1em;
+          }
+        }
+        .mat-form-field-wrapper {
+          margin: 0.25em 0 0.35em;
+          .mat-form-field-subscript-wrapper {
+            font-size: 75%;
+            margin-top: 0.8em;
+            // top: 100% // calc(100% - 1.7916666667em);
+          }
+        }
+        .mat-form-field-suffix {
+          // top: -0.05em;
+          font-size: 10px;
+        }
+      }
+    }
+
+    .mat-checkbox-indeterminate.mat-primary .mat-checkbox-background,
+    .mat-checkbox-checked.mat-primary .mat-checkbox-background {
+      background-color: $primaryButtonColor !important;
+    }
+
+    .mat-card {
+      padding: 0 !important;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .mat-tab-group {
+        .mat-tab-list {
+          .mat-tab-labels {
+            .mat-tab-label {
+              color: #b1b1b1;
+              height: 40px !important;
+              .mat-tab-label-content {
+                flex-wrap: wrap !important;
+                span {
+                  font-size: 12px;
+                  display: flex !important;
+                  flex: 1 0 100% !important;
+                  justify-content: center !important;
+                  &.tab-label-subTitle {
+                    font-size: 10px;
+                  }
+                }
+              }
+            }
+            .mat-tab-label-active {
+              color: #7e1818!important;
+              background-color: #f3b2b28c!important;
+              font-size: 12px;
+              font-weight: 600;
+            }
+          }
+
+          .mat-ink-bar {
+            background-color: #b34040 !important;
+          }
+        }
+        .mat-tab-body {
+          padding: 0px !important;
+          .title {
+            color: #003fee;
+            text-align: center;
+            margin-bottom: 15px;
+          }
+          .tab-body {
+            padding-top: 5px;
+          }
+          .mat-tab-body-content {
+            padding: 10px 10px 5px !important;
+            .mat-card {
+              .mat-card-content {
+                padding: 15px 10px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .mat-tab-label,
+    .mat-tab-link,
+    .mat-card-subtitle,
+    .mat-card-content {
+      font-size: 12px;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-primary
+    .mat-ripple-element,
+  .mat-checkbox:active:not(.mat-checkbox-disabled).mat-primary
+    .mat-ripple-element {
+    background: $primaryButtonColor !important;
+  }
+
+  .mat-ripple-element {
+    background-color: $mat-ripple !important;
+  }
+
+  .mat-checkbox-indeterminate.mat-primary .mat-checkbox-background,
+  .mat-checkbox-checked.mat-primary .mat-checkbox-background {
+    background-color: $primaryButtonColor !important;
+  }
+}
+app-edit-proposal,
+app-generate-pdf  {
+  form {
+    width: 70vw;
+  }
+}
+// /* --------------------- Select component loading style --------------------- */
+// app-add,
+// app-edit,
+// app-probability,
+// app-area,
+// app-involved,
+// app-consult-redundancy,
+// app-business-canceled,
+// app-business-sold-closed {
+//   .mat-option {
+//     /* used for both internal and external spinner versions */
+//     .deferred-select-placeholder-container {
+//       display: flex;
+//       align-items: center;
+//     }
+
+//     /* used for both internal and external spinner versions */
+//     .deferred-select-placeholder-container > span {
+//       flex: 1;
+//     }
+
+//     /* only needed if using internal loading spinner */
+//     ::ng-deep .hide-deferred-select-dummy-option {
+//       display: none !important;
+//     }
+//   }
+// }

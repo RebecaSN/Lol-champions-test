@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+@import "~font-awesome/css/font-awesome.css";
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~ngx-toastr/toastr.css";
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";
+
+@import "./assets/scss/custom/dialog";
+@import "./assets/scss/custom/button";
+@import "./assets/scss/custom/slide";
+@import "./assets/scss/custom/stepper";
+@import "./assets/scss/custom/toolbar";
+@import "./assets/scss/custom/toastr";
+@import "./assets/scss/custom/tab";
+@import "./assets/scss/mix";
+
+@import "./assets/scss/app/pages";
+

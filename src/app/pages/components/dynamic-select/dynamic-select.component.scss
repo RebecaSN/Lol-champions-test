@@ -1,0 +1,84 @@
+form {
+  width: 100% !important;
+}
+/* used for both internal and external spinner versions */
+.deferred-select-placeholder-container {
+  display: flex;
+  align-items: center;
+}
+
+/* used for both internal and external spinner versions */
+.deferred-select-placeholder-container > span {
+  flex: 1;
+}
+
+/* only needed if using internal loading spinner */
+::ng-deep .hide-deferred-select-dummy-option {
+  display: none !important;
+}
+
+$blue-10: #008cff;
+.search-input {
+  border: none !important;
+  outline: none !important;
+  margin-left: 5px;
+}
+
+.new-select-design {
+  padding: 0 !important;
+}
+
+.se-search {
+  color: $blue-10;
+  font-size: 12px;
+}
+
+ngk-icon {
+  cursor: pointer;
+  fill: rgba(0, 0, 0, 0.54);
+}
+
+.no-results {
+  display: block;
+  line-height: 1;
+  font-size: 12px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.mat-select-panel {
+  max-width: 100%!important;
+}
+
+.search-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #bfbfbf;
+
+  .ngk-search-icon,
+  .se-search {
+    margin-right: 10px;
+    margin-left: -16px;
+  }
+
+  .ngk-clear-icon {
+    align-self: flex-end;
+    margin-right: -16px;
+  }
+
+  .clear-icon {
+    cursor: pointer;
+  }
+
+  .mat-icon {
+    height: 20px;
+    width: 20px;
+  }
+  .material-icons {
+    font-size: 20px;
+  }
+}
+
+

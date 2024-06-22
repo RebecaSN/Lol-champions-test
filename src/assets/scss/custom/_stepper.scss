@@ -1,0 +1,18 @@
+.mat-horizontal-stepper-header {
+  height: 45px !important;
+}
+
+.mat-step-header .mat-step-icon-state-done,
+.mat-step-icon .mat-step-icon-state-done {
+  background-color: green !important;
+}
+
+.container {
+  .mat-stepper-horizontal {
+    .mat-horizontal-content-container {
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      padding: 0px 15px 0 !important;
+    }
+  }
+}
