@@ -1,15 +1,11 @@
 <div class="main-content">
   <section class="dash-row">
-    <mat-card>
-
-      <mat-card-title *ngIf="title"> {{titleLabel}} </mat-card-title>
-      <mat-card-subtitle *ngIf="subTitle">{{subTitleLabel}}</mat-card-subtitle>
+    <mat-card [ngStyle]="showBackground ? {'background-image': 'url(' + backgroundImage + ')', 'background-size': 'cover', 'background-position': 'center'} : {}">
+      <mat-card-title *ngIf="titleLabel">{{titleLabel}}</mat-card-title>
+      <mat-card-subtitle *ngIf="subTitleLabel">{{subTitleLabel}}</mat-card-subtitle>
       <mat-card-content>
-
         <ng-content></ng-content>
-
       </mat-card-content>
     </mat-card>
-
   </section>
 </div>

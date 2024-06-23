@@ -5,17 +5,55 @@
     </div>
   </div>
 
-  <app-dynamic-panel-body [title]="true" [titleLabel]="'Avisos'">
-    <!-- <mat-divider></mat-divider><br> -->
+  <app-dynamic-panel-body [title]="true" [titleLabel]="''" [showBackground]="true"
+    [backgroundImage]="'assets/images/background.jpg'">
 
-    <div fxLayout="row" fxLayoutAlign="center" class="dynamic-data-table">
-      <div fxFlex="97" class="ajust-border">
+    <div fxLayout="row" fxLayoutAlign="center" class="center-card">
+      <div fxFlex="80" class="main-content">
+        <div fxLayout="column" fyLayoutGap="10px" fxLayoutAlign="center" >
+          <div fxFlex="50">
+            <div fxLayout="column">
+              <div fxFlex="50" style="margin-top: 30px;">
+                <div fxLayout="row" fxLayoutAlign="center">
+                  <div fxFlex="50"> <h3 class="text-ajust">Explore the World of League of Legends!</h3>
+                  </div>
+                </div>
+              </div>
 
+              <div fxFlex="50">
+                <span class="text-ajust description">Discover the most iconic <span class="text-right-light">champions and summoner spells </span> in League of Legends.
+                  <span class="text-right-light">Explore our comprehensive list of champions</span> and learn about the <span class="text-right-light">powerful spells</span>
+                  available to dominate the battlefield. Take the first step on your journey to become a
+                  master summoner!</span>
+              </div>
+            </div>
+          </div>
 
+          <div fxFlex="50">
+            <div class="container">
+              <mat-card class="card" routerLink="/champions-list">
+                <div class="card-background" style="background-image: url('assets/images/lol-campions.jpg');">
+                  <div class="overlay">
+                    <h2>Champion List</h2>
+                    <p>Explore the complete list of champions in League of Legends</p>
+                  </div>
+                </div>
+              </mat-card>
+
+              <mat-card class="card" routerLink="/summoner-list">
+                <img src="assets/images/summon.png" alt="Imagem de Feitiços de Invocador">
+                <div class="overlay">
+                  <h2>Summoner Spells</h2>
+                  <p>Discover the summoner spells available in the game</p>
+
+                </div>
+              </mat-card>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- <mat-divider class="footer-divider"></mat-divider><br> -->
   </app-dynamic-panel-body>
 
 </div>

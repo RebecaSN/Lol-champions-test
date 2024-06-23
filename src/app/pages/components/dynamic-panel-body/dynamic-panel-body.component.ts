@@ -11,6 +11,8 @@ export class DynamicPanelBodyComponent implements OnInit {
   @Input() titleLabel: string = '';
   @Input() subTitle: boolean = false;
   @Input() subTitleLabel: string = '';
+  @Input() backgroundImage: string;
+  @Input() showBackground: boolean = true;
 
   constructor() { }
 
