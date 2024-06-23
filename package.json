@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:prod": "ng build --base-href=/portalcliente/ --prod --aot --output-hashing=bundles && npm run post-build",
-     "post-build": "node src/app/build/post-build.js"
+    "post-build": "node src/app/build/post-build.js"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +25,8 @@
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
     "@types/underscore": "^1.11.4",
+    "ag-grid-angular": "^24.1.0",
+    "ag-grid-community": "^24.1.0",
     "angular-animations": "^0.11.0",
     "angular-oauth2-oidc": "^10.0.3",
     "bootstrap": "^4.6.1",

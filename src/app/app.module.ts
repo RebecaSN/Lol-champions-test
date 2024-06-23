@@ -15,6 +15,7 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxUiLoaderConfig, NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
 import { IConfig, NgxMaskModule } from 'ngx-mask';
+import { AgGridModule } from 'ag-grid-angular';
 
 import { NgxCurrencyModule } from 'ngx-currency';
 import { registerLocaleData } from '@angular/common';
@@ -105,7 +106,8 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig =
     NgxUiLoaderHttpModule.forRoot({
       showForeground: true,
     }),
-    NgxCurrencyModule
+    NgxCurrencyModule,
+    AgGridModule
   ],
 
   bootstrap: [AppComponent],

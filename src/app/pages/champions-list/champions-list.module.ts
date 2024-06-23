@@ -6,6 +6,7 @@ import { AngularMaterialModule } from 'src/app/core/modules/angular-material/ang
 import { ChampionsListRoutes } from './champions-list.routing';
 import { DynamicPanelBodyModule } from '../components/dynamic-panel-body/dynamic-panel-body.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
     AngularMaterialModule,
     DynamicPanelBodyModule,
+    AgGridModule.withComponents([])
   ],
   declarations: [ChampionsListComponent]
 })
