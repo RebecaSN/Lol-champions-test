@@ -5,17 +5,26 @@
     </div>
   </div>
 
-  <app-dynamic-panel-body [title]="true" [titleLabel]="'Avisos'">
-    <div class="container">
-      <h1>Champions List</h1>
-      <ag-grid-angular
-        style="width: 100%; height: 500px;"
-        class="ag-theme-alpine"
-        [rowData]="champions"
-        [columnDefs]="columnDefs"
-        [defaultColDef]="{ sortable: true, filter: true }">
-      </ag-grid-angular>
-    </div>
-  </app-dynamic-panel-body>
+  <app-dynamic-panel-body [title]="true" [titleLabel]="''" [showBackground]="true"
+    [backgroundImage]="'assets/images/background.jpg'">
 
+    <div fxLayout="row" fxLayoutAlign="center" class="center-card">
+      <mat-card fxFlex="80" class="main-content">
+        <mat-card-content class="container">
+          <h3 class="text-ajust">Champions List</h3>
+          <ag-grid-angular
+            style="width: 100%; height: 500px;"
+            class="ag-theme-alpine"
+            [rowData]="championsList"
+            [columnDefs]="columnDefs"
+            [defaultColDef]="{ sortable: true, filter: true }">
+          </ag-grid-angular>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </app-dynamic-panel-body>
 </div>
+
+
+

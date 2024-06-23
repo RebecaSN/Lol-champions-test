@@ -11,7 +11,7 @@ import { NgxMaskModule } from 'ngx-mask';
   exports: [DynamicDataTableComponent],
   imports: [
     CommonModule,
-    BrowserAnimationsModule,
+    //BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
 

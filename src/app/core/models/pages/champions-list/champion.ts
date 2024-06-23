@@ -1,4 +1,4 @@
-import { SummonerSpell } from "./summonerSpell";
+import { SummonerSpell } from "../summoner-spells/summonerSpell";
 
 export interface Champion {
   id?: number;
@@ -10,7 +10,7 @@ export interface Champion {
 }
 
 export interface ChampionData {
-  type: string;
-  version: string;
-  data: { [key: string]: Champion };
+  type?: string;
+  version?: string;
+  data?: { [key: string]: Champion };
 }

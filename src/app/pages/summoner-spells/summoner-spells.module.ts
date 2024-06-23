@@ -5,6 +5,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularMaterialModule } from 'src/app/core/modules/angular-material/angular-material.module';
 import { DynamicPanelBodyModule } from '../components/dynamic-panel-body/dynamic-panel-body.module';
 import { SummonerSpellsComponent } from './summoner-spells.component';
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { SummonerSpellsComponent } from './summoner-spells.component';
 
     AngularMaterialModule,
     DynamicPanelBodyModule,
+    AgGridModule.withComponents([])
   ],
   declarations: [SummonerSpellsComponent]
 })
