@@ -33,7 +33,7 @@
     </div>
 
     <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="5px" fxLayoutAlign="center center">
-      <div fxFlex="33">
+      <div fxFlex="100">
         <!-- <app-dynamic-select
           [label]="'Champion Type'"
           [selectFormControl]="getFormControl('tags')"
@@ -45,6 +45,26 @@
           [isRequired]="false"
           [isDisabled]="false">
        </app-dynamic-select> -->
+
+       <!-- <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Champion Tags</mat-label>
+        <mat-select formControlName="tags" multiple>
+          <mat-option *ngFor="let champion of tagsData" [value]="champion.tags">
+            {{ champion.name }} Tags:
+            <span *ngFor="let tag of champion.tags">{{ tag }}</span>
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Champion Tags</mat-label>
+        <mat-select formControlName="tags" multiple>
+          <mat-option *ngFor="let tag of tagsData" [value]="tag.tags">
+            {{ tag.tags.join(', ') }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
       </div>
     </div>
 

@@ -14,24 +14,12 @@ export class EditChampionComponent implements OnInit {
   championsFormGroup:FormGroup;
 
   tagsData: TagData[] = [
-    { id: 1, tags: ['Fighter','Tank'] },
-    { id: 2, tags: ['Fighter','Assassin'] },
-    { id: 3, tags: ['Mage','Support'] },
+    { id: 1, tags: ['Tank'] },
+    { id: 2, tags: ['Fighter'] },
+    { id: 3, tags: ['Mage',] },
     { id: 4, tags: ['Assassin'] },
     { id: 5, tags: ['Marksman'] },
-    { id: 6, tags: ['Mage'] },
-    { id: 7, tags: ['Mage','Assassin'] },
-    { id: 8, tags: ['Support','Fighter'] },
     { id: 10, tags: ['Support'] },
-    { id: 11, tags: ['Mage','Marksman'] },
-    { id: 12, tags: ['Mage','Fighter'] },
-    { id: 13, tags: [ 'Tank'] },
-    { id: 14, tags: [ 'Tank','Mage'] },
-    { id: 15, tags: [ 'Marksman','Assassin'] },
-    { id: 16, tags: [ 'Marksman','Fighter'] },
-    { id: 17, tags: [ 'Marksman','Support'] },
-    { id: 18, tags: [ 'Tank','Support'] },
-    { id: 19, tags: [ 'Fighter'] },
   ];
 
   constructor(
@@ -52,7 +40,7 @@ export class EditChampionComponent implements OnInit {
     this.championsFormGroup = this.fb.group({
       title: objectData.title,
       name: objectData.name,
-     // tags:this.fb.array(objectData.tags),
+      tags:this.fb.control(objectData.tags),
     });
   }
 
