@@ -60,6 +60,10 @@ export class DynamicSelectComponent implements OnInit {
     }
   }
 
+  formatTags(tags: string[]): string {
+    return tags.join(', ');
+  }
+
   close(): void {
     if (this.isSearch)
       this.inputSearch = '';

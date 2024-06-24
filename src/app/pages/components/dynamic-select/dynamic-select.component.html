@@ -1,60 +1,7 @@
-<!-- Using -->
-<!--
-  <app-dynamic-select
-    [label]="'pages.business.add.fields.label.contractType'"
-    [selectFormControl]="contractType"
-    [optionsData]="contractTypesData"
-    [optionColumn]="['name']"
-    [isLoading]="true"
-    [isSearch]="true"
-    [plaseholderInputSearch]="'components.mat-select.search.placeholder'"
-    [isRequired]="false"
-    [isDisabled]="false">
-    <mat-error matErrors>{{ 'default_validators.field_required' | translate }}</mat-error>
-  </app-dynamic-select>
--->
-<!-- <mat-form-field class="full-width" [appearance]="appearance" fxFlex>
-  <mat-label *ngIf="isLabel">{{ label | translate }}</mat-label>
-  <mat-select
-    [compareWith]="compareWithFn"
-    [formControl]="selectFormControl"
-    (opened)="open()"
-    (closed)="close()"
-    [attr.disabled]="isDisabled"
-    [required]="isRequired"
-    placeholder="{{ label | translate }}">
-    <ng-container *ngIf="isSearch">
-      <div class="search-option">
-        <mat-icon class="search-icon" matPrefix aria-label="Search Icon">search</mat-icon>
-        <input matInput tabindex="-1" class="search-input" [(ngModel)]="inputSearch" #searchInput (keydown)="$event.stopPropagation()"
-          placeholder="{{ plaseholderInputSearch | translate }}" spellcheck="false" autocomplete="off">
-        <mat-icon *ngIf="searchInput?.value?.length > 0" matSuffix class="clear-icon" aria-label="Clear"
-          (click)="clear($event)">
-          clear
-        </mat-icon>
-      </div>
-    </ng-container>
-    <ng-container *ngIf="optionsData !== undefined; else loading">
-      <mat-option>-- {{ 'Nenhum' | translate }} --</mat-option>
-      <mat-option *ngFor="let option of optionsData | search : inputSearch : optionColumn" [value]="option">
-        {{ option[optionColumn[0]] | translate }} <span *ngIf="optionColumn.length > 1"> | {{ option[optionColumn[optionColumn.length > 1 ? 1 : 0]] | translate }}</span>
-      </mat-option>
-    </ng-container>
-    <ng-template #loading>
-      <mat-option disabled>
-        <div class="deferred-select-placeholder-container">
-          <span>{{ 'Loading' | translate }}</span>
-          <mat-spinner class="spinner" diameter="20"></mat-spinner>
-        </div>
-      </mat-option>
-    </ng-template>
-  </mat-select>
-  <mat-error *ngIf="isRequired && isErrorShow">
-    <ng-content select="[matErrors]"></ng-content>
-  </mat-error>
-</mat-form-field> -->
+<!-- app-dynamic-select.component.html -->
+
 <mat-form-field class="full-width" [appearance]="appearance" fxFlex>
-  <mat-label *ngIf="isLabel">{{ label | translate }}</mat-label>
+  <mat-label *ngIf="isLabel">{{ label }}</mat-label>
   <mat-select
     [compareWith]="compareWithFn"
     [formControl]="selectFormControl"
@@ -62,29 +9,28 @@
     (closed)="close()"
     [attr.disabled]="isDisabled"
     [required]="isRequired"
-    placeholder="{{ label | translate }}">
+    placeholder="{{ label }}">
     <ng-container *ngIf="isSearch">
       <div class="search-option">
         <mat-icon class="search-icon" matPrefix aria-label="Search Icon">search</mat-icon>
         <input matInput tabindex="-1" class="search-input" [(ngModel)]="inputSearch" #searchInput (keydown)="$event.stopPropagation()"
-          placeholder="{{ plaseholderInputSearch | translate }}" spellcheck="false" autocomplete="off">
-        <mat-icon *ngIf="searchInput?.value?.length > 0" matSuffix class="clear-icon" aria-label="Clear"
-          (click)="clear($event)">
+          placeholder="{{ plaseholderInputSearch }}" spellcheck="false" autocomplete="off">
+        <mat-icon *ngIf="searchInput?.value?.length > 0" matSuffix class="clear-icon" aria-label="Clear" (click)="clear($event)">
           clear
         </mat-icon>
       </div>
     </ng-container>
     <ng-container *ngIf="optionsData !== undefined; else loading">
-      <mat-option>-- {{ 'Nenhum' | translate }} --</mat-option>
-      <mat-option *ngFor="let option of optionsData | search : inputSearch : optionColumn" [value]="option">
-        {{ option[optionColumn[0]] | translate }} <span *ngIf="optionColumn.length > 1"> | {{ option[optionColumn[optionColumn.length > 1 ? 1 : 0]] | translate }}</span>
-        <!-- {{ option[optionColumn] | translate }} -->
+      <mat-option>-- {{ 'Nenhum' }} --</mat-option>
+      <mat-option *ngFor="let option of optionsData" [value]="option">
+        {{ option[optionColumn[0]] }} <span *ngIf="optionColumn.length > 1"> | {{ option[optionColumn[optionColumn.length > 1 ? 1 : 0]] | translate }}</span>
+        <span *ngIf="option.tags && option.tags.length > 0"> | {{ formatTags(option.tags) }}</span>
       </mat-option>
     </ng-container>
     <ng-template #loading>
       <mat-option disabled>
         <div class="deferred-select-placeholder-container">
-          <span>{{ 'Loading' | translate }}</span>
+          <span>{{ 'Loading' }}</span>
           <mat-spinner class="spinner" diameter="20"></mat-spinner>
         </div>
       </mat-option>

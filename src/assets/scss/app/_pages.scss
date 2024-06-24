@@ -4,9 +4,6 @@ $primaryButtonColor: #18746e;
 $matDialogTitle: #7c5656; //#543232;
 $matIconColorTrash: $background-layout;
 $matIconColorPrimary: $primaryButtonColor;
-// .mat-dialog-container {
-//   // min-width: 30vw;
-//   font-size: 12px !important;
 
   .mat-form-field-appearance-outline {
     .mat-form-field-prefix,
@@ -80,7 +77,7 @@ $matIconColorPrimary: $primaryButtonColor;
 
   .mat-dialog-container .mat-form-field-type-mat-select.mat-form-field-appearance-outline .mat-form-field-wrapper
 
-  terms-accepted-dialog{
+  app-edit-champion{
     .mat-raised-button {
       font-size: 12px;
     }
@@ -320,7 +317,7 @@ $matIconColorPrimary: $primaryButtonColor;
     }
   }
 
-  edit-app-tics-commission-form-component {
+  app-edit-champion {
     form {
       width: 40vw;
     }

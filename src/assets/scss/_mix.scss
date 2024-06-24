@@ -1,56 +1,4 @@
-/* ------------------------------- Login Page ------------------------------- */
-// .form-control {
-//   border-radius: 0;
-//   &:focus {
-//     border: none;
-//     border-radius: 0;
-//   }
-// }
 
-// .input-group > .input-group-prepend > .btn,
-// .input-group > .input-group-prepend > .input-group-text,
-// .input-group > .input-group-append:not(:last-child) > .btn,
-// .input-group > .input-group-append:not(:last-child) > .input-group-text,
-// .input-group
-//   > .input-group-append:last-child
-//   > .btn:not(:last-child):not(.dropdown-toggle),
-// .input-group
-//   > .input-group-append:last-child
-//   > .input-group-text:not(:last-child) {
-//   border-top-right-radius: 0;
-//   border-bottom-right-radius: 0;
-// }
-
-// .input-group-focus {
-//   .input-group-text {
-//     background-color: rgba(255, 255, 255, 0.2);
-//     border-color: #ffffff;
-//   }
-// }
-
-// .input-group
-//   > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-//   margin-left: 0px !important;
-// }
-
-// .btn-block {
-//   display: block;
-//   width: 100%;
-// }
-
-// .login-page .login .card-login .logo-container {
-//   width: 215px !important;
-//   margin: 0 auto;
-//   margin-bottom: 55px;
-// }
-
-// .login-page .login .form-check input[type="checkbox"],
-// .radio input[type="radio"] {
-//   opacity: 0.5 !important;
-//   visibility: visible;
-//   background-color: rgba(255, 255, 255, 0.5) !important;
-//   color: #fff;
-// }
 /* --------------------------------- Sidenav -------------------------------- */
 $background-layout: rgb(9,41,73);
 $primaryButtonColor: #18746e;
@@ -58,15 +6,6 @@ $primaryButtonColor: #18746e;
 .logo {
   background: $background-layout !important;
   height: 120px;
-  // background: linear-gradient(
-  //   0deg,
-  //   #ff3636 0%,
-  //   #f89393 24%,
-  //   #f7acac 35%,
-  //   #f7b7b7 40%,
-  //   #f6c9c9 56%,
-  //   white 100%
-  // ) !important;
   a.logo-normal {
     display: block;
     opacity: 1;
@@ -84,11 +23,6 @@ $primaryButtonColor: #18746e;
   input::placeholder {
     color: white !important;
   }
-
-  // .fa {
-  //   font: normal normal normal 24px/1 FontAwesome !important;
-  //   font-size: 24px !important;
-  // }
 
   .mat-button .mat-button-wrapper > *,
   .mat-flat-button .mat-button-wrapper > *,
@@ -237,27 +171,18 @@ $primaryButtonColor: #18746e;
   box-shadow: 0 0 0 0 !important;
 }
 
-// @media screen and (max-width: 991px) {
 .navbar .navbar-toggler-bar {
   background: #6a0000 !important;
 }
-// }
+
+
 /* ------------------------------ Painel Titulo ----------------------------- */
 .panel-header {
   height: 120px !important;
   padding-top: 45px !important;
   background: $background-layout !important;
-  // background: linear-gradient(
-  //   0deg,
-  //   #ff3636 0%,
-  //   #f89393 24%,
-  //   #f7acac 35%,
-  //   #f7b7b7 40%,
-  //   #f6c9c9 56%,
-  //   white 100%
-  // ) !important;
-  // background-image: url(https://img.freepik.com/fotos-gratis/papel-amassado-preto-escuro-fechar-textura_99266-562.jpg)!important;
 }
+
 /* ------------------------------ body contant ------------------------------ */
 .main-panel {
   .main-content {
@@ -287,59 +212,6 @@ $primaryButtonColor: #18746e;
 }
 
 /*
-* Customização
-*/
-/* -------------------------- Botão close do dialog ------------------------- */
-// .mat-dialog-actions {
-//   padding: 15px 0 !important;
-// }
-
-// .close-button {
-//   position: absolute !important;
-//   float: right !important;
-//   top: 0 !important;
-//   right: 0 !important;
-//   transform: translate(50%, -50%) !important;
-//   background: rgb(182, 182, 182) !important;
-// }
-
-// .close-icon {
-//   transition: 1s ease-in-out !important;
-//   &:hover {
-//     transform: rotate(180deg) !important;
-//   }
-//   .mat-button-focus-overlay {
-//     background: rgb(63, 63, 63) !important;
-//   }
-// }
-
-// ::ng-deep .icon-outside {
-//   .close-button {
-//     float: right !important;
-//     top: -52px !important;
-//     right: -52px !important;
-//   }
-//   .mat-dialog-container {
-//     overflow: unset !important;
-//   }
-// }
-
-/* --------------------- Painel de cadastro de telefones -------------------- */
-.phoneList {
-  &.mat-toolbar-single-row {
-    height: 45px !important;
-    // font: inherit;
-    font-size: 15px !important;
-  }
-}
-
-.fill-remaining-space {
-  /*This fills the remaining space, by using flexbox.
- Every toolbar row uses a flexbox row layout. */
-  flex: 1 1 auto;
-}
-
-/*
 * Css para campo de busca das telas que tem table
 */
 /* --------------------- Toolbar da pesquisa das tabelas -------------------- */
@@ -360,6 +232,7 @@ $primaryButtonColor: #18746e;
 mat-slide-toggle {
   padding-top: 7px !important;
 }
+
 /* ----------------------------- Campo de busca ----------------------------- */
 .filter-dropdown,
 .search {
@@ -382,10 +255,8 @@ table {
 }
 
 .mat-header-row {
-  // background: #ddd;
   font-size: 15px;
   min-height: 35px;
-  // color: #000;
 }
 
 .mat-header-cell {
@@ -395,7 +266,6 @@ table {
 th.mat-header-cell,
 td.mat-cell,
 td.mat-footer-cell {
-  // font-size: 0.7754em !important;
   font-size: 12px !important;
   padding: 0;
   border-bottom-width: 0 !important;
@@ -405,7 +275,6 @@ td.mat-footer-cell {
 mat-row,
 mat-footer-row {
   min-height: 35px !important;
-  // height: 35px !important;
   .mat-icon-button {
     height: 35px !important;
     line-height: 35px !important;
@@ -413,14 +282,6 @@ mat-footer-row {
       font-size: 18px !important;
     }
   }
-}
-
-mat-column-actions {
-  // justify-content: center !important;
-  // flex: 0 0 200px !important;
-  // border-bottom-width: 1px;
-  // border-bottom-style: solid;
-  // border-bottom-color: lightgrey;
 }
 
 .mat-row {
@@ -432,9 +293,6 @@ mat-column-actions {
   }
   &:hover {
     background-color: #999999;
-    // .mat-cell {
-    //   color: #fff;
-    // }
   }
 }
 
@@ -560,7 +418,6 @@ ul {
 
 .container .mat-card {
   padding: 0 10px;
-  // max-height: 40vw;
 }
 
 .mat-card-footer {
@@ -665,7 +522,6 @@ ul {
   white-space: nowrap;
 }
 
-// .mat-primary,
 .default {
   color: rgb(0, 0, 0);
   background-color: rgb(197, 197, 197) !important;
@@ -674,26 +530,17 @@ ul {
   color: #fff;
   background-color: #369 !important;
 }
-// .primary {
-//   color: #fff;
-//   background-color: rgb(0, 4, 211) !important;
-// }
-// .mat-success,
-// .success {
-//   color: #fff;
-//   background-color: #00b327 !important;
-// }
 
 .error {
   color: #fff;
   background-color: #000 !important;
 }
-// .mat-accent,
+
 .accent {
   color: #fff;
   background-color: rgb(66, 255, 198) !important;
 }
-// .mat-warn,
+
 .warn {
   color: #fff;
   background-color: rgb(235, 133, 0) !important;
@@ -737,11 +584,6 @@ ul {
     min-width: 40px!important;
     line-height: 36px!important;
     padding: 0 5px!important;
-
-    // .mat-icon {
-    //   height: 20px !important;
-    //   width: 20px !important;
-    // }
   }
 
   &.footer-toolbar {

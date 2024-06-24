@@ -1,0 +1,58 @@
+<h2 mat-dialog-title> Edit Champion</h2>
+
+<form (focus)="$event.stopPropagation();" [formGroup]="championsFormGroup">
+
+  <mat-dialog-content fxLayout="column" (focus)="$event.stopPropagation();">
+
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="5px" fxLayoutAlign="center center">
+      <div fxFlex="33">
+        <app-dynamic-input
+          [label]="'Champion Title'"
+          [inputFormControl]="getFormControl('title')"
+          [inputPlaceholder]="'Champion Title'"
+          [isRequired]="false"
+          [isDisabled]="false"
+          hintValue="30"
+          [maxlengthValue]="30">
+        </app-dynamic-input>
+      </div>
+
+      <div fxFlex="33">
+        <app-dynamic-input
+          [label]="'Champion Name'"
+          [inputFormControl]="getFormControl('name')"
+          [inputPlaceholder]="'Champion Name'"
+          [isRequired]="false"
+          [isDisabled]="false"
+          hintValue="20"
+          [maxlengthValue]="20">
+        </app-dynamic-input>
+      </div>
+
+      <div fxFlex="33">
+        <!-- <app-dynamic-select
+          [label]="'Champion Type'"
+          [selectFormControl]="getFormControl('tags')"
+          [optionsData]="tagsData"
+          [optionColumn]="['tags']"
+          [isLoading]="true"
+          [isSearch]="true"
+          [plaseholderInputSearch]="'Select the champion type'"
+          [isRequired]="false"
+          [isDisabled]="false">
+       </app-dynamic-select> -->
+      </div>
+    </div>
+
+  </mat-dialog-content>
+
+  <mat-dialog-actions fxLayout="row">
+    <div fxFlex align="end">
+      <button type="button" mat-raised-button mat-dialog-close class="defaul">Cancel</button>
+      <!-- [disabled]="!projectManagementForm.valid" -->
+      <button mat-raised-button color="success" class="success" (click)="confirm()" type="submit"
+        > Save</button>
+    </div>
+  </mat-dialog-actions>
+
+</form>
