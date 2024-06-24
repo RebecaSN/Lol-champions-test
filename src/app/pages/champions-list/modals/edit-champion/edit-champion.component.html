@@ -5,7 +5,7 @@
   <mat-dialog-content fxLayout="column" (focus)="$event.stopPropagation();">
 
     <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="5px" fxLayoutAlign="center center">
-      <div fxFlex="33">
+      <div fxFlex="100">
         <app-dynamic-input
           [label]="'Champion Title'"
           [inputFormControl]="getFormControl('title')"
@@ -16,8 +16,10 @@
           [maxlengthValue]="30">
         </app-dynamic-input>
       </div>
+    </div>
 
-      <div fxFlex="33">
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="5px" fxLayoutAlign="center center">
+      <div fxFlex="100">
         <app-dynamic-input
           [label]="'Champion Name'"
           [inputFormControl]="getFormControl('name')"
@@ -28,7 +30,9 @@
           [maxlengthValue]="20">
         </app-dynamic-input>
       </div>
+    </div>
 
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="5px" fxLayoutAlign="center center">
       <div fxFlex="33">
         <!-- <app-dynamic-select
           [label]="'Champion Type'"

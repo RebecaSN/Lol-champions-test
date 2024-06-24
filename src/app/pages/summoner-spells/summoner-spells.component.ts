@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { SummonerSpell } from 'src/app/core/models/pages/summoner-spells/summonerSpell';
 import { SummonerSpellsDataService } from 'src/app/core/services/pages/summoner-spells/summoner-spells-data.service';
 
@@ -13,25 +14,16 @@ export class SummonerSpellsComponent implements OnInit {
   summonersList: SummonerSpell[];
 
   columnDefs = [
-    { field: 'id' },
-    { field: 'summonerLevel' },
-    { field: 'name' },
-    { field: 'description'},
-     {
-      headerName: 'Actions',
-      cellRenderer: (params) => {
-        return `
-          <button mat-icon-button (click)="removeChampion(${params.data.id})">
-            <mat-icon>delete</mat-icon>
-          </button>
-        `;
-      }
-    }
+    { field: 'id', width: 70 },
+    { field: 'summonerLevel', width: 160 },
+    { field: 'name', width: 240, },
+    { field: 'description', width: 1400, cellRenderer: (params) => this.createTooltipCellRenderer(params)},
   ];
 
   constructor(
     private http: HttpClient,
-    private summonerSpellsDataService: SummonerSpellsDataService) { }
+    private summonerSpellsDataService: SummonerSpellsDataService,
+    private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
     this.loadDataSource();
@@ -44,6 +36,12 @@ export class SummonerSpellsComponent implements OnInit {
         console.log('Champions:', this.summonersList);
       }
     );
+  }
+
+  createTooltipCellRenderer(params): string {
+    const value = params.value;
+    const sanitizedValue = this.sanitizer.sanitize(1, value);
+    return `<span matTooltip="${sanitizedValue}">${value}</span>`;
   }
 
 }

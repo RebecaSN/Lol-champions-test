@@ -222,8 +222,6 @@ h5,
           }
         }
       }
-
-      // .mat-form-field-type-mat-input.mat-form-field-appearance-outline .mat-form-field-outline
       .mat-warning {
         .mat-form-field-type-mat-date-range-input,
         .mat-form-field-type-mat-select,
@@ -363,21 +361,12 @@ h5,
     }
   }
 
-
-
-  app-edit-champion {
-    form {
-      width: 40vw;
-    }
-  }
-
-  //app-view-champion,
   app-delete-champion  {
     form {
       width: 35vw;
     }
   }
-
+  app-edit-champion,
   app-view-champion {
     form {
       width: 20vw;

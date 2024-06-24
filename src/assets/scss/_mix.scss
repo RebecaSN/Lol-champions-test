@@ -81,7 +81,7 @@ $primaryButtonColor: #18746e;
 
 .sidebar .logo,
 .off-canvas-sidebar .logo {
-  // padding: 0.79rem 0.7rem !important;
+
   padding: 0 !important;
 }
 
@@ -116,7 +116,7 @@ $primaryButtonColor: #18746e;
 .sidebar .nav li:focus:not(.active) > a,
 .off-canvas-sidebar .nav li:hover:not(.active) > a,
 .off-canvas-sidebar .nav li:focus:not(.active) > a {
-  background-color: #6a000038 !important;
+  background-color: #41486438 !important;
 }
 
 .sidebar .logo:after,
@@ -163,16 +163,6 @@ $primaryButtonColor: #18746e;
       // }
     }
   }
-}
-/* --------------------------------- NavBar --------------------------------- */
-.navbar-toggler:focus {
-  text-decoration: none;
-  outline: 0;
-  box-shadow: 0 0 0 0 !important;
-}
-
-.navbar .navbar-toggler-bar {
-  background: #6a0000 !important;
 }
 
 
