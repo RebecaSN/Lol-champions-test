@@ -1,9 +1,38 @@
 $background-layout: #a80404;
 $mat-ripple: #a804046b;
-$primaryButtonColor: #18746e;
-$matDialogTitle: #7c5656; //#543232;
+$primaryButtonColor: #087189;
+// background-color: #087189!important
+$matDialogTitle: rgb(24,53,75);
 $matIconColorTrash: $background-layout;
 $matIconColorPrimary: $primaryButtonColor;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  text-transform: none !important;
+}
+
+h5,
+.h5 {
+  font-size: 1.5em !important;
+}
+
+.mat-no-data-row {
+  text-align: center;
+  font-weight: 500;
+}
+.mat-dialog-container {
+  // min-width: 30vw;
+  font-size: 12px !important;
 
   .mat-form-field-appearance-outline {
     .mat-form-field-prefix,
@@ -19,12 +48,13 @@ $matIconColorPrimary: $primaryButtonColor;
         }
       }
     }
-  // }
+  }
 
   .mat-form-field-appearance-outline .mat-select-arrow-wrapper {
     transform: translateY(-5%) !important;
   }
 
+  .mat-form-field-type-mat-date-range-input,
   .mat-form-field-type-mat-select,
   .mat-form-field-type-mat-input {
     &.mat-form-field-appearance-outline {
@@ -40,7 +70,7 @@ $matIconColorPrimary: $primaryButtonColor;
         }
       }
       .mat-form-field-infix {
-        padding: 0.4em 0 0.6em 0;
+        padding: 0.4em 0 0.6em 0 !important;
 
         .mat-form-field-label-wrapper {
           top: -1.2em;
@@ -62,80 +92,43 @@ $matIconColorPrimary: $primaryButtonColor;
     }
   }
 
-  app-edit-register {
-    .mat-dialog-content
-      .topFormField
-      .mat-form-field-type-mat-input.mat-form-field-appearance-outline
-      .mat-form-field-wrapper,
-    .mat-dialog-content
-      mat-dialog-actions
-      .mat-form-field-type-mat-select.mat-form-field-appearance-outline
-      .mat-form-field-wrapper {
-      padding-bottom: 0 !important;
+  .mat-warning {
+    .mat-form-field {
+      font-weight: 500;
     }
-  }
-
-  .mat-dialog-container .mat-form-field-type-mat-select.mat-form-field-appearance-outline .mat-form-field-wrapper
-
-  app-edit-champion{
-    .mat-raised-button {
-      font-size: 12px;
-    }
-    .mat-form-field-appearance-outline {
-      .mat-form-field-prefix,
-      .mat-form-field-suffix {
-        top: 0em !important;
+    &.mat-checkbox {
+      .mat-checkbox-label {
+        background: #ffff003d !important;
       }
     }
-    .mat-form-field-appearance-outline.mat-form-field-disabled {
-      .mat-form-field-wrapper {
-        .mat-form-field-flex {
-          .mat-form-field-outline {
-            background-color: #f1f1f1;
-          }
-        }
-      }
-    }
-
-    .mat-form-field-appearance-outline .mat-select-arrow-wrapper {
-      transform: translateY(-5%) !important;
-    }
-
+    .mat-form-field-type-mat-date-range-input,
     .mat-form-field-type-mat-select,
     .mat-form-field-type-mat-input {
       &.mat-form-field-appearance-outline {
         .mat-form-field-outline {
-          color: rgb(107, 155, 218) !important;
+          color: rgb(212, 191, 0) !important;
+          background: #ffff003d !important;
           height: 35px;
         }
-        &.mat-form-field-invalid {
-          &.mat-form-field-invalid {
-            .mat-form-field-outline-thick {
-              color: #f44336 !important;
-            }
-          }
-        }
-        .mat-form-field-infix {
-          padding: 0.4em 0 0.6em 0;
-
-          .mat-form-field-label-wrapper {
-            top: -1.2em;
-            padding-top: 1.1em;
-          }
-        }
-        .mat-form-field-wrapper {
-          margin: 0.25em 0 0.35em;
-          .mat-form-field-subscript-wrapper {
-            font-size: 75%;
-            margin-top: 0.5em;
-            // top: 100% // calc(100% - 1.7916666667em);
-          }
-        }
-        .mat-form-field-suffix {
-          // top: -0.05em;
-          font-size: 10px;
-        }
       }
+    }
+  }
+
+  .mat-raised-button.mat-primary {
+    background-color: $primaryButtonColor;
+  }
+
+  .mat-raised-button.mat-primary.mat-button-disabled,
+  .mat-raised-button.mat-button-disabled.mat-button-disabled {
+    color: rgb(255 255 255 / 88%);
+    background-color: #087189ad;
+  }
+
+  app-view-champion,
+  app-delete-champion,
+  app-edit-champion {
+    .mat-raised-button {
+      font-size: 12px;
     }
     /* ------------- CSS do titulo do modal caso queira colocar cor ------------- */
     [mat-dialog-title] {
@@ -154,7 +147,7 @@ $matIconColorPrimary: $primaryButtonColor;
 
       .mat-icon-button {
         .mat-icon {
-          color: $matIconColorPrimary;
+          color: $matIconColorPrimary; //rgb(0, 63, 238);
           &.fa {
             font-size: 25px;
           }
@@ -169,21 +162,115 @@ $matIconColorPrimary: $primaryButtonColor;
         }
       }
 
+
       /* ------------- Customizing the height of form-field components ------------ */
+
+      .mat-form-field-appearance-outline {
+        .mat-form-field-prefix,
+        .mat-form-field-suffix {
+          top: 0em !important;
+        }
+      }
+      .mat-form-field-appearance-outline.mat-form-field-disabled {
+        .mat-form-field-wrapper {
+          .mat-form-field-flex {
+            .mat-form-field-outline {
+              background-color: #f1f1f1;
+            }
+          }
+        }
+      }
+
+      .mat-form-field-appearance-outline .mat-select-arrow-wrapper {
+        transform: translateY(-5%) !important;
+      }
+
+      .mat-form-field-type-mat-date-range-input,
+      .mat-form-field-type-mat-select,
+      .mat-form-field-type-mat-input {
+        &.mat-form-field-appearance-outline {
+          .mat-form-field-outline {
+            color: rgb(107, 155, 218) !important;
+            height: 35px;
+          }
+          &.mat-form-field-invalid {
+            &.mat-form-field-invalid {
+              .mat-form-field-outline-thick {
+                color: #f44336 !important;
+              }
+            }
+          }
+          .mat-form-field-infix {
+            padding: 0.4em 0 0.6em 0 !important; //0.4em 0 0.6em 0;
+
+            .mat-form-field-label-wrapper {
+              top: -1.2em;
+              padding-top: 1.1em;
+            }
+          }
+          .mat-form-field-wrapper {
+            margin: 0.25em 0 0.55em;
+            .mat-form-field-subscript-wrapper {
+              font-size: 75%;
+              margin-top: 0.8em;
+              // top: 100% // calc(100% - 1.7916666667em);
+            }
+          }
+          .mat-form-field-suffix {
+            // top: -0.05em;
+            font-size: 10px;
+          }
+        }
+      }
+
+      // .mat-form-field-type-mat-input.mat-form-field-appearance-outline .mat-form-field-outline
+      .mat-warning {
+        .mat-form-field-type-mat-date-range-input,
+        .mat-form-field-type-mat-select,
+        .mat-form-field-type-mat-input {
+          &.mat-form-field-appearance-outline {
+            .mat-form-field-outline {
+              color: rgb(212, 191, 0) !important;
+              background: #ffff003d !important;
+              height: 35px;
+            }
+          }
+        }
+      }
+
+      .mat-warning {
+        &.mat-form-field-type-mat-date-range-input,
+        &.mat-form-field-type-mat-select,
+        &.mat-form-field-type-mat-input {
+          &.mat-form-field-appearance-outline {
+            .mat-form-field-outline {
+              color: rgb(212, 191, 0) !important;
+              background: #ffff003d !important;
+              height: 35px;
+            }
+          }
+        }
+      }
 
       .mat-checkbox-indeterminate.mat-primary .mat-checkbox-background,
       .mat-checkbox-checked.mat-primary .mat-checkbox-background {
         background-color: $primaryButtonColor !important;
       }
+
+      .chield.mat-card {
+        height: 100vh;
+      }
+
       .mat-card {
         padding: 0 !important;
         margin-top: 10px;
         margin-bottom: 10px;
         .mat-tab-group {
           .mat-tab-list {
+            background: #ebebeb;
             .mat-tab-labels {
               .mat-tab-label {
-                color: #b1b1b1;
+                color: #424242;
                 height: 40px !important;
                 .mat-tab-label-content {
                   flex-wrap: wrap !important;
@@ -222,9 +309,14 @@ $matIconColorPrimary: $primaryButtonColor;
             }
             .mat-tab-body-content {
               padding: 10px 10px 5px !important;
+              overflow: auto;
+              overflow-x: hidden !important;
               .mat-card {
                 .mat-card-content {
                   padding: 15px 10px !important;
+                }
+                .mat-card-reduced-content{
+                  padding: 5px !important;
                 }
               }
             }
@@ -240,14 +332,17 @@ $matIconColorPrimary: $primaryButtonColor;
       }
     }
 
+    .mat-tab-group.mat-primary .mat-ink-bar,
+    .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+      background-color: #7e0000;
+    }
+
     textarea {
       resize: none;
     }
 
-    .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-primary
-      .mat-ripple-element,
-    .mat-checkbox:active:not(.mat-checkbox-disabled).mat-primary
-      .mat-ripple-element {
+    .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-primary .mat-ripple-element,
+    .mat-checkbox:active:not(.mat-checkbox-disabled).mat-primary .mat-ripple-element {
       background: $primaryButtonColor !important;
     }
 
@@ -261,293 +356,42 @@ $matIconColorPrimary: $primaryButtonColor;
     }
   }
 
-  terms-accepted-dialog {
-    @media only screen and (min-height: 415px) {
-      .mat-dialog-content {
-        min-height: 75vh !important;
-      }
 
-      .mat-tab-body {
-        min-height: 40vh !important;
-      }
-    }
-
-    @media only screen and (min-height: 769px) {
-      .mat-dialog-content {
-        min-height: 80vh !important;
-      }
-
-      .mat-tab-body {
-        min-height: 58vh !important;
-      }
-    }
-
-    @media only screen and (min-height: 992px) {
-      .mat-dialog-content {
-        min-height: 80vh !important;
-      }
-
-      .mat-tab-body {
-        min-height: 58vh !important;
-      }
-    }
-  }
-
-  app-disapproved-modal {
+  app-delete-champion {
     [mat-dialog-title] {
       background: #d60 !important;
     }
   }
 
-  app-approve-modal {
-    [mat-dialog-title] {
-      background: rgb(30, 122, 118) !important;
-    }
-  }
 
-  app-edit-proposal{
-    form {
-      width: 70vw;
-    }
-  }
-
-  app-search-network-view {
-    form {
-      width: 60vw;
-    }
-  }
 
   app-edit-champion {
     form {
       width: 40vw;
     }
   }
+
+  //app-view-champion,
+  app-delete-champion  {
+    form {
+      width: 35vw;
+    }
+  }
+
+  app-view-champion {
+    form {
+      width: 20vw;
+    }
+  }
+
 }
 
-app-generate-business {
-  form {
-    width: 25vw;
-  }
-}
-
-
-.mat-dialog-container {
-  terms-accepted-dialog {
-    .mat-dialog-content {
-      padding: 0 !important;
-      .container {
-        margin-top: 15px !important;
-      }
-      .mat-card {
-        margin: 0 !important;
-        .mat-tab-group {
-          .mat-tab-body {
-            padding: 0 !important;
-            .mat-tab-body-content {
-              padding: 10px;
-              .mat-card {
-                margin-top: 10px !important;
-                // margin-bottom: 10px!important;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-app-edit-proposal,
-app-disapproved-modal,
-app-approve-modal,
-app-generate-pdf{
-  .mat-raised-button {
-    font-size: 12px;
-  }
-  /* ------------- CSS do titulo do modal caso queira colocar cor ------------- */
-  [mat-dialog-title] {
-    margin: -24px -24px 0px -24px !important;
-    padding: 15px 20px;
-    background: $matDialogTitle;
-    color: #fff;
-    // cursor: move;
+table {
+  ::ng-deep .mat-sort-header-container {
+    justify-content: center !important;
   }
 
-  .mat-dialog-content {
-    border-bottom: 1px #ddd solid;
-    border-top: 1px #ddd solid;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    .mat-icon-button {
-      .mat-icon {
-        color: $matIconColorPrimary; //rgb(0, 63, 238);
-        &.fa {
-          font-size: 25px;
-        }
-
-        &.trash {
-          color: $matIconColorTrash !important;
-        }
-
-        &.buttonPrimary {
-          color: $matIconColorPrimary !important;
-        }
-      }
-    }
-
-    /* ------------- Customizing the height of form-field components ------------ */
-
-    .mat-form-field-appearance-outline {
-      .mat-form-field-prefix,
-      .mat-form-field-suffix {
-        top: 0em !important;
-      }
-    }
-    .mat-form-field-appearance-outline.mat-form-field-disabled {
-      .mat-form-field-wrapper {
-        .mat-form-field-flex {
-          .mat-form-field-outline {
-            background-color: #f1f1f1;
-          }
-        }
-      }
-    }
-
-    .mat-form-field-appearance-outline .mat-select-arrow-wrapper {
-      transform: translateY(-5%) !important;
-    }
-
-    .mat-form-field-type-mat-select,
-    .mat-form-field-type-mat-input {
-      &.mat-form-field-appearance-outline {
-        .mat-form-field-outline {
-          color: rgb(107, 155, 218) !important;
-          height: 35px;
-        }
-        &.mat-form-field-invalid {
-          &.mat-form-field-invalid {
-            .mat-form-field-outline-thick {
-              color: #f44336 !important;
-            }
-          }
-        }
-        .mat-form-field-infix {
-          padding: 0.4em 0 0.6em 0;
-
-          .mat-form-field-label-wrapper {
-            top: -1.2em;
-            padding-top: 1.1em;
-          }
-        }
-        .mat-form-field-wrapper {
-          margin: 0.25em 0 0.35em;
-          .mat-form-field-subscript-wrapper {
-            font-size: 75%;
-            margin-top: 0.8em;
-            // top: 100% // calc(100% - 1.7916666667em);
-          }
-        }
-        .mat-form-field-suffix {
-          // top: -0.05em;
-          font-size: 10px;
-        }
-      }
-    }
-
-    .mat-checkbox-indeterminate.mat-primary .mat-checkbox-background,
-    .mat-checkbox-checked.mat-primary .mat-checkbox-background {
-      background-color: $primaryButtonColor !important;
-    }
-
-    .mat-card {
-      padding: 0 !important;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      .mat-tab-group {
-        .mat-tab-list {
-          .mat-tab-labels {
-            .mat-tab-label {
-              color: #b1b1b1;
-              height: 40px !important;
-              .mat-tab-label-content {
-                flex-wrap: wrap !important;
-                span {
-                  font-size: 12px;
-                  display: flex !important;
-                  flex: 1 0 100% !important;
-                  justify-content: center !important;
-                  &.tab-label-subTitle {
-                    font-size: 10px;
-                  }
-                }
-              }
-            }
-            .mat-tab-label-active {
-              color: #7e1818!important;
-              background-color: #f3b2b28c!important;
-              font-size: 12px;
-              font-weight: 600;
-            }
-          }
-
-          .mat-ink-bar {
-            background-color: #b34040 !important;
-          }
-        }
-        .mat-tab-body {
-          padding: 0px !important;
-          .title {
-            color: #003fee;
-            text-align: center;
-            margin-bottom: 15px;
-          }
-          .tab-body {
-            padding-top: 5px;
-          }
-          .mat-tab-body-content {
-            padding: 10px 10px 5px !important;
-            .mat-card {
-              .mat-card-content {
-                padding: 15px 10px !important;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .mat-tab-label,
-    .mat-tab-link,
-    .mat-card-subtitle,
-    .mat-card-content {
-      font-size: 12px;
-    }
-  }
-
-  textarea {
-    resize: none;
-  }
-
-  .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-primary
-    .mat-ripple-element,
-  .mat-checkbox:active:not(.mat-checkbox-disabled).mat-primary
-    .mat-ripple-element {
-    background: $primaryButtonColor !important;
-  }
-
-  .mat-ripple-element {
-    background-color: $mat-ripple !important;
-  }
-
-  .mat-checkbox-indeterminate.mat-primary .mat-checkbox-background,
-  .mat-checkbox-checked.mat-primary .mat-checkbox-background {
-    background-color: $primaryButtonColor !important;
-  }
-}
-app-edit-proposal,
-app-generate-pdf  {
-  form {
-    width: 70vw;
+  ::ng-deep .mat-sort-header-arrow {
+    color: #a80404;
   }
 }

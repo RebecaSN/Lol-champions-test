@@ -66,7 +66,11 @@ export class ChampionsListComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
-       // this.dialogRef.close(result);
+        const index = this.championsList.findIndex(item => item.id === params['rowData'].id);
+        if (index !== -1) {
+          this.championsList.splice(index, 1);
+          this.refreshGrid();
+        }
       }
     });
   }
@@ -108,6 +112,7 @@ export class ChampionsListComponent implements OnInit {
     });
 
   }
+
 }
 
 

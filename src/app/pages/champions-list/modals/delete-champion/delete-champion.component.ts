@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { Champion } from 'src/app/core/models/pages/champions-list/champion';
 
 @Component({
   selector: 'app-delete-champion',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeleteChampionComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    @Inject(MAT_DIALOG_DATA) public data: Champion,
+    public dialogRef: MatDialogRef<DeleteChampionComponent>,
+  ) { }
 
   ngOnInit() {
+
+  }
+
+  confirm():void{
+    this.dialogRef.close(this.data['data']);
+
   }
 
 }

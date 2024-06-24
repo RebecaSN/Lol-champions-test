@@ -11,12 +11,16 @@ import { ButtonRendererComponent } from 'src/app/core/services/utilities/button-
 import { EditChampionComponent } from './modals/edit-champion/edit-champion.component';
 import { DynamicInputModule } from '../components/dynamic-input/dynamic-input.module';
 import { DynamicSelectModule } from '../components/dynamic-select/dynamic-select.module';
+import { DeleteChampionComponent } from './modals/delete-champion/delete-champion.component';
+import { ViewChampionComponent } from './modals/view-champion/view-champion.component';
 
 @NgModule({
   declarations: [
     ChampionsListComponent,
     ButtonRendererComponent,
-    EditChampionComponent
+    EditChampionComponent,
+    DeleteChampionComponent,
+    ViewChampionComponent
   ],
   imports: [
     CommonModule,
