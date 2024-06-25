@@ -33,7 +33,6 @@ export class SummonerSpellsComponent implements OnInit {
     this.summonerSpellsDataService.getAllSummoresSpells().subscribe(
       (data: any) => {
         this.summonersList = Object.values(data.data);
-        console.log('Champions:', this.summonersList);
       }
     );
   }

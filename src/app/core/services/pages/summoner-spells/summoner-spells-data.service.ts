@@ -10,9 +10,11 @@ const summonersData = require('src/assets/json/summoner_spell_info.json');
 })
 export class SummonerSpellsDataService {
 
+  private summonerSpellsUrl = '/api/summonerSpells';
+
   constructor(private httpClient: HttpClient) { }
 
   getAllSummoresSpells(): Observable<SummonerSpell[]> {
-    return this.httpClient.get<SummonerSpell[]>('assets/json/summoner_spell_info.json');
+  return this.httpClient.get<SummonerSpell[]>(this.summonerSpellsUrl);
   }
 }

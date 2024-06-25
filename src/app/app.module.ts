@@ -19,6 +19,10 @@ import { AgGridModule } from 'ag-grid-angular';
 
 import { NgxCurrencyModule } from 'ngx-currency';
 import { registerLocaleData } from '@angular/common';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataServiceService } from './core/services/pages/inMemoryDataService.service';
+
+
 
 registerLocaleData(localept, 'pt');
 
@@ -107,7 +111,8 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig =
       showForeground: true,
     }),
     NgxCurrencyModule,
-    AgGridModule
+    AgGridModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataServiceService, { delay: 500 })
   ],
 
   bootstrap: [AppComponent],

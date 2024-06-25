@@ -53,7 +53,6 @@ export class ChampionsListComponent implements OnInit {
     this.championsListData.getAllChampions().subscribe(
       (data: any) => {
         this.championsList = Object.values(data.data);
-        console.log('Champions:', this.championsList);
       }
     );
   }
@@ -87,7 +86,6 @@ export class ChampionsListComponent implements OnInit {
        const index = this.championsList.findIndex(item => item.id === params['rowData'].id);
 
        if (index !== -1) {
-
         this.championsList[index] = { ...this.championsList[index], ...result };
         this.refreshGrid();
       }
@@ -103,12 +101,6 @@ export class ChampionsListComponent implements OnInit {
     const dialogRef = this.dialog.open(ViewChampionComponent, {
       disableClose: true,
       data: { data:params['rowData']}
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-       // this.dialogRef.close(result);
-      }
     });
 
   }

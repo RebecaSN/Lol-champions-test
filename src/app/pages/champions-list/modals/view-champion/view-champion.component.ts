@@ -10,7 +10,6 @@ import { ChampionsListData } from 'src/app/core/services/pages/champions-list/ch
 })
 export class ViewChampionComponent implements OnInit {
 
-  latestVersion: string;
   championImageUrl: string;
 
   constructor(
@@ -25,14 +24,8 @@ export class ViewChampionComponent implements OnInit {
   }
 
   loadViewData():void{
-    this.championsListData.getLatestVersion().subscribe(
-      (latestVersion: string) => {
-        this.latestVersion = latestVersion;
-        this.championImageUrl = this.championsListData.getChampionImageUrl(latestVersion, this.data['data'].name);
-        console.log('Champion Image URL:', this.championImageUrl);
-      },
-      error => console.error('Error fetching latest version:', error)
-    );
+    const versionToUse = '7.18.1';
+    this.championImageUrl = this.championsListData.getChampionImageUrl(versionToUse, this.data['data'].name);
 
   }
 
