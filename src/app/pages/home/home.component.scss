@@ -30,6 +30,7 @@
 
 .main-content{
   background-color: #060E1F;
+  max-height: 200px !important;
 }
 .text-ajust{
   color: white;
@@ -37,7 +38,6 @@
 
 .card-background {
   height: 100%;
-  // width: 100%;
   background-size: cover;
   background-position: center;
   position: relative;

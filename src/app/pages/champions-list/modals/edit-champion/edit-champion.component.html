@@ -60,7 +60,7 @@
         <mat-label>Champion Tags</mat-label>
         <mat-select formControlName="tags" multiple>
           <mat-option *ngFor="let tag of tagsData" [value]="tag.tags">
-            {{ tag.tags.join(', ') }}
+            {{ tag.tags.join(', ')}}
           </mat-option>
         </mat-select>
       </mat-form-field>

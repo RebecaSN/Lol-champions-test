@@ -16,7 +16,7 @@ export class EditChampionComponent implements OnInit {
   tagsData: TagData[] = [
     { id: 1, tags: ['Tank'] },
     { id: 2, tags: ['Fighter'] },
-    { id: 3, tags: ['Mage',] },
+    { id: 3, tags: ['Mage'] },
     { id: 4, tags: ['Assassin'] },
     { id: 5, tags: ['Marksman'] },
     { id: 10, tags: ['Support'] },
@@ -36,6 +36,7 @@ export class EditChampionComponent implements OnInit {
   }
 
   createFormGroup(objectData: Champion): void {
+
     console.log(objectData)
     this.championsFormGroup = this.fb.group({
       title: objectData.title,
