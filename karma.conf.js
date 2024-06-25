@@ -22,10 +22,10 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     jasmineHtmlReporter: {
-      suppressAll: true // removes the duplicated traces
+      suppressAll: true // removes the duplicated tracess
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/portal-client'),
+      dir: require('path').join(__dirname, './coverage/lol-wiki'),
       subdir: '.',
       reporters: [
         { type: 'html' },

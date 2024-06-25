@@ -13,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { NgxUiLoaderConfig, NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
+import {NgxUiLoaderHttpModule } from 'ngx-ui-loader';
 import { IConfig, NgxMaskModule } from 'ngx-mask';
 import { AgGridModule } from 'ag-grid-angular';
 
@@ -21,8 +21,6 @@ import { NgxCurrencyModule } from 'ngx-currency';
 import { registerLocaleData } from '@angular/common';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataServiceService } from './core/services/pages/inMemoryDataService.service';
-
-
 
 registerLocaleData(localept, 'pt');
 
@@ -33,50 +31,6 @@ const maskConfig: Partial<IConfig> = {
   // separatorLimit: "10000"
 };
 
-
-export const MY_DATE_FORMATS = {
-  parse: {
-    dateInput: 'DD/MM/YYYY',
-  },
-  display: {
-    dateInput: 'DD/MM/YYYY',
-    monthYearLabel: 'MMMM YYYY',
-    dateA11yLabel: 'LL',
-    monthYearA11yLabel: 'MMMM YYYY'
-  },
-};
-
-const ngxUiLoaderConfig: NgxUiLoaderConfig =
-{
-  bgsColor: 'red',
-  bgsOpacity: 0.5,
-  bgsPosition: 'bottom-right',
-  bgsSize: 60,
-  bgsType: 'ball-spin-clockwise',
-  blur: 2,
-  delay: 0,
-  fastFadeOut: true,
-  fgsColor: 'rgba(198,198,198,0.6)',
-  fgsPosition: 'center-center',
-  fgsSize: 60,
-  fgsType: 'cube-grid',
-  gap: 24,
-  logoPosition: 'center-center',
-  logoSize: 70,
-  logoUrl: 'assets/images/logos/Logo-Marko.png',
-  masterLoaderId: 'master',
-  overlayBorderRadius: '0',
-  overlayColor: 'rgba(40,40,40,0.69)',
-  pbColor: '#00adbb',
-  pbDirection: 'ltr',
-  pbThickness: 4,
-  hasProgressBar: true,
-  text: '',
-  textColor: '#FFFFFF',
-  textPosition: 'center-center',
-  maxTime: -1,
-  minTime: 300
-};
 
 @NgModule({
   declarations: [
@@ -106,7 +60,6 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig =
     }),
 
     NgxMaskModule.forRoot(maskConfig),
-    NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
     NgxUiLoaderHttpModule.forRoot({
       showForeground: true,
     }),

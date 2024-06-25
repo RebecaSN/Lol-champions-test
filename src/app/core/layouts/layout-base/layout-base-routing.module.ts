@@ -4,10 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from 'src/app/pages/home/home.component';
 import { ChampionsListComponent } from 'src/app/pages/champions-list/champions-list.component';
 import { SummonerSpellsComponent } from 'src/app/pages/summoner-spells/summoner-spells.component';
+import { AuthGuard } from '../../guards/auth.guard';
 
 const routes: Routes = [
   {
     path: 'home',
+    canActivate: [AuthGuard],
     component: HomeComponent,
     children: [
       {
@@ -21,6 +23,7 @@ const routes: Routes = [
   },
   {
     path: 'champions-list',
+    canActivate: [AuthGuard],
     component: ChampionsListComponent,
     children: [
       {
@@ -34,6 +37,7 @@ const routes: Routes = [
   },
   {
     path: 'summoner-list',
+    canActivate: [AuthGuard],
     component: SummonerSpellsComponent,
     children: [
       {

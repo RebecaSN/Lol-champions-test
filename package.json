@@ -1,12 +1,10 @@
 {
-  "name": "portal-client",
+  "name": "lol-wiki",
   "version": "1.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "build:prod": "ng build --base-href=/portalcliente/ --prod --aot --output-hashing=bundles && npm run post-build",
-    "post-build": "node src/app/build/post-build.js"
+    "build": "ng build"
   },
   "private": true,
   "dependencies": {
