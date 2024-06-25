@@ -3,11 +3,13 @@ import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { SummonerSpell } from 'src/app/core/models/pages/summoner-spells/summonerSpell';
 import { SummonerSpellsDataService } from 'src/app/core/services/pages/summoner-spells/summoner-spells-data.service';
+import { fadeInOut } from 'src/app/core/services/utilities/animations.service';
 
 @Component({
   selector: 'app-summoner-spells',
   templateUrl: './summoner-spells.component.html',
-  styleUrls: ['./summoner-spells.component.scss']
+  styleUrls: ['./summoner-spells.component.scss'],
+  animations: [fadeInOut]
 })
 export class SummonerSpellsComponent implements OnInit {
 

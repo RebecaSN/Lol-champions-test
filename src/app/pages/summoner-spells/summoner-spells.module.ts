@@ -6,14 +6,11 @@ import { AngularMaterialModule } from 'src/app/core/modules/angular-material/ang
 import { DynamicPanelBodyModule } from '../components/dynamic-panel-body/dynamic-panel-body.module';
 import { SummonerSpellsComponent } from './summoner-spells.component';
 import { AgGridModule } from 'ag-grid-angular';
-// import { TooltipCellRendererComponent } from 'src/app/core/services/utilities/tooltip-cell-renderer.component';
-
 @NgModule({
   imports: [
     CommonModule,
     SummonerSpellsRoutes,
     FlexLayoutModule,
-    // TooltipCellRendererComponent,
 
     AngularMaterialModule,
     DynamicPanelBodyModule,

@@ -7,11 +7,13 @@ import { ButtonRendererComponent } from 'src/app/core/services/utilities/button-
 import { EditChampionComponent } from './modals/edit-champion/edit-champion.component';
 import { ViewChampionComponent } from './modals/view-champion/view-champion.component';
 import { DeleteChampionComponent } from './modals/delete-champion/delete-champion.component';
+import { fadeInOut } from 'src/app/core/services/utilities/animations.service';
 
 @Component({
   selector: 'app-champions-list',
   templateUrl: './champions-list.component.html',
-  styleUrls: ['./champions-list.component.scss']
+  styleUrls: ['./champions-list.component.scss'],
+  animations: [fadeInOut]
 })
 export class ChampionsListComponent implements OnInit {
 
