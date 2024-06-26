@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  margin-top: 111px;
+  margin-top: 8px;
 }
 
 .card {
@@ -70,3 +70,40 @@
   color: #C9AA71;
 
 }
+.grid-list {
+  width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .card{
+    width: 289px;
+    height: 244px;
+  }
+  .container{
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  h3{
+    font-size: 1.5em !important;
+  }
+  .description{
+    font-size: 12px;
+  }
+  .title-div{
+    max-width: 58% !important;
+  }
+}
+
+@media screen and (max-width: 1625px) {
+  .title-div{
+    max-width: 58% !important;
+  }
+}
+
+@media screen and (max-width: 1444px) {
+  .title-div{
+    max-width: 64% !important;
+  }
+}
+

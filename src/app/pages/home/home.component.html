@@ -15,8 +15,7 @@
             <div fxLayout="column">
               <div fxFlex="50" style="margin-top: 30px;">
                 <div fxLayout="row" fxLayoutAlign="center">
-                  <div fxFlex="50"> <h3 class="text-ajust">Explore the World of League of Legends!</h3>
-                  </div>
+                  <div fxFlex="50" class="title-div"> <h3 class="text-ajust">Explore the World of League of Legends!</h3></div>
                 </div>
               </div>
 
@@ -31,7 +30,7 @@
 
           <div fxFlex="50">
             <div class="container">
-              <mat-card class="card" routerLink="/champions-list"  style="background-image: url('../../assets/images/lol-campions.jpg'); background-size: cover; background-position: center;">
+              <!-- <mat-card class="card" routerLink="/champions-list"  style="background-image: url('../../assets/images/lol-campions.jpg'); background-size: cover; background-position: center;">
                 <div class="overlay">
                   <h2>Champion List</h2>
                   <p>Explore the complete list of champions in League of Legends</p>
@@ -44,7 +43,30 @@
                   <h2>Summoner Spells</h2>
                   <p>Discover the summoner spells available in the game</p>
                 </div>
-              </mat-card>
+              </mat-card> -->
+
+              <mat-grid-list cols="2" rowHeight="1:1" class="grid-list">
+                <mat-grid-tile>
+                  <mat-card class="card" routerLink="/champions-list"
+                    style="background-image: url('assets/images/lol-campions.jpg'); background-size: cover; background-position: center;">
+                    <div class="overlay">
+                      <h2>Champion List</h2>
+                      <p>Explore the complete list of champions in League of Legends</p>
+                    </div>
+                  </mat-card>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                  <mat-card class="card" routerLink="/summoner-list">
+                    <img src="assets/images/summon.png" alt="Imagem de Feitiços de Invocador">
+                    <div class="overlay">
+                      <h2>Summoner Spells</h2>
+                      <p>Discover the summoner spells available in the game</p>
+                    </div>
+                  </mat-card>
+                </mat-grid-tile>
+              </mat-grid-list>
+
+
             </div>
           </div>
         </div>
