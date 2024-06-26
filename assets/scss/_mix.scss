@@ -1,0 +1,646 @@
+
+/* --------------------------------- Sidenav -------------------------------- */
+$background-layout: rgb(9,41,73);
+$primaryButtonColor: #18746e;
+
+.logo {
+  background: $background-layout !important;
+  height: 120px;
+  a.logo-normal {
+    display: block;
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+    width: 100% !important;
+    text-align: center !important;
+    img {
+      width: auto !important;
+      height: 111px;
+      padding: 0 0 10px 0;
+    }
+  }
+}
+.mat-toolbar {
+  input::placeholder {
+    color: white !important;
+  }
+
+  .mat-button .mat-button-wrapper > *,
+  .mat-flat-button .mat-button-wrapper > *,
+  .mat-stroked-button .mat-button-wrapper > *,
+  .mat-raised-button .mat-button-wrapper > *,
+  .mat-icon-button .mat-button-wrapper > *,
+  .mat-fab .mat-button-wrapper > *,
+  .mat-mini-fab .mat-button-wrapper > * {
+    vertical-align: middle;
+    line-height: 24px !important;
+  }
+  .fa {
+    font: normal normal normal 24px/1 FontAwesome !important;
+    font-size: 20px !important;
+  }
+
+  .mat-icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+  }
+}
+.mat-toolbar.mat-primary {
+  background: #515152 !important;
+  color: #fff !important;
+}
+
+.mat-fab.mat-success,
+.mat-flat-button.mat-success,
+.mat-mini-fab.mat-success,
+.mat-raised-button.mat-success {
+  background-color: #18746e;
+}
+
+.mat-flat-button,
+.mat-raised-button,
+.mat-fab,
+.mat-mini-fab {
+  color: rgb(255 255 255 / 87%);
+  background-color: #787878;
+}
+
+.sidebar .nav li > a,
+.off-canvas-sidebar .nav li > a {
+  padding: 5px 18px !important;
+}
+
+.sidebar .nav li.active > a,
+.sidebar .nav li.active-pro > a,
+.off-canvas-sidebar .nav li.active > a,
+.off-canvas-sidebar .nav li.active-pro > a {
+  background-color: $background-layout !important;
+}
+
+.sidebar .logo,
+.off-canvas-sidebar .logo {
+
+  padding: 0 !important;
+}
+
+.sidebar {
+  .logo {
+    p,
+    .off-canvas-sidebar .logo p {
+      font-size: 12px !important;
+      font-weight: 600;
+      font-stretch: condensed !important;
+      margin: 0px 10px !important;
+      color: #c3c3c3 !important;
+      float: none !important;
+    }
+  }
+}
+
+.sidebar .nav li:hover:not(.active) > a,
+.sidebar .nav li:focus:not(.active) > a,
+.sidebar .nav li:hover:not(.active) > a > .mat-icon,
+.sidebar .nav li:focus:not(.active) > a > .mat-icon,
+.sidebar .nav li:hover:not(.active) > a > i,
+.sidebar .nav li:focus:not(.active) > a > i,
+.off-canvas-sidebar .nav li:hover:not(.active) > a,
+.off-canvas-sidebar .nav li:focus:not(.active) > a,
+.off-canvas-sidebar .nav li:hover:not(.active) > a > i,
+.off-canvas-sidebar .nav li:focus:not(.active) > a > i {
+  color: #ebebeb !important;
+}
+
+.sidebar .nav li:hover:not(.active) > a,
+.sidebar .nav li:focus:not(.active) > a,
+.off-canvas-sidebar .nav li:hover:not(.active) > a,
+.off-canvas-sidebar .nav li:focus:not(.active) > a {
+  background-color: #41486438 !important;
+}
+
+.sidebar .logo:after,
+.off-canvas-sidebar .logo:after {
+  background-color: transparent !important;
+}
+
+.sidebar[data-color="red"]:after,
+.off-canvas-sidebar[data-color="red"]:after {
+  background: #cecfd2 !important;
+}
+
+.sidebar,
+.off-canvas-sidebar {
+  .nav {
+    li {
+      &.active > a,
+      .active-pro > a {
+        color: white !important;
+        box-shadow: 2px 2px 5px 3px rgb(39 39 39 / 35%) !important;
+        border-radius: 5px;
+        font-weight: 700;
+        // i {
+        //   color: #000000 !important;
+        // }
+        i,
+        .mat-icon {
+          color: white !important;
+        }
+      }
+      > a {
+        border-radius: 5px !important;
+        padding: 5px 18px !important;
+        margin: 0px 15px 5px !important;
+        color: #747474 !important;
+        > .mat-icon,
+        i {
+          color: #747474 !important;
+        }
+      }
+
+      // a {
+      //   font-size: 0.8242em !important;
+      // }
+    }
+  }
+}
+
+
+/* ------------------------------ Painel Titulo ----------------------------- */
+.panel-header {
+  height: 120px !important;
+  padding-top: 45px !important;
+  background: $background-layout !important;
+}
+
+/* ------------------------------ body contant ------------------------------ */
+.main-panel {
+  .main-content {
+    padding: 0 20px 23px !important;
+    min-height: calc(100vh - 85px) !important;
+    margin-top: -35px !important;
+  }
+  .navbar {
+    margin-bottom: 0;
+  }
+  .header {
+    margin-bottom: 50px;
+    .title {
+      color: #fff !important;
+      text-shadow: 2px 2px 3px rgb(86 86 86 / 78%) !important;
+    }
+    .subTitle {
+      color: #a1a1a1   !important;
+      text-shadow: 2px 2px 3px rgb(86 86 86 / 78%) !important;
+    }
+    h4,
+    .h4 {
+      margin-top: 0 !important;
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+/*
+* Css para campo de busca das telas que tem table
+*/
+/* --------------------- Toolbar da pesquisa das tabelas -------------------- */
+.mat-toolbar {
+  font-size: 0.8754em !important;
+  .mat-form-field-appearance-legacy .mat-form-field-label {
+    color: #d5d5d5;
+  }
+
+  .spacer {
+    margin: 0 6px !important;
+  }
+}
+.filterOptionLabel {
+  margin-right: 10px !important;
+}
+
+mat-slide-toggle {
+  padding-top: 7px !important;
+}
+
+/* ----------------------------- Campo de busca ----------------------------- */
+.filter-dropdown,
+.search {
+  // font-size: 14px;
+  padding: 0 10px;
+}
+
+/* -------------- Ajustes das tabelas e suas colunas ------------- */
+table {
+  margin: 5px auto !important;
+  width: 100% !important;
+  tr.mat-row,
+  tr.mat-footer-row {
+    height: 35px !important;
+  }
+}
+
+.mat-table {
+  width: 100%;
+}
+
+.mat-header-row {
+  font-size: 15px;
+  min-height: 35px;
+}
+
+.mat-header-cell {
+  color: rgb(0 0 0) !important;
+}
+
+th.mat-header-cell,
+td.mat-cell,
+td.mat-footer-cell {
+  font-size: 12px !important;
+  padding: 0;
+  border-bottom-width: 0 !important;
+  border-bottom-style: solid;
+}
+
+mat-row,
+mat-footer-row {
+  min-height: 35px !important;
+  .mat-icon-button {
+    height: 35px !important;
+    line-height: 35px !important;
+    .material-icons {
+      font-size: 18px !important;
+    }
+  }
+}
+
+.mat-row {
+  &:nth-child(odd) {
+    background-color: #eaeaea;
+  }
+  &:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  &:hover {
+    background-color: #999999;
+  }
+}
+
+.mat-button,
+.mat-icon-button,
+.mat-stroked-button,
+.mat-flat-button {
+  vertical-align: middle !important;
+}
+
+.buttom-fab-custon {
+  margin-left: 20px;
+  &.mat-mini-fab {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  &.mat-mini-fab:not([class*="mat-elevation-z"]) {
+    box-shadow: 0px 2px 3px -1px rgb(0 0 0 / 20%),
+      3px 2px 3px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%) !important;
+  }
+  .material-icons {
+    line-height: -0.8 !important;
+  }
+
+  .mat-icon {
+    height: 16px !important;
+    width: 16px !important;
+    font-size: 16px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+  }
+}
+
+.mat-menu-item {
+  .mat-icon {
+    margin-right: 10px !important;
+    height: 18px !important;
+    width: 18px !important;
+    font-size: 18px !important;
+  }
+}
+
+/* --------------------- Ajustes de componentes do modal -------------------- */
+/* --------------------------------- Toolbar -------------------------------- */
+.phoneList {
+  &.mat-toolbar-single-row {
+    height: 45px !important;
+    // font: inherit;
+    font-size: 15px !important;
+  }
+}
+
+.mat-form-field {
+  > .mat-form-field-wrapper {
+    > .mat-form-field-flex {
+      > .mat-form-field-infix {
+        width: 100%;
+      }
+    }
+  }
+}
+/* ------------------------ Ajuste do mat-card title ------------------------ */
+.mat-card-header-text {
+  margin: 0 !important;
+  width: 100% !important;
+  .mat-card-subtitle {
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid #ddd !important;
+  }
+}
+
+/* ------------------------------- Uso Global ------------------------------- */
+/* ----------------------------------- Mix ---------------------------------- */
+.no-padding-right,
+.no-margin-right {
+  padding-right: 0 !important;
+  margin: 0 !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* ---------------- Ajustes de componentes globais Ex: input ---------------- */
+/* ------------------------------- Texto Input ------------------------------ */
+.mat-input-element:disabled,
+.mat-form-field-type-mat-native-select.mat-form-field-disabled
+  .mat-form-field-infix::after,
+.mat-form-field-appearance-legacy .mat-form-field-label,
+.mat-select-disabled .mat-select-value {
+  color: #243ab4;
+}
+
+/* ----- Ajuste da posição da mensagem de erro dos campos do formulário ----- */
+.mat-error {
+  display: block;
+  top: 0px;
+  position: relative;
+}
+
+/* --------------------------------- Spinner -------------------------------- */
+.ngx-loading-logo {
+  width: auto !important;
+}
+
+/* --------------------------------- icones --------------------------------- */
+.mat-button.mat-success,
+.mat-icon-button.mat-success,
+.mat-stroked-button.mat-success {
+  color: #3fb571;
+}
+
+ul {
+  list-style: none !important;
+  padding: 5px 0 !important;
+  margin: 0 !important;
+}
+
+.container .mat-card {
+  padding: 0 10px;
+}
+
+.mat-card-footer {
+  margin: 0 !important;
+}
+
+/* ------------------------ Barra de rolagem (scroll) ----------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: #eee;
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #999;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #adadad;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.container::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+  width: 20px;
+}
+
+.mat-form-field-appearance-legacy
+  .mat-form-field-prefix
+  .mat-icon-button
+  .mat-icon,
+.mat-form-field-appearance-legacy
+  .mat-form-field-suffix
+  .mat-icon-button
+  .mat-icon {
+  font-size: 18px !important;
+}
+
+.alertYellow {
+  color: #c3bd00;
+  &.helpStepper {
+    position: absolute !important;
+    float: right !important;
+    top: 0 !important;
+    right: 15px !important;
+  }
+}
+
+/* ---------------------- Angular Material Autocomplete --------------------- */
+.cdk-overlay-pane,
+.mat-autocomplete-panel-above {
+  min-width: inherit !important;
+  // width: auto !important;
+}
+
+.mat-option {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 12px !important;
+  // height: 30px !important;
+}
+/* ----------------------------------- Fim ---------------------------------- */
+
+.text-limit-5 {
+  max-width: 5ch;
+}
+.text-limit-10 {
+  max-width: 10ch;
+}
+.text-limit-15 {
+  max-width: 15ch;
+}
+.text-limit-20 {
+  max-width: 20ch;
+}
+.text-limit-25 {
+  max-width: 25ch;
+}
+.text-limit-30 {
+  max-width: 30ch;
+}
+.text-limit-35 {
+  max-width: 35ch;
+}
+.text-limit-5,
+.text-limit-10,
+.text-limit-15,
+.text-limit-20,
+.text-limit-25,
+.text-limit-30,
+.text-limit-35 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.default {
+  color: rgb(0, 0, 0);
+  background-color: rgb(197, 197, 197) !important;
+}
+.default-primary {
+  color: #fff;
+  background-color: #369 !important;
+}
+
+.error {
+  color: #fff;
+  background-color: #000 !important;
+}
+
+.accent {
+  color: #fff;
+  background-color: rgb(66, 255, 198) !important;
+}
+
+.warn {
+  color: #fff;
+  background-color: rgb(235, 133, 0) !important;
+}
+.info {
+  color: #fff;
+  background-color: rgb(104, 182, 228) !important;
+}
+
+.mat-menu-item,
+.mat-list-base .mat-list-item,
+.mat-list-base .mat-list-option {
+  height: 35px !important;
+  line-height: 35px !important;
+}
+
+.mat-menu-panel {
+  min-height: 50px !important;
+}
+
+.mat-body,
+.mat-body-1,
+.mat-typography {
+  font: 400 12px/18px Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+}
+
+.fa {
+  font: normal normal normal 14px/1 FontAwesome !important;
+  font-size: 18px !important;
+}
+
+.mat-checkbox-indeterminate.mat-primary .mat-checkbox-background,
+.mat-checkbox-checked.mat-primary .mat-checkbox-background {
+  background-color: $primaryButtonColor !important;
+}
+
+.mat-toolbar {
+
+  .mat-raised-button {
+    min-width: 40px!important;
+    line-height: 36px!important;
+    padding: 0 5px!important;
+  }
+
+  &.footer-toolbar {
+    background: transparent !important;
+    color: rgba(0, 0, 0, 0.87);
+
+    .fa {
+      font: normal normal normal 20px/1 FontAwesome !important;
+      font-size: 20px !important;
+    }
+
+    .mat-toolbar-row,
+    .mat-toolbar-single-row {
+      height: 56px !important;
+      margin-bottom: 0px;
+      box-shadow: none !important;
+
+      .mat-raised-button {
+        min-width: 40px;
+        line-height: 36px;
+        padding: 0 5px;
+
+        .mat-icon {
+          height: 20px !important;
+          width: 20px !important;
+        }
+      }
+    }
+  }
+
+  &.mat-toolbar-multiple-rows {
+    min-height: 56px !important;
+  }
+}
+
+
+@media (min-width: 768px) {
+  dl {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .dl-horizontal dt {
+    float: left;
+    width: 70px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .dl-horizontal dd {
+    margin-left: 75px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.dl-horizontal dd:before,
+.dl-horizontal dd:after {
+  display: table;
+  content: " ";
+}
+
+.dl-horizontal dd:after {
+  clear: both;
+}
+
+.dl-horizontal dt {
+  font-weight: 600!important;
+}

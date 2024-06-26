@@ -1,0 +1,11 @@
+.app-overlay-container:empty {
+  display: none !important;
+}
+
+.cdk-overlay-container {
+  z-index: 1040 !important;
+  .cdk-global-overlay-wrapper .cdk-overlay-pane {
+    position: relative !important;
+
+  }
+}

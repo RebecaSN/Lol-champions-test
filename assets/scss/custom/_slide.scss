@@ -1,0 +1,19 @@
+.mat-slide-toggle-content {
+  font-size: 1.2em !important;
+  padding-right: 10px !important;
+}
+
+.mat-slide-toggle.mat-slide-color-custon.mat-checked {
+  .mat-slide-toggle-label {
+    color: white!important;
+  }
+  .mat-slide-toggle-bar {
+    background-color: rgb(39 50 112) !important;
+    .mat-slide-toggle-thumb {
+      background-color: #278c31 !important;
+    }
+    .mat-ripple-element {
+      background-color: #278c31 !important;
+    }
+  }
+}

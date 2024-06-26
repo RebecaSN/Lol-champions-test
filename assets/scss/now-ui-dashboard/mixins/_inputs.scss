@@ -1,0 +1,433 @@
+@mixin input-size($padding-vertical, $padding-horizontal){
+    padding: $padding-vertical $padding-horizontal;
+}
+
+@mixin form-control-placeholder($color, $opacity){
+   .form-control::-moz-placeholder{
+       color: $color;
+       @include opacity(1);
+   }
+   .form-control:-moz-placeholder{
+       color: $color;
+       @include opacity(1);
+   }
+   .form-control::-webkit-input-placeholder{
+       color: $color;
+       @include opacity(1);
+   }
+   .form-control:-ms-input-placeholder{
+       color: $color;
+       @include opacity(1);
+   }
+}
+
+@mixin placeholder() {
+  &::-moz-placeholder {@content; } // Firefox
+  &:-ms-input-placeholder {@content; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  {@content; } // Safari and Chrome
+}
+
+@mixin light-form(){
+    border-radius: 0;
+    border:0;
+    padding: 0;
+    background-color: transparent;
+
+}
+
+
+@mixin form-control-lg-padding($padding-vertical, $padding-horizontal) {
+    .form-group.no-border.form-control-lg,
+    .input-group.no-border.form-control-lg{
+        .input-group-append .input-group-text{
+            padding: $padding-vertical 0 $padding-vertical $padding-horizontal;
+        }
+
+        .form-control{
+            padding: $padding-vertical $padding-horizontal;
+
+            & + .input-group-prepend .input-group-text,
+            & + .input-group-append .input-group-text{
+                padding: $padding-vertical $padding-horizontal $padding-vertical 0;
+            }
+        }
+    }
+
+    .form-group.form-control-lg,
+    .input-group.form-control-lg{
+        .form-control{
+            padding: $padding-vertical - 1 $padding-horizontal - 1;
+
+            & + .input-group-prepend .input-group-text,
+            & + .input-group-append .input-group-text{
+                padding: $padding-vertical - 1 $padding-horizontal - 1 $padding-vertical - 1 0;
+            }
+        }
+
+        .input-group-prepend .input-group-text,
+        .input-group-append .input-group-text{
+            padding: $padding-vertical - 1 0 $padding-vertical $padding-horizontal - 1;
+
+            & + .form-control{
+                padding: $padding-vertical  $padding-horizontal - 1 $padding-vertical $padding-horizontal - 3;
+            }
+        }
+    }
+}
+
+
+
+@mixin input-base-padding($padding-vertical, $padding-horizontal) {
+    .form-group.no-border,
+    .input-group.no-border{
+        .form-control{
+            padding: $padding-vertical $padding-horizontal;
+
+            & + .input-group-prepend .input-group-text,
+            & + .input-group-append .input-group-text{
+                padding: $padding-vertical $padding-horizontal $padding-vertical 0;
+            }
+        }
+
+        .input-group-prepend .input-group-text,
+        .input-group-append .input-group-text{
+            padding: $padding-vertical 0 $padding-vertical $padding-horizontal;
+        }
+    }
+
+    .form-group,
+    .input-group{
+        .form-control{
+            padding: $padding-vertical - 1 $padding-horizontal - 1 $padding-vertical - 1 $padding-horizontal - 1;
+
+            & + .input-group-prepend .input-group-text,
+            & + .input-group-append .input-group-text{
+                padding: $padding-vertical - 1 $padding-horizontal - 1 $padding-vertical - 1 0;
+            }
+        }
+
+        .input-group-prepend .input-group-text,
+        .input-group-append .input-group-text{
+            padding: $padding-vertical - 1 0 $padding-vertical - 1 $padding-horizontal - 1;
+
+            & + .form-control,
+            & ~ .form-control{
+                padding:$padding-vertical - 1 $padding-horizontal $padding-vertical $padding-horizontal - 3;
+            }
+        }
+    }
+}
+
+
+//color1 = $opacity-5
+//color2 = $opacity-8
+//color3 = $white-color
+//color4 = $transparent-bg
+//color5 = $opacity-1
+//color6 = $opacity-2
+
+
+@mixin input-coloured-bg($color1, $color2, $color3, $color4, $color5, $color6) {
+    @include form-control-placeholder(darken($color2, 8%), 1);
+
+    .form-control{
+        border-color: $color1;
+        color: $color2;
+
+        &:focus{
+            border-color: $color3;
+            background-color: $color4;
+            color: $color3;
+        }
+    }
+
+    .has-success,
+    .has-danger{
+        &:after{
+            color: $color3;
+        }
+    }
+
+    .has-danger{
+        .form-control{
+            background-color: $color4;
+        }
+    }
+
+    .input-group-prepend .input-group-text,
+    .input-group-append .input-group-text{
+        background-color: $color4;
+        border-color: $color1;
+        color: $color2;
+    }
+
+    .input-group-focus{
+        .input-group-prepend .input-group-text,
+        .input-group-append .input-group-text{
+            background-color: $color4;
+            border-color: $color3;
+            color: $color3;
+        }
+    }
+
+    .form-group.no-border,
+    .input-group.no-border{
+        .form-control{
+            background-color: $color5;
+            color: $color2;
+
+            &:focus,
+            &:active,
+            &:active{
+                background-color: $color6;
+                color: $color3;
+            }
+        }
+
+        .form-control + .input-group-prepend .input-group-text,
+        .form-control + .input-group-append .input-group-text{
+            background-color: $color5;
+
+            &:focus,
+            &:active,
+            &:active{
+                background-color: $color6;
+                color: $color3;
+            }
+        }
+
+        .form-control{
+            &:focus{
+                & + .input-group-prepend .input-group-text,
+                & + .input-group-append .input-group-text{
+                    background-color: $color6;
+                    color: $color3;
+                }
+            }
+        }
+
+        .input-group-prepend .input-group-text,
+        .input-group-append .input-group-text{
+            background-color: $color5;
+            border: none;
+            color: $color2;
+        }
+
+        &.input-group-focus{
+            .input-group-prepend .input-group-text,
+            .input-group-append .input-group-text{
+                background-color: $color6;
+                color: $color3;
+            }
+        }
+    }
+}
+
+
+// Login Page
+
+@mixin login-input-size($login-padding-vertical, $login-padding-horizontal){
+  padding: $login-padding-vertical $login-padding-horizontal;
+}
+
+@mixin login-form-control-placeholder($login-color, $login-opacity){
+ .form-control::-moz-placeholder{
+     color: $login-color;
+     @include opacity(1);
+ }
+ .form-control:-moz-placeholder{
+     color: $login-color;
+     @include opacity(1);
+ }
+ .form-control::-webkit-input-placeholder{
+     color: $login-color;
+     @include opacity(1);
+ }
+ .form-control:-ms-input-placeholder{
+     color: $login-color;
+     @include opacity(1);
+ }
+}
+
+@mixin login-light-form(){
+  border-radius: 0;
+  border:0;
+  padding: 0;
+  background-color: transparent;
+
+}
+
+
+@mixin login-input-lg-padding($login-padding-vertical, $login-padding-horizontal) {
+  .form-group.form-group-no-border.input-lg,
+  .input-group.form-group-no-border.input-lg{
+      .input-group-text{
+          padding: $login-padding-vertical 0 $login-padding-vertical $login-padding-horizontal;
+      }
+
+      .form-control{
+          padding: $login-padding-vertical $login-padding-horizontal;
+
+          & + .input-group-text{
+              padding: $login-padding-vertical $login-padding-horizontal $login-padding-vertical 0;
+          }
+      }
+  }
+
+  .form-group.input-lg,
+  .input-group.input-lg{
+      .form-control{
+          padding: $login-padding-vertical - 1 $login-padding-horizontal - 1;
+
+          & + .input-group-text{
+              padding: $login-padding-vertical - 1 $login-padding-horizontal - 1 $login-padding-vertical - 1 0;
+          }
+      }
+
+      .input-group-text{
+          padding: $login-padding-vertical - 1 0 $login-padding-vertical $login-padding-horizontal - 1;
+
+          & + .form-control{
+              padding: $login-padding-vertical  $login-padding-horizontal - 1 $login-padding-vertical $login-padding-horizontal - 3;
+          }
+      }
+  }
+}
+
+
+
+@mixin login-input-base-padding($login-padding-vertical, $login-padding-horizontal) {
+  .form-group.form-group-no-border,
+  .input-group.form-group-no-border{
+      .form-control{
+          padding: $login-padding-vertical $login-padding-horizontal;
+
+          & + .input-group-text{
+              padding: $login-padding-vertical $login-padding-horizontal $login-padding-vertical 0;
+          }
+      }
+
+      .input-group-text{
+          padding: $login-padding-vertical 0 $login-padding-vertical $login-padding-horizontal;
+      }
+  }
+
+  .form-group,
+  .input-group{
+      .form-control{
+          padding: $login-padding-vertical - 1 $login-padding-horizontal - 1 $login-padding-vertical - 1 $login-padding-horizontal - 1;
+
+          & + .input-group-text{
+              padding: $login-padding-vertical - 1 $login-padding-horizontal - 1 $login-padding-vertical - 1 0;
+          }
+      }
+
+      .input-group-text{
+          padding: $login-padding-vertical - 1 0 $login-padding-vertical - 1 $login-padding-horizontal - 1;
+
+          & + .form-control,
+          & ~ .form-control{
+              padding:$login-padding-vertical - 1 $login-padding-horizontal $login-padding-vertical $login-padding-horizontal - 3;
+          }
+      }
+  }
+}
+
+
+//color1 = $login-opacity-5
+//color2 = $login-opacity-8
+//color3 = $login-white-color
+//color4 = $login-transparent-bg
+//color5 = $login-opacity-1
+//color6 = $login-opacity-2
+
+
+@mixin login-input-coloured-bg($login-color1, $login-color2, $login-color3, $login-color4, $login-color5, $login-color6) {
+  @include login-form-control-placeholder(darken($login-color2, 8%), 1);
+
+  .form-control{
+      border-color: $login-color1;
+      color: $login-color2;
+
+      &:focus{
+          border-color: $login-color3;
+          background-color: $login-color4;
+          color: $login-color3;
+      }
+  }
+
+  .has-success,
+  .has-danger{
+      &:after{
+          color: $login-color3;
+      }
+  }
+
+  .has-danger{
+      .form-control{
+          background-color: $login-color4;
+      }
+  }
+
+  .input-group-text{
+      background-color: $login-color4;
+      border-color: $login-color1;
+      color: $login-color2;
+  }
+
+  .input-group-focus{
+      .input-group-text{
+          background-color: $login-color4;
+          border-color: $login-color3;
+          color: $login-color3;
+      }
+  }
+
+  .form-group.form-group-no-border,
+  .input-group.form-group-no-border{
+      .form-control{
+          background-color: $login-color5;
+          color: $login-color2;
+
+          &:focus,
+          &:active,
+          &:active{
+              background-color: $login-color6;
+              color: $login-color3;
+          }
+      }
+
+      .form-control + .input-group-text{
+          background-color: $login-color5;
+
+          &:focus,
+          &:active,
+          &:active{
+              background-color: $login-color6;
+              color: $login-color3;
+          }
+      }
+
+      .form-control{
+          &:focus{
+              & + .input-group-text{
+                  background-color: $login-color6;
+                  color: $login-color3;
+              }
+          }
+      }
+
+      .input-group-text{
+          background-color: $login-color5;
+          border: none;
+          color: $login-color2;
+      }
+
+      &.input-group-focus{
+          .input-group-text{
+              background-color: $login-color6;
+              color: $login-color3;
+          }
+      }
+  }
+}
