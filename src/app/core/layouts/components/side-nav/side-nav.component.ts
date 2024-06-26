@@ -1,7 +1,6 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
-
 @Component({
   selector: 'app-side-nav',
   templateUrl: './side-nav.component.html',
@@ -37,9 +36,7 @@ export class SideNavComponent implements OnInit {
 
   isExpanded: boolean = false;
 
-
   constructor(
-    /* --------- Registrando o componente de icones do angular/material --------- */
     matIconRegistry: MatIconRegistry,
 
   ) {

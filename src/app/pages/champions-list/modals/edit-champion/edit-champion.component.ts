@@ -2,7 +2,6 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { Champion } from 'src/app/core/models/pages/champions-list/champion';
-import { TagData } from 'src/app/core/models/pages/champions-list/tag-data';
 
 @Component({
   selector: 'app-edit-champion',
@@ -12,15 +11,7 @@ import { TagData } from 'src/app/core/models/pages/champions-list/tag-data';
 export class EditChampionComponent implements OnInit {
 
   championsFormGroup:FormGroup;
-
-  tagsData: TagData[] = [
-    { id: 1, tags: ['Tank'] },
-    { id: 2, tags: ['Fighter'] },
-    { id: 3, tags: ['Mage'] },
-    { id: 4, tags: ['Assassin'] },
-    { id: 5, tags: ['Marksman'] },
-    { id: 10, tags: ['Support'] },
-  ];
+  tagsData = ['Tank', 'Fighter', 'Mage', 'Assassin', 'Marksman', 'Support'];
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: Champion,
@@ -36,13 +27,15 @@ export class EditChampionComponent implements OnInit {
   }
 
   createFormGroup(objectData: Champion): void {
-
-    console.log(objectData)
     this.championsFormGroup = this.fb.group({
       title: objectData.title,
       name: objectData.name,
-      tags:this.fb.control(objectData.tags),
+      tags: [[]],
     });
+
+    objectData.tags.forEach(tag =>{
+      ( this.championsFormGroup.controls['tags'].setValue([...(this.championsFormGroup.controls['tags'].value), tag]))
+    })
   }
 
   confirm():void{

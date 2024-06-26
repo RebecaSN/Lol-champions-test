@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { InputType } from 'zlib';
-
 import { CurrencyMaskInputMode } from 'ngx-currency';
 
 @Component({

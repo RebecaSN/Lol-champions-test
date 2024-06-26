@@ -10,17 +10,13 @@
   border-radius: 5px !important;
   .mat-menu-item {
     background: none;
-    // color: #6a0000 !important;
     color: #ddd !important;
     text-shadow: 2px 2px 3px rgb(86 86 86 / 78%) !important;
     &:hover:not([disabled]) {
-      // background: #333333a1;
-      // color: #7a0000 !important;
       color: #fff !important;
       text-shadow: 3px 3px 5px rgb(86 86 86 / 88%) !important;
       .mat-icon-no-color,
       .mat-menu-item-submenu-trigger::after {
-        // color: #6a0000;
         color: #fff;
       }
     }
@@ -30,7 +26,6 @@
     }
     .mat-icon-no-color,
     .mat-menu-item-submenu-trigger::after {
-      // color: #6a0000;
       color: #ddd;
     }
   }
@@ -80,13 +75,4 @@
   .mat-select-arrow-wrapper {
     transform: translateY(-15%) !important;
   }
-}
-
-.flag {
-  width: 20px;
-  //height: 20px;
-  //border: 1px solid black;
-  border-radius: 0;
-  box-sizing: border-box;
-  //opacity: 0.5;
 }

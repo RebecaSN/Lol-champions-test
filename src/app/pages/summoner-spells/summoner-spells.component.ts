@@ -23,7 +23,6 @@ export class SummonerSpellsComponent implements OnInit {
   ];
 
   constructor(
-    private http: HttpClient,
     private summonerSpellsDataService: SummonerSpellsDataService,
     private sanitizer: DomSanitizer) { }
 

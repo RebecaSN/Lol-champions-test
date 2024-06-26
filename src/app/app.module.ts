@@ -28,7 +28,6 @@ const maskConfig: Partial<IConfig> = {
   validation: false,
   dropSpecialCharacters: false,
   thousandSeparator: ",",
-  // separatorLimit: "10000"
 };
 
 

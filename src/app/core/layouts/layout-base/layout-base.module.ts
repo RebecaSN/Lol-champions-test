@@ -17,7 +17,6 @@ import { NgxMaskModule } from 'ngx-mask';
     AngularMaterialModule,
     FlexLayoutModule,
 
-
     ComponentsModule,
     NgxMaskModule.forChild(),
   ],

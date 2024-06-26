@@ -7,10 +7,11 @@ import { DynamicPanelHeaderComponent } from './dynamic-panel-header.component';
   declarations: [
     DynamicPanelHeaderComponent
   ],
-  exports: [DynamicPanelHeaderComponent],
+  exports: [
+    DynamicPanelHeaderComponent
+  ],
   imports: [
     CommonModule,
-
     AngularMaterialModule,
   ]
 })
